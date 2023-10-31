@@ -1,0 +1,1657 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8" />
+        <title>Dashboard | Minia - Minimal Admin & Dashboard Template</title>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+        <meta content="Themesbrand" name="author" />
+        <!-- App favicon -->
+        <link rel="shortcut icon" href="assets/images/favicon.ico">
+        <!-- plugin css -->
+        <!-- flatpickr css -->
+        <link href="assets/libs/flatpickr/flatpickr.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/input-tel.min.css" rel="stylesheet"
+            type="text/css" />
+        
+
+        <!-- preloader css -->
+        <link rel="stylesheet" href="assets/css/preloader.min.css" type="text/css" />
+
+        <!-- Bootstrap Css -->
+        <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+        <!-- Icons Css -->
+        <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+        <!-- App Css-->
+        <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+    </head>
+    <body data-layout-mode="dark">
+
+    <!-- <body data-layout="horizontal"> -->
+<!-- Begin page -->
+        <div id="layout-wrapper">
+
+            
+            <header id="page-topbar" class="border-0">
+                <div class="navbar-header">
+                    <div class="d-flex">
+                        <!-- LOGO -->
+                        <div class="navbar-brand-box border-0  mt-0">
+                            <a href="index.html" class="logo logo-dark">
+                                <span class="logo-sm">
+                                    <img src="assets/images/logo-sm.svg" alt="" height="28">
+                                </span>
+                                <span class="logo-lg">
+                                    <img src="assets/images/logo-sm.svg" alt="" height="48"> <!--<span class="logo-txt">Minia</span>-->
+                                </span>
+                            </a>
+                            <a href="index.html" class="logo logo-light">
+                                <span class="logo-sm">
+                                    <img src="assets/images/logo_light.svg" alt="" height="24">
+                                </span>
+                                <span class="logo-lg">
+                                    <img src="assets/images/logo_light.svg" alt="" height="48"> <!--<span class="logo-txt">Minia</span>-->
+                                </span>
+                            </a>
+                        </div>
+
+                        <button type="button" class="btn btn-sm px-3 font-size-16 header-item" id="vertical-menu-btn">
+                            <i class="fa fa-fw fa-bars"></i>
+                        </button>
+
+            
+                    </div>
+                    <div class="d-flex">
+                        <div class=" d-flex align-items-center me-2 me-md-4">
+                            <div class=" d-inline-block  ">
+                                <button  type="button"  class="btn position-relative"  
+                                data-bs-toggle="modal" data-bs-target=".bs-example-modal-insta"  >
+                        
+                                        <img src="assets/images/social-icons/instagram_w.png" alt="instagram" class=" badge-to-show" height="16"  >
+                                        <span class="badge position-absolute translate-middle bg-success rounded-pill top-0 gilroysemibold-type fs-11">5</span>
+                            
+                        
+                        
+                        
+                                </button>
+                                <button  type="button"  class="btn position-relative"  
+                                data-bs-toggle="modal" data-bs-target=".bs-example-modal-linkedin"  >
+                        
+                                        <img src="assets/images/social-icons/linkedin_w.png" alt="linkedin" class="badge-to-show " height="16"  >
+                                        <span class="badge position-absolute translate-middle bg-success rounded-pill top-0 gilroysemibold-type fs-11"> 5</span>
+                           
+                        
+                        
+                                </button>
+                                <button  type="button"  class="btn position-relative"  
+                                data-bs-toggle="modal" data-bs-target=".bs-example-modal-twitter"  >
+                        
+                                        <img src="assets/images/social-icons/twitter_w.png" alt="instagram" class=" badge-to-show" height="16"  >
+                                        <span class="badge position-absolute translate-middle bg-success rounded-pill top-0 gilroysemibold-type fs-11"> 5</span>
+                            
+                        
+                        
+                        
+                                </button>
+
+                                <button  type="button"  class="btn position-relative"  
+                                data-bs-toggle="modal" data-bs-target=".bs-example-modal-facebook"  >
+                        
+                                        <img src="assets/images/social-icons/facebook_w.png" alt="facebook" class=" badge-to-show" height="16"  >
+                                        <span class="badge position-absolute translate-middle bg-success rounded-pill top-0 gilroysemibold-type fs-11"> 5</span>
+                           
+                        
+                        
+                        
+                                </button>
+
+                                <button  type="button"  class="btn position-relative"  
+                                data-bs-toggle="modal" data-bs-target=".bs-example-modal-yt"  >
+                        
+                                        <img src="assets/images/social-icons/yt_w.png" alt="yt" class=" badge-to-show" height="16"  >
+                                        <span class="badge position-absolute translate-middle bg-success rounded-pill top-0 gilroysemibold-type fs-11"> 5</span>
+                            
+                        
+                        
+                        
+                                </button>
+
+                   
+                    
+                    
+                
+                            </div>
+
+
+                        </div>
+            
+                        <div class="dropdown d-inline-block">
+                            <button type="button" class="btn header-item " id="page-header-user-dropdown"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><!--bg-soft-light border-start border-end-->
+                                <span class="d-none d-xl-inline-block me-2 fw-medium">Hi, Shibu Kizhepat</span>
+                                <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg"
+                                    alt="Header Avatar">
+                    
+                                <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-end">
+                                <!-- item-->
+                                <a class="dropdown-item" href="apps-contacts-profile.html"><i class="mdi mdi-face-profile font-size-16 align-middle me-1"></i> Profile</a>
+                                <a class="dropdown-item" href="auth-lock-screen.html"><i class="mdi mdi-lock font-size-16 align-middle me-1"></i> Lock Screen</a>
+                                <div class="dropdown-divider"></div>
+                                <a class="dropdown-item" href="auth-logout.html"><i class="mdi mdi-logout font-size-16 align-middle me-1"></i> Logout</a>
+                            </div>
+                        </div>
+          
+                        <div class="dropdown d-inline-block">
+                            <button type="button" class="btn header-item noti-icon position-relative" id="page-header-notifications-dropdown"
+                            data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                <i data-feather="bell" class="icon-lg"></i>
+                                <span class="badge bg-danger rounded-pill">5</span>
+                            </button>
+                            <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                                aria-labelledby="page-header-notifications-dropdown">
+                                <div class="p-3">
+                                    <div class="row align-items-center">
+                                        <div class="col">
+                                            <h6 class="m-0"> Notifications </h6>
+                                        </div>
+                                        <div class="col-auto">
+                                            <a href="#!" class="small text-reset text-decoration-underline"> Unread (3)</a>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div data-simplebar style="max-height: 230px;">
+                                    <a href="#!" class="text-reset notification-item">
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0 me-3">
+                                                <img src="assets/images/users/avatar-3.jpg" class="rounded-circle avatar-sm" alt="user-pic">
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h6 class="mb-1">James Lemire</h6>
+                                                <div class="font-size-13 text-muted">
+                                                    <p class="mb-1">It will seem like simplified English.</p>
+                                                    <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>1 hour ago</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#!" class="text-reset notification-item">
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0 avatar-sm me-3">
+                                                <span class="avatar-title bg-primary rounded-circle font-size-16">
+                                                    <i class="bx bx-cart"></i>
+                                                </span>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h6 class="mb-1">Your order is placed</h6>
+                                                <div class="font-size-13 text-muted">
+                                                    <p class="mb-1">If several languages coalesce the grammar</p>
+                                                    <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>3 min ago</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                    <a href="#!" class="text-reset notification-item">
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0 avatar-sm me-3">
+                                                <span class="avatar-title bg-success rounded-circle font-size-16">
+                                                    <i class="bx bx-badge-check"></i>
+                                                </span>
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h6 class="mb-1">Your item is shipped</h6>
+                                                <div class="font-size-13 text-muted">
+                                                    <p class="mb-1">If several languages coalesce the grammar</p>
+                                                    <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>3 min ago</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+
+                                    <a href="#!" class="text-reset notification-item">
+                                        <div class="d-flex">
+                                            <div class="flex-shrink-0 me-3">
+                                                <img src="assets/images/users/avatar-6.jpg" class="rounded-circle avatar-sm" alt="user-pic">
+                                            </div>
+                                            <div class="flex-grow-1">
+                                                <h6 class="mb-1">Salena Layfield</h6>
+                                                <div class="font-size-13 text-muted">
+                                                    <p class="mb-1">As a skeptical Cambridge friend of mine occidental.</p>
+                                                    <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>1 hour ago</span></p>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </a>
+                                </div>
+                                <div class="p-2 border-top d-grid">
+                                    <a class="btn btn-sm btn-link font-size-14 text-center" href="javascript:void(0)">
+                                        <i class="mdi mdi-arrow-right-circle me-1"></i> <span>View More..</span> 
+                                    </a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="dropdown d-none d-sm-inline-block">
+                            <button type="button" class="btn header-item" id="mode-setting-btn">
+                                <i data-feather="moon" class="icon-lg layout-mode-dark"></i>
+                                <i data-feather="sun" class="icon-lg layout-mode-light"></i>
+                            </button>
+                        </div>
+
+                    </div>
+                </div>
+            </header>
+
+            <!-- ========== Left Sidebar Start ========== -->
+            <div class="vertical-menu border-0" >
+
+                <div data-simplebar class="h-100">
+
+                    <!--- Sidemenu -->
+                    <div id="sidebar-menu">
+                        <!-- Left Menu Start -->
+                        <ul class="metismenu list-unstyled gilroymedium-type fs-15" id="side-menu">
+                            <!--<li class="menu-title" data-key="t-menu">Menu</li>-->
+
+                            <li>
+                                <a  href="javascript: void(0);" class="has-arrow"><!--href="indexsales.html"-->
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.1667 7.81004V3.64837C20.1667 2.35587 19.58 1.83337 18.1225 1.83337H14.4192C12.9617 1.83337 12.375 2.35587 12.375 3.64837V7.80087C12.375 9.10254 12.9617 9.61587 14.4192 9.61587H18.1225C19.58 9.62504 20.1667 9.10254 20.1667 7.81004Z" fill="#00A54F"/>
+                                        <path d="M20.1667 18.1225V14.4192C20.1667 12.9617 19.58 12.375 18.1225 12.375H14.4192C12.9617 12.375 12.375 12.9617 12.375 14.4192V18.1225C12.375 19.58 12.9617 20.1667 14.4192 20.1667H18.1225C19.58 20.1667 20.1667 19.58 20.1667 18.1225Z" fill="#00A54F"/>
+                                        <path d="M9.62498 7.81004V3.64837C9.62498 2.35587 9.03831 1.83337 7.58081 1.83337H3.87748C2.41998 1.83337 1.83331 2.35587 1.83331 3.64837V7.80087C1.83331 9.10254 2.41998 9.61587 3.87748 9.61587H7.58081C9.03831 9.62504 9.62498 9.10254 9.62498 7.81004Z" fill="#00A54F"/>
+                                        <path d="M9.62498 18.1225V14.4192C9.62498 12.9617 9.03831 12.375 7.58081 12.375H3.87748C2.41998 12.375 1.83331 12.9617 1.83331 14.4192V18.1225C1.83331 19.58 2.41998 20.1667 3.87748 20.1667H7.58081C9.03831 20.1667 9.62498 19.58 9.62498 18.1225Z" fill="#00A54F"/>
+                                    </svg>
+                            
+                    
+                                    <span data-key="t-dashboard">Dashboard1</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li class="box">
+                                        <!--<a href="Newcasereportform.html" data-key="t-crfr1"  class="box">-->
+                                        <div class="item" id="item1" draggable="true">
+                                            <span class="link">Chart1</span>
+                                            <div class="card-body ">
+
+                                                <div class="d-flex flex-wrap align-items-center mb-4">
+                                                    <h5 class="card-title me-2 almarenamonolight-type fs-21">New Accounts</h5>
+                                                    <div class="ms-auto">
+                                                        <div>
+                                                            <a href="" class=" mb-0 my-n1  gilorymedium-type fs-15"
+                                                                style="color: var(--color1);">Sales graph this week</a>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="  text-center d-none ">
+
+                                                    <img src="assets/images/nodata/nodata.png" alt="">
+
+
+
+                                                    <p class="gilory-regular-type fs-20 mt-2">Webinars this week not
+                                                        sheduled</p>
+
+                                                </div>
+
+                                                <div id="spline_area_new_accounts"
+                                                    data-colors='["#FF0000", "#06C3FF","#DD9406","#39AA7B"]'
+                                                    class="apex-charts d-flex card-h-100 align-items-center" dir="ltr"></div>
+                                            </div>
+
+                                
+                                
+                               
+                                        <!--<div     class=" card-body d-flex align-items-center justify-content-center" draggable="true" >XXX</div></a>-->
+                                    </li>
+                                    <li class="box"><!--<a href="crfcase-details.html" data-key="t-crfd1">CRF Details</a>-->
+                        
+                                        <div class="item"  id="item2" draggable="true">
+                                            <span class="link">Chart2</span>
+                                            <div class="card-body">
+
+                                                <div class="d-flex flex-wrap align-items-center mb-4">
+                                                    <h5 class="card-title me-2 almarenamonolight-type fs-21"> Tickets</h5>
+                                                    <div class="ms-auto">
+                                                        <div>
+                                                            <button type="button"
+                                                                class="btn bg-soft-gunmetal  text-white btn-sm fs-13 gilroyregular-type almarenamonolight-type"
+                                                                onclick="btnclickactive(this,'.bg-soft-gunmetal')">
+                                                                Daily
+                                                            </button>
+                                                            <button type="button"
+                                                                class="btn  btn-sm  text-white fs-13 gilroyregular-type"
+                                                                onclick="btnclickactive(this,'.bg-soft-gunmetal')" o="">
+                                                                Weekly
+                                                            </button>
+    
+                                                        </div>
+                                                    </div>
+    
+                                                </div>
+    
+    
+                                                <div class="  text-center  d-none">
+    
+                                                    <img src="assets/images/nodata/nodata.png" alt="" style="max-height: 80px;">
+    
+    
+    
+                                                    <p class="gilory-regular-type fs-20 mt-2">Tickets not
+                                                        sheduled</p>
+    
+                                                </div>
+                                                <div id="tickets" data-colors='["#B750BE","#DD9406","#3AACFF"]'
+                                                    class="apex-charts " dir="ltr">
+                                                </div>
+                                            </div>
+                                        </div>
+                        
+                                    </li>
+
+                                    <li class="box">
+                           
+                                        <div class="item" id="item3" draggable="true">
+                                            <span class="link">Chart 3</span>
+                                            <div class="card-body">
+
+                                                <div class="d-flex flex-wrap align-items-center mb-4">
+                                                    <h5 class="card-title me-2 almarenamonolight-type fs-21"> Tickets</h5>
+                                                    <div class="ms-auto">
+                                                        <div>
+                                                            <button type="button"
+                                                                class="btn bg-soft-gunmetal  text-white btn-sm fs-13 gilroyregular-type almarenamonolight-type"
+                                                                onclick="btnclickactive(this,'.bg-soft-gunmetal')">
+                                                                Daily
+                                                            </button>
+                                                            <button type="button"
+                                                                class="btn  btn-sm  text-white fs-13 gilroyregular-type"
+                                                                onclick="btnclickactive(this,'.bg-soft-gunmetal')" o="">
+                                                                Weekly
+                                                            </button>
+
+                                                        </div>
+                                                    </div>
+
+                                                </div>
+
+
+                                                <div class="  text-center  d-none">
+
+                                                    <img src="assets/images/nodata/nodata.png" alt="" style="max-height: 80px;">
+
+
+
+                                                    <p class="gilory-regular-type fs-20 mt-2">Tickets not
+                                                        sheduled</p>
+
+                                                </div>
+                                                <div id="tickets" data-colors='["#B750BE","#DD9406","#3AACFF"]'
+                                                    class="apex-charts " dir="ltr">
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow">
+                     
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M16.5 6.56338C16.445 6.55421 16.3808 6.55421 16.3258 6.56338C15.0608 6.51754 14.0525 5.48171 14.0525 4.19838C14.0525 2.88754 15.1067 1.83337 16.4175 1.83337C17.7283 1.83337 18.7825 2.89671 18.7825 4.19838C18.7733 5.48171 17.765 6.51754 16.5 6.56338Z" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M15.5558 13.2367C16.8117 13.4476 18.1958 13.2276 19.1675 12.5767C20.46 11.7151 20.46 10.3034 19.1675 9.44173C18.1867 8.7909 16.7842 8.57089 15.5283 8.79089" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M5.4725 6.56338C5.5275 6.55421 5.59167 6.55421 5.64667 6.56338C6.91167 6.51754 7.92 5.48171 7.92 4.19838C7.92 2.88754 6.86584 1.83337 5.555 1.83337C4.24417 1.83337 3.19 2.89671 3.19 4.19838C3.19917 5.48171 4.2075 6.51754 5.4725 6.56338Z" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6.41667 13.2367C5.16084 13.4476 3.77667 13.2276 2.80501 12.5767C1.51251 11.7151 1.51251 10.3034 2.80501 9.44173C3.78584 8.7909 5.18834 8.57089 6.44417 8.79089" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M11 13.4108C10.945 13.4016 10.8808 13.4016 10.8258 13.4108C9.56082 13.365 8.55249 12.3291 8.55249 11.0458C8.55249 9.73495 9.60666 8.68079 10.9175 8.68079C12.2283 8.68079 13.2825 9.74412 13.2825 11.0458C13.2733 12.3291 12.265 13.3741 11 13.4108Z" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8.33247 16.2983C7.03997 17.16 7.03997 18.5717 8.33247 19.4333C9.79914 20.4142 12.2008 20.4142 13.6675 19.4333C14.96 18.5717 14.96 17.16 13.6675 16.2983C12.21 15.3267 9.79914 15.3267 8.33247 16.2983Z" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>
+                                    <span data-key="t-clients">All Clients</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="newaccount_sales.html" data-key="t-liveaccounts">Live Accounts</a></li>
+                                    <!--<li><a href="#" data-key="t-pendingaccounts">Pending Accounts</a></li>
+                                    <li><a href="#" data-key="t-rejectedaccounts">Rejected Accounts</a></li>
+                                    <li><a href="#" data-key="t-terminatedaccounts">Terminated Accounts</a></li>
+                                    <li><a href="#" data-key="t-closedaccounts">Closed Accounts</a></li>-->
+                                </ul>
+                            </li>
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow">
+                     
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.3332 1.66602H6.6665C3.33317 1.66602 1.6665 3.33268 1.6665 6.66602V17.4993C1.6665 17.9577 2.0415 18.3327 2.49984 18.3327H13.3332C16.6665 18.3327 18.3332 16.666 18.3332 13.3327V6.66602C18.3332 3.33268 16.6665 1.66602 13.3332 1.66602Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M5.8335 7.91602H14.1668" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M5.8335 12.082H11.6668" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                             
+                                    <span data-key="t-crf">CRF</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="Newcasereportform.html" data-key="t-crfr">New Case Report Form</a></li>
+                                    <li><a href="crfcase-details.html" data-key="t-crfd">CRF Details</a></li>
+                        
+                       
+                       
+                        
+                                </ul>
+                            </li>
+                           <li>
+                                <a href="javascript: void(0);" class="has-arrow">
+                     
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M3.28168 4.72998H15.9684C17.49 4.72998 18.7184 5.95831 18.7184 7.47998V10.5233" stroke="#989898" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6.17835 1.83337L3.28168 4.73002L6.17835 7.62671" stroke="#989898" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18.7184 17.27H6.03168C4.51001 17.27 3.28168 16.0417 3.28168 14.52V11.4767" stroke="#989898" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M15.8217 20.1668L18.7184 17.2701L15.8217 14.3734" stroke="#989898" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg>  
+                                    <span data-key="t-backOffice">Back Office</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="changePassword.html" data-key="t-password">Change Password</a></li>
+                                    <li><a href="backoffice_management1.html" data-key="t-manage">Manage Account</a></li>
+                                    <li><a href="bo-cardapproval.html" data-key="t-approve">Approval</a></li>
+                                    <li><a href="bo-viiewnupload.html" data-key="t-vnupload">View and Upload</a></li>
+                                    <li><a href="backoffice-db.html" data-key="t-approve">Dashboard</a></li>
+                                    <li><a href="bo-transaction.html" data-key="t-tran"> Transactions</a></li>
+                                    <li><a href="bo-transactionhistory.html" data-key="t-tranh"> Transaction History</a></li>
+                       
+                       
+                        
+                                </ul>
+                            </li>
+                            <!--
+                            <li>
+                                <a href="javascript: void(0);" class="has-arrow">
+                        
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.2847 17.6459H5.88193C2.52082 17.6459 1.68054 16.8056 1.68054 13.4445V6.72226C1.68054 3.36115 2.52082 2.52087 5.88193 2.52087H14.2847C17.6458 2.52087 18.4861 3.36115 18.4861 6.72226V13.4445C18.4861 16.8056 17.6458 17.6459 14.2847 17.6459Z" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M11.7639 6.72217H15.9653" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12.6042 10.0834H15.9653" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M14.2847 13.4445H15.9653" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M7.14236 9.48675C7.98233 9.48675 8.66327 8.80582 8.66327 7.96585C8.66327 7.12588 7.98233 6.44495 7.14236 6.44495C6.30239 6.44495 5.62146 7.12588 5.62146 7.96585C5.62146 8.80582 6.30239 9.48675 7.14236 9.48675Z" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M10.0834 13.7217C9.96572 12.5033 8.9994 11.5454 7.781 11.4362C7.36086 11.3942 6.93232 11.3942 6.50378 11.4362C5.28537 11.5538 4.31905 12.5033 4.20142 13.7217" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                            
+                                    <span data-key="t-affiliates">Affiliates</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a href="#" data-key="t-liveaffiliates">Live Affiliates</a></li>
+                                    <li><a href="#" data-key="t-pendingaffiliates">Pending Affiliates</a></li>
+                                    <li><a href="#" data-key="t-rejectedaffiliates">Rejected Affiliates</a></li>
+                     
+                        
+                                </ul>
+                            </li>-->
+
+                            <li>
+                                <a  href="javascript: void(0);" class="has-arrow">
+                        
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M6.30664 16.6375V14.74" stroke="#989898" stroke-width="1.5" stroke-linecap="round"/>
+                                        <path d="M11 16.6375V12.8425" stroke="#989898" stroke-width="1.5" stroke-linecap="round"/>
+                                        <path d="M15.6934 16.6375V10.9358" stroke="#989898" stroke-width="1.5" stroke-linecap="round"/>
+                                        <path d="M15.6933 5.36255L15.2716 5.85755C12.9341 8.58922 9.79914 10.5234 6.30664 11.3942" stroke="#989898" stroke-width="1.5" stroke-linecap="round"/>
+                                        <path d="M13.0075 5.36255H15.6933V8.03922" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8.24998 20.1667H13.75C18.3333 20.1667 20.1666 18.3334 20.1666 13.75V8.25004C20.1666 3.66671 18.3333 1.83337 13.75 1.83337H8.24998C3.66665 1.83337 1.83331 3.66671 1.83331 8.25004V13.75C1.83331 18.3334 3.66665 20.1667 8.24998 20.1667Z" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                            
+                                    <span data-key="t-sales">Sales</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a  href="apps-emailtc-inbox.html" data-key="t-inbox">Inbox</a></li>
+                                    <li><a  href="newLeads.html" data-key="t-leads">Leads</a></li>
+                                    <li><a  href="newLeadRegistration.html" data-key="t-LeadRegistration">Ticket Registration</a></li>
+                                    <li><a  href="newLeadProcessing.html" data-key="t-LeadRegistration">Manage Tickets</a></li>
+                     
+                        
+                                </ul>
+                            </li>
+
+                            <li>
+                                <a  href="javascript: void(0);" class="has-arrow">
+                        
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M7.63338 9.05817C7.55005 9.04984 7.45005 9.04984 7.35838 9.05817C5.37505 8.9915 3.80005 7.3665 3.80005 5.3665C3.80005 3.32484 5.45005 1.6665 7.50005 1.6665C9.54172 1.6665 11.2 3.32484 11.2 5.3665C11.1917 7.3665 9.61671 8.9915 7.63338 9.05817Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M13.675 3.3335C15.2916 3.3335 16.5917 4.64183 16.5917 6.25016C16.5917 7.82516 15.3417 9.1085 13.7833 9.16683C13.7167 9.1585 13.6417 9.1585 13.5667 9.16683" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M3.4666 12.1335C1.44993 13.4835 1.44993 15.6835 3.4666 17.0252C5.75827 18.5585 9.5166 18.5585 11.8083 17.0252C13.8249 15.6752 13.8249 13.4752 11.8083 12.1335C9.52494 10.6085 5.7666 10.6085 3.4666 12.1335Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M15.2834 16.6665C15.8834 16.5415 16.4501 16.2998 16.9168 15.9415C18.2168 14.9665 18.2168 13.3582 16.9168 12.3832C16.4584 12.0332 15.9001 11.7998 15.3084 11.6665" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                            
+                            
+                                    <span data-key="t-sales">Management</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a  href="management-salesreport.html" data-key="t-salesreport">Sales Report</a></li>
+                     
+                     
+                        
+                                </ul>
+                            </li>
+                            <li>
+                                <a  href="javascript: void(0);" class="has-arrow">
+                        
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M20.1666 8.25004V13.75C20.1666 13.9609 20.1666 14.1625 20.1483 14.3642C20.1116 14.3092 20.0658 14.2542 20.02 14.2084C20.0108 14.1992 20.0016 14.1809 19.9925 14.1717C19.25 13.3467 18.1591 12.8334 16.9583 12.8334C15.8033 12.8334 14.7492 13.31 13.9975 14.08C13.2733 14.8225 12.8333 15.84 12.8333 16.9584C12.8333 17.7284 13.0533 18.4617 13.4291 19.085C13.6308 19.4242 13.8875 19.7359 14.1808 19.9925C14.1991 20.0017 14.2083 20.0109 14.2175 20.0201C14.2633 20.0659 14.3091 20.1025 14.3641 20.1484C14.1716 20.1667 13.9608 20.1667 13.75 20.1667H8.24998C3.66665 20.1667 1.83331 18.3334 1.83331 13.75V8.25004C1.83331 3.66671 3.66665 1.83337 8.24998 1.83337H13.75C18.3333 1.83337 20.1666 3.66671 20.1666 8.25004Z" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M2.31 6.51746H19.69" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M7.81 1.9342V6.38919" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M14.19 1.9342V5.97674" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M21.0833 16.9584C21.0833 17.2884 21.0466 17.6092 20.9641 17.9209C20.8633 18.3334 20.6983 18.7275 20.4875 19.085C19.7725 20.2767 18.4616 21.0834 16.9583 21.0834C15.9683 21.0834 15.07 20.735 14.3733 20.1484C14.3641 20.1484 14.3641 20.1484 14.3641 20.1484C14.3091 20.1025 14.2633 20.0659 14.2175 20.0201C14.2083 20.0109 14.1991 20.0017 14.1808 19.9925C13.8875 19.7359 13.6308 19.4242 13.4291 19.085C13.0533 18.4617 12.8333 17.7284 12.8333 16.9584C12.8333 15.84 13.2733 14.8225 13.9975 14.08C14.7492 13.31 15.8033 12.8334 16.9583 12.8334C18.1591 12.8334 19.25 13.3467 19.9925 14.1717C20.0016 14.1809 20.0108 14.1992 20.02 14.2084C20.0658 14.2542 20.1116 14.3092 20.1483 14.3642C20.735 15.07 21.0833 15.9775 21.0833 16.9584Z" stroke="#989898" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18.4983 16.9399H15.4183" stroke="#989898" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M16.9583 15.4366V18.5166" stroke="#989898" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                            
+                            
+                                    <span data-key="t-seminars">Seminars</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a  href="newEventRegistration-seminar.html" data-key="t-newe">New Event Registration</a></li>
+                                    <li><a  href="seminarreport.html" data-key="t-semg">Report Generation</a></li>
+                                    <li><a  href="seminarconfirmation.html" data-key="t-semrc">Seminar Confirmation</a></li>
+                        
+                                </ul>
+                            </li>    <!-- 
+                            <li>
+                                <a  href="javascript: void(0);" class="has-arrow">
+                                    <i data-feather="layout"></i>
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.39666 9.96421C8.30499 9.95504 8.19499 9.95504 8.09416 9.96421C5.91249 9.89087 4.17999 8.10337 4.17999 5.90337C4.17999 3.65754 5.99499 1.83337 8.24999 1.83337C10.4958 1.83337 12.32 3.65754 12.32 5.90337C12.3108 8.10337 10.5783 9.89087 8.39666 9.96421Z" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M15.0425 3.66663C16.8208 3.66663 18.2508 5.10579 18.2508 6.87496C18.2508 8.60746 16.8758 10.0191 15.1617 10.0833C15.0883 10.0741 15.0058 10.0741 14.9233 10.0833" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M3.81335 13.3466C1.59501 14.8316 1.59501 17.2516 3.81335 18.7275C6.33418 20.4141 10.4683 20.4141 12.9892 18.7275C15.2075 17.2425 15.2075 14.8225 12.9892 13.3466C10.4775 11.6691 6.34335 11.6691 3.81335 13.3466Z" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M16.8116 18.3334C17.4716 18.1959 18.095 17.93 18.6083 17.5359C20.0383 16.4634 20.0383 14.6942 18.6083 13.6217C18.1041 13.2367 17.49 12.98 16.8391 12.8334" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                            
+                            
+                            
+                                    <span data-key="t-management">Management</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                    <li><a  href="Leads.html" data-key="t-leads">Leads</a></li>
+                                    <li><a  href="LeadRegistration.html" data-key="t-LeadRegistration">Ticket Registration</a></li>-
+                        
+                                </ul>
+                            </li>   
+               
+                            <li>
+                                <a  href="javascript: void(0);" class="has-arrow">
+                                    <i data-feather="layout"></i>
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.6666 1.83337H7.33331C3.66665 1.83337 1.83331 3.66671 1.83331 7.33337V19.25C1.83331 19.7542 2.24581 20.1667 2.74998 20.1667H14.6666C18.3333 20.1667 20.1666 18.3334 20.1666 14.6667V7.33337C20.1666 3.66671 18.3333 1.83337 14.6666 1.83337Z" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6.41669 8.70837H15.5834" stroke="#989898" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M6.41669 13.2917H12.8334" stroke="#989898" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                            
+                            
+                            
+                            
+                                    <span data-key="t-compliance">Compliance</span>
+                                </a>
+                                <ul class="sub-menu" aria-expanded="false">
+                                   <li><a  href="Leads.html" data-key="t-leads">Leads</a></li>
+                                    <li><a  href="LeadRegistration.html" data-key="t-LeadRegistration">Ticket Registration</a></li>
+                        
+                                </ul>
+                            </li>
+                                -->
+               
+                            <li>
+                                <a  href="changepassword.html" >
+                       
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.24998 20.1667H13.75C18.3333 20.1667 20.1666 18.3334 20.1666 13.75V8.25004C20.1666 3.66671 18.3333 1.83337 13.75 1.83337H8.24998C3.66665 1.83337 1.83331 3.66671 1.83331 8.25004V13.75C1.83331 18.3334 3.66665 20.1667 8.24998 20.1667Z" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M14.9233 12.4758C13.8875 13.5116 12.4025 13.8325 11.0916 13.42L8.71748 15.785C8.55248 15.9591 8.21331 16.0691 7.96581 16.0325L6.86581 15.8858C6.49914 15.84 6.16914 15.4916 6.11414 15.1341L5.96748 14.0341C5.93081 13.7958 6.04998 13.4566 6.21498 13.2825L8.57998 10.9175C8.17664 9.60663 8.48831 8.12163 9.52414 7.0858C11.0091 5.6008 13.4291 5.6008 14.9233 7.0858C16.4083 8.56163 16.4083 10.9816 14.9233 12.4758Z" stroke="#989898" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M9.57915 14.9233L8.79999 14.135" stroke="#989898" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M12.2783 9.80831H12.2865" stroke="#989898" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                            
+                            
+                            
+                            
+                            
+                                    <span data-key="t-changepassword">Change Password</span>
+                                </a>
+                    
+                            </li>
+                            <!--<li>
+                                <a  href="javascript: void(0);" class="has-arrow" >
+                                    <i data-feather="layout"></i>
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M11 13.75C12.5188 13.75 13.75 12.5188 13.75 11C13.75 9.48122 12.5188 8.25 11 8.25C9.48122 8.25 8.25 9.48122 8.25 11C8.25 12.5188 9.48122 13.75 11 13.75Z" stroke="#989898" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M1.83331 11.8066V10.1933C1.83331 9.23998 2.61248 8.45165 3.57498 8.45165C5.23415 8.45165 5.91248 7.27832 5.07831 5.83915C4.60165 5.01415 4.88581 3.94165 5.71998 3.46498L7.30581 2.55748C8.02998 2.12665 8.96498 2.38332 9.39581 3.10748L9.49665 3.28165C10.3216 4.72082 11.6783 4.72082 12.5125 3.28165L12.6133 3.10748C13.0441 2.38332 13.9791 2.12665 14.7033 2.55748L16.2891 3.46498C17.1233 3.94165 17.4075 5.01415 16.9308 5.83915C16.0966 7.27832 16.775 8.45165 18.4341 8.45165C19.3875 8.45165 20.1758 9.23082 20.1758 10.1933V11.8066C20.1758 12.76 19.3966 13.5483 18.4341 13.5483C16.775 13.5483 16.0966 14.7216 16.9308 16.1608C17.4075 16.995 17.1233 18.0583 16.2891 18.535L14.7033 19.4425C13.9791 19.8733 13.0441 19.6166 12.6133 18.8925L12.5125 18.7183C11.6875 17.2791 10.3308 17.2791 9.49665 18.7183L9.39581 18.8925C8.96498 19.6166 8.02998 19.8733 7.30581 19.4425L5.71998 18.535C4.88581 18.0583 4.60165 16.9858 5.07831 16.1608C5.91248 14.7216 5.23415 13.5483 3.57498 13.5483C2.61248 13.5483 1.83331 12.76 1.83331 11.8066Z" stroke="#989898" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                            
+                            
+                            
+                            
+                            
+                            
+                                    <span data-key="t-settings">Settings</span>
+                                </a>
+                    
+                            </li>-->
+                            <li>
+                                <a  href="apps-chatnew.html" >
+                        
+                                    <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M14.9834 8.99167V12.325C14.9834 12.5417 14.9751 12.75 14.9501 12.95C14.7584 15.2 13.4334 16.3167 10.9918 16.3167H10.6584C10.4501 16.3167 10.2501 16.4167 10.1251 16.5833L9.12509 17.9167C8.68343 18.5083 7.96675 18.5083 7.52508 17.9167L6.52507 16.5833C6.41674 16.4417 6.17508 16.3167 5.99175 16.3167H5.65842C3.00009 16.3167 1.66675 15.6583 1.66675 12.325V8.99167C1.66675 6.55001 2.79176 5.22501 5.03342 5.03334C5.23342 5.00834 5.44176 5 5.65842 5H10.9918C13.6501 5 14.9834 6.33334 14.9834 8.99167Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M18.3168 5.65818V8.99151C18.3168 11.4415 17.1918 12.7582 14.9501 12.9498C14.9751 12.7498 14.9834 12.5415 14.9834 12.3248V8.99151C14.9834 6.33318 13.6501 4.99984 10.9918 4.99984H5.65845C5.44178 4.99984 5.23345 5.00818 5.03345 5.03318C5.22511 2.79151 6.55011 1.6665 8.99178 1.6665H14.3251C16.9834 1.6665 18.3168 2.99984 18.3168 5.65818Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M11.2462 11.0417H11.2537" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M8.32966 11.0417H8.33716" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M5.41292 11.0417H5.42042" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                        </svg>
+                            
+                            
+                            
+                            
+                            
+                            
+                                    <span data-key="t-appschatnew">Live Chat Logs</span>
+                                </a>
+                    
+                            </li>
+                            <li>
+                                <a  href="auth-loginnew2.html" >
+                    
+                                    <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M8.15833 6.92997C8.44249 3.62997 10.1383 2.28247 13.8508 2.28247H13.97C18.0675 2.28247 19.7083 3.9233 19.7083 8.0208V13.9975C19.7083 18.095 18.0675 19.7358 13.97 19.7358H13.8508C10.1658 19.7358 8.46999 18.4066 8.16749 15.1616" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M1.83331 11H13.64" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                        <path d="M11.5958 7.9292L14.6667 11L11.5958 14.0709" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                    </svg> 
+                            
+                                    <span data-key="t-logout">Logout</span>
+                                </a>
+                    
+                            </li>
+
+
+
+                        </ul>
+
+                        <div class="card  sidebar-alert border-0 text-center mx-4 mb-0 mt-5"><!--.sidebar-alert-->
+                            <div class="card-body">
+                                <img src="assets/images/sales/sales.png" alt="" class="w-100">
+                                <div class="mt-1">
+                                    <h5 class=" font-size-16 almarenamonolight-type fs-18">Sales Performers
+                                        of the month</h5>
+                                    <!--<p class="font-size-13">Upgrade your plan from a Free trial, to select ‘Business Plan’.</p>-->
+                                    <a href="#!" class="btn btn-primary mt-2 gilory-semibold-type" data-bs-toggle="modal" data-bs-target=".bs-example-modal-not" type="button">View </a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- Sidebar -->
+                </div>
+            </div>
+            <!-- Left Sidebar End -->
+
+            
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
+
+                <div class="page-content" id="sales">
+                    <div class="container-fluid"> <!--container-fluid px-md-5 me-md5-->
+
+                        <!-- start page title -->
+                        <div class="row">
+                            <div class="col-12">
+                                <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                                    <h4 class="mb-sm-0 fs-23 almarenamonolight-type">Backoffice</h4><!--font-size-18-->
+
+                                    <!--<div class="page-title-right">
+                                        <ol class="breadcrumb m-0">
+                                            <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
+                                            <li class="breadcrumb-item active">Backoffice</li>
+                                        </ol>
+                                    </div>-->
+
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end page title -->
+
+                        <div class="row ">
+                            <div class="  col-md-12">
+                                <div class="card  card-h-100">
+                                
+                                    <div class="card-body"> 
+
+                                        <div class="row  justify-content-start align-items-center pt-2">
+                                
+                                            <div class="col-md-12">
+
+                               
+                                                
+                                        
+                                                    <button type="button" class="btn  text-white me-2 fs-14 top-rounded-status" > <!--style="background-color: var(--bs-card-bg) ;-->
+                                                        <div class="circle" data-size="60" data-value="0.8" data-thickness="4" data-fill="{
+                                                            &quot;color&quot;: &quot;#35D00E&quot;
+                                                        }" style="width: 60px; height:60px"><canvas width="60" height="60"></canvas>
+                                                            <div class="circle-content">
+
+                                                              
+                                                                <svg width="32" height="32" viewBox="0 0 32 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M16 8.49997C16.8284 8.49997 17.5 7.82841 17.5 6.99999C17.5 6.17157 16.8284 5.5 16 5.5C15.1716 5.5 14.5 6.17157 14.5 6.99999C14.5 7.82841 15.1716 8.49997 16 8.49997Z" fill="#00A54F"/>
+<path d="M1.99998 12.4999H29.9997C30.8967 12.4999 31.6837 11.9029 31.9257 11.0389C32.1677 10.1749 31.8047 9.25591 31.0382 8.79042L17.0383 0.290497C16.7188 0.0964991 16.3593 0 15.9998 0C15.6404 0 15.2809 0.0964991 14.9619 0.290497L0.961985 8.79042C0.195492 9.25591 -0.168005 10.1754 0.074493 11.0389C0.315991 11.9029 1.10298 12.4999 1.99998 12.4999ZM15.9998 4.49996C17.3808 4.49996 18.4998 5.61895 18.4998 6.99994C18.4998 8.38092 17.3808 9.49991 15.9998 9.49991C14.6189 9.49991 13.4999 8.38092 13.4999 6.99994C13.4999 5.61895 14.6189 4.49996 15.9998 4.49996Z" fill="#00A54F"/>
+<path d="M21 13.4998H17V25.9996H21V13.4998Z" fill="#00A54F"/>
+<path d="M27 13.4998H23V25.9996H27V13.4998Z" fill="#00A54F"/>
+<path d="M15 13.4998H11V25.9996H15V13.4998Z" fill="#00A54F"/>
+<path d="M8.99996 13.4998H5V25.9996H8.99996V13.4998Z" fill="#00A54F"/>
+<path d="M2 28.9997H29.9997C29.9997 27.8952 29.1043 26.9998 27.9998 26.9998H3.99998C2.89549 26.9998 2 27.8952 2 28.9997Z" fill="#00A54F"/>
+<path d="M31.7222 29.9998H0.277497C0.105499 30.2953 0 30.6338 0 30.9997V31.9997H31.9997V30.9997C31.9997 30.6338 31.8942 30.2953 31.7222 29.9998Z" fill="#00A54F"/>
+</svg>
+
+                                                            </div>
+                                                        </div>
+                                                            
+                                                        
+                                                        <span class="d-block">Email bank details</span></button><!-- if Model tn--data-bs-toggle="modal" data-bs-target=".bs-example-modal-meeting"-->
+                                                    <!-- /.modal -->
+
+                                                    <button type="button" class="btn  text-white me-2 fs-14 top-rounded-status" > <!--style="background-color: var(--bs-card-bg) ;-->
+                                                        <div class="circle" data-size="60" data-value="0.8" data-thickness="4" data-fill="{
+                                                            &quot;color&quot;: &quot;#35D00E&quot;
+                                                        }" style="width: 60px; height:60px"><canvas width="60" height="60"></canvas>
+                                                            <div class="circle-content">
+
+                                                              
+                                                                <svg width="25" height="34" viewBox="0 0 25 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                    <path d="M0 15.5467C0 14.7098 0 13.8729 0 13.036C0.0254008 12.8729 0.0387788 12.7071 0.0762117 12.5467C0.426476 11.0627 1.33154 10.0975 2.79142 9.65901C2.8703 9.63494 2.89704 9.60687 2.89704 9.52131C2.89437 6.9478 2.8957 4.37429 2.8957 1.80079C2.8957 0.939832 3.44784 0.23529 4.27002 0.0441155C4.34222 0.0280728 4.41441 0.0147058 4.48794 0C9.81409 0 15.1403 0 20.4651 0C20.4891 0.00668443 20.5145 0.0147023 20.5386 0.0173761C20.9009 0.0695147 21.2191 0.216574 21.4864 0.466572C21.8755 0.828868 22.0573 1.2794 22.0573 1.80881C22.056 4.33686 22.0573 6.86491 22.0573 9.39163C22.0573 9.44912 22.06 9.5066 22.056 9.56409C22.0519 9.61355 22.072 9.63895 22.1201 9.64698C22.1429 9.65099 22.1643 9.65767 22.187 9.66435C23.6562 10.1229 24.5599 11.1002 24.8875 12.6055C24.9182 12.7472 24.9329 12.8929 24.9543 13.036C24.9543 13.8729 24.9543 14.7098 24.9543 15.5467C24.937 15.6683 24.9263 15.7913 24.9022 15.9116C24.5934 17.4584 23.6816 18.4624 22.1763 18.9276C22.0827 18.9571 22.052 18.9865 22.052 19.0867C22.0546 23.1054 22.0546 27.1241 22.0546 31.1414C22.0546 31.2069 22.0546 31.2738 22.052 31.3393C22.0199 32.1241 21.4651 32.7938 20.699 32.9716C20.6215 32.989 20.5426 33.0051 20.4651 33.0211C15.1389 33.0211 9.81276 33.0211 4.48794 33.0211C4.33821 32.9837 4.18445 32.9583 4.04007 32.9061C3.33954 32.6494 2.89971 31.9984 2.89838 31.227C2.89704 29.5679 2.89838 27.9075 2.89838 26.2484C2.89838 23.8554 2.89838 21.4624 2.90105 19.0694C2.90105 18.9838 2.87565 18.953 2.7941 18.933C2.45854 18.8488 2.1417 18.7164 1.84625 18.5359C0.88369 17.945 0.284756 17.0988 0.0655061 15.9878C0.0374315 15.8408 0.0213902 15.6924 0 15.5467ZM12.4745 18.1148C15.3635 18.1148 18.2525 18.1148 21.1429 18.1135C21.2913 18.1135 21.4423 18.1081 21.588 18.0854C22.9864 17.8782 24.0065 16.6964 24.0092 15.2833C24.0105 14.6215 24.0118 13.9584 24.0078 13.2967C24.0065 13.1362 23.9958 12.9745 23.9677 12.8181C23.7164 11.4344 22.56 10.4718 21.1522 10.4718C15.3675 10.4718 9.58281 10.4718 3.79944 10.4732C3.67377 10.4732 3.54676 10.4785 3.42243 10.4946C1.99864 10.6777 0.947863 11.8729 0.946526 13.31C0.945189 13.9691 0.942502 14.6282 0.949186 15.2873C0.95186 15.4811 0.967911 15.6777 1.00802 15.8675C1.29545 17.2031 2.4318 18.1148 3.79944 18.1148C6.69112 18.1148 9.58281 18.1148 12.4745 18.1148ZM4.99728 19.0653C4.99728 21.7431 4.99728 24.4129 4.99728 27.084C9.97318 27.084 14.9424 27.084 19.9156 27.084C19.9156 24.4089 19.9156 21.7404 19.9156 19.0653C14.9424 19.0653 9.97318 19.0653 4.99728 19.0653ZM4.98793 9.52264C9.97051 9.52264 14.9424 9.52264 19.9169 9.52264C19.9169 7.00796 19.9169 4.49996 19.9169 1.97993C19.8782 1.97993 19.8448 1.97993 19.81 1.97993C14.909 1.97993 10.0079 1.97993 5.10692 1.97993C4.98793 1.97993 4.98659 1.97993 4.98659 2.10025C4.98659 4.53606 4.98659 6.9732 4.98659 9.40901C4.98793 9.44376 4.98793 9.47852 4.98793 9.52264ZM12.4558 29.1107C11.7552 29.108 11.1804 29.6789 11.1764 30.3794C11.1724 31.092 11.7405 31.6708 12.4477 31.6762C13.151 31.6815 13.7352 31.1013 13.7392 30.3968C13.7432 29.6909 13.1657 29.1134 12.4558 29.1107ZM10.1336 1.17646C11.6523 1.17646 13.1617 1.17646 14.675 1.17646C14.675 0.941167 14.675 0.713897 14.675 0.483952C13.159 0.483952 11.6483 0.483952 10.1336 0.483952C10.1336 0.716571 10.1336 0.941167 10.1336 1.17646Z" fill="#CDCBCB"/>
+                                                                    <path d="M2.49618 13.9653C2.58174 13.9653 2.66062 13.9653 2.75019 13.9653C2.75019 13.7741 2.75153 13.5909 2.75019 13.4091C2.74885 13.2113 2.78494 13.0214 2.85579 12.8383C3.10178 12.2072 3.7475 11.8169 4.43065 11.8864C5.09642 11.9532 5.65658 12.4706 5.75952 13.135C5.79428 13.3623 5.78225 13.5976 5.79027 13.8289C5.7916 13.8717 5.79027 13.9131 5.79027 13.9639C5.8785 13.9639 5.95737 13.9639 6.04828 13.9639C6.04828 14.0027 6.04828 14.0334 6.04828 14.0642C6.04828 14.5749 6.04961 15.0842 6.04828 15.5949C6.0456 16.4291 5.41594 17.0588 4.58306 17.0588C4.30231 17.0588 4.02022 17.0708 3.74215 17.0414C3.08173 16.9733 2.53494 16.4211 2.50285 15.7594C2.47344 15.1671 2.49618 14.5735 2.49618 13.9653ZM5.31834 13.9626C5.31834 13.7193 5.33973 13.484 5.31433 13.2527C5.25684 12.7367 4.82235 12.3583 4.29428 12.3369C3.79161 12.3169 3.32104 12.6792 3.23682 13.1859C3.19537 13.4345 3.21809 13.6925 3.21275 13.9479C3.21275 13.9519 3.21943 13.9559 3.22477 13.9639C3.91995 13.9626 4.61781 13.9626 5.31834 13.9626ZM4.11247 16.2192C4.11247 16.3115 4.11113 16.4024 4.11247 16.4946C4.11381 16.6016 4.17798 16.6725 4.26889 16.6725C4.36114 16.6725 4.4213 16.6029 4.42264 16.4933C4.42397 16.3249 4.42664 16.1551 4.4213 15.9866C4.41862 15.9225 4.44001 15.893 4.49749 15.8663C4.75952 15.7447 4.87718 15.4452 4.7729 15.1791C4.66996 14.9158 4.38118 14.7767 4.11113 14.8583C3.90124 14.9225 3.74616 15.111 3.73012 15.3209C3.7114 15.5602 3.82771 15.7701 4.04027 15.8663C4.09508 15.8917 4.11782 15.9184 4.11381 15.9799C4.10712 16.0588 4.11247 16.139 4.11247 16.2192Z" fill="#CDCBCB"/>
+                                                                    <path d="M21.5305 15.0841C21.7297 15.282 21.9289 15.4798 22.1281 15.6763C22.1909 15.7378 22.231 15.8087 22.2137 15.8983C22.1976 15.9838 22.1482 16.0467 22.0639 16.0707C21.9757 16.0975 21.8955 16.0774 21.8273 16.0092C21.6415 15.8221 21.4543 15.6362 21.2685 15.4491C21.2484 15.429 21.2284 15.4116 21.195 15.3809C21.1923 15.4237 21.1896 15.4504 21.1896 15.4771C21.1896 15.7378 21.1896 15.9985 21.1896 16.2592C21.1896 16.4063 21.1027 16.5039 20.973 16.5065C20.8407 16.5092 20.7444 16.4089 20.7444 16.2606C20.7431 16.0052 20.7444 15.7499 20.7444 15.4959C20.7444 15.4651 20.7444 15.4344 20.7444 15.3809C20.707 15.4156 20.6856 15.4344 20.6642 15.4557C20.4771 15.6416 20.2926 15.8301 20.1041 16.0146C20.0265 16.0894 19.9209 16.1028 19.8353 16.0547C19.7511 16.0079 19.7017 15.9103 19.7297 15.814C19.7431 15.7646 19.7765 15.7151 19.8126 15.6777C20.0091 15.4771 20.2097 15.2806 20.4263 15.0654C20.3768 15.0627 20.3474 15.06 20.3193 15.06C20.0639 15.06 19.8086 15.0654 19.5546 15.056C19.4864 15.0533 19.4089 15.0213 19.3554 14.9785C19.2859 14.9223 19.2792 14.8341 19.314 14.7485C19.3527 14.6563 19.4249 14.6122 19.5225 14.6108C19.7859 14.6095 20.0493 14.6108 20.314 14.6108C20.3447 14.6108 20.3741 14.6108 20.4263 14.6108C20.3915 14.5734 20.3728 14.552 20.3541 14.5333C20.1736 14.3528 19.9931 14.1723 19.8126 13.9919C19.7043 13.8822 19.6936 13.7432 19.7872 13.6496C19.8821 13.5547 20.0172 13.5641 20.1295 13.675C20.3046 13.8488 20.4784 14.0226 20.6522 14.1991C20.6762 14.2231 20.6936 14.2539 20.7137 14.282C20.723 14.278 20.7324 14.2726 20.7418 14.2686C20.7431 14.2392 20.7458 14.2111 20.7458 14.1817C20.7458 13.921 20.7444 13.6603 20.7471 13.3996C20.7484 13.2285 20.8915 13.1229 21.0426 13.1737C21.1361 13.2044 21.1909 13.2833 21.1923 13.3903C21.1936 13.651 21.1923 13.9116 21.1923 14.1723C21.1923 14.2031 21.1923 14.2338 21.1923 14.2873C21.227 14.2579 21.2471 14.2405 21.2658 14.2231C21.449 14.0413 21.6308 13.8582 21.8139 13.6764C21.9249 13.5654 22.0613 13.556 22.1562 13.651C22.2511 13.7459 22.2404 13.8809 22.1294 13.9932C21.949 14.1737 21.7685 14.3542 21.588 14.5346C21.5693 14.5533 21.5519 14.5747 21.5172 14.6122C21.5693 14.6122 21.6 14.6122 21.6308 14.6122C21.8942 14.6122 22.1588 14.6108 22.4222 14.6135C22.5519 14.6148 22.6401 14.7071 22.6441 14.8287C22.6482 14.9451 22.5653 15.0386 22.4423 15.056C22.4142 15.06 22.3848 15.0587 22.3567 15.06C22.1134 15.06 21.8687 15.06 21.6254 15.06C21.5974 15.06 21.5706 15.06 21.5425 15.06C21.5385 15.0681 21.5345 15.0761 21.5305 15.0841Z" fill="#CDCBCB"/>
+                                                                    <path d="M10.6829 15.0813C10.8821 15.2792 11.0813 15.4757 11.2765 15.6763C11.3166 15.7177 11.35 15.7738 11.3634 15.8287C11.3861 15.9236 11.3339 16.0145 11.2511 16.0586C11.1628 16.1041 11.0612 16.0893 10.9823 16.0131C10.8192 15.8527 10.6575 15.6896 10.4957 15.5265C10.4529 15.4837 10.4142 15.4383 10.3527 15.4009C10.3513 15.4263 10.3473 15.4517 10.3473 15.4784C10.3473 15.7284 10.3473 15.9771 10.346 16.227C10.346 16.2618 10.3447 16.2966 10.338 16.33C10.3166 16.4423 10.223 16.5158 10.1107 16.5118C9.99706 16.5065 9.90348 16.4222 9.90081 16.3033C9.89546 16.08 9.89813 15.8567 9.89679 15.6321C9.89679 15.5559 9.89679 15.4797 9.89679 15.4035C9.88476 15.3955 9.87273 15.3875 9.86069 15.3795C9.84331 15.4089 9.82994 15.4436 9.80722 15.4664C9.63476 15.6415 9.45964 15.8153 9.2845 15.9904C9.16953 16.1041 9.03182 16.1161 8.9369 16.0198C8.84198 15.9236 8.85402 15.7886 8.97166 15.6722C9.14813 15.4958 9.32461 15.3193 9.49974 15.1428C9.51979 15.1228 9.5385 15.1014 9.5746 15.064C9.52513 15.064 9.49573 15.064 9.46766 15.064C9.20964 15.064 8.95161 15.0666 8.69359 15.0626C8.5091 15.0599 8.39949 14.9035 8.46767 14.7485C8.50911 14.6535 8.58664 14.6148 8.68824 14.6148C8.94359 14.6148 9.19894 14.6148 9.45295 14.6148C9.48638 14.6148 9.51979 14.6148 9.57594 14.6148C9.54251 14.5787 9.52513 14.5573 9.50642 14.5386C9.3246 14.3554 9.14145 14.1736 8.95963 13.9904C8.85402 13.8835 8.84466 13.7471 8.9369 13.6549C9.03182 13.5586 9.16819 13.5666 9.27915 13.6776C9.45829 13.8554 9.6361 14.0332 9.81391 14.2137C9.8353 14.2351 9.84867 14.2658 9.86605 14.2912C9.87674 14.2846 9.88744 14.2779 9.89947 14.2698C9.89947 14.2391 9.89947 14.2097 9.89947 14.1789C9.89947 13.9182 9.8968 13.6576 9.90081 13.3969C9.90348 13.2191 10.0626 13.1134 10.2136 13.183C10.3152 13.2297 10.3473 13.3166 10.3473 13.4223C10.346 13.6749 10.3473 13.9263 10.3473 14.1789C10.3473 14.207 10.3473 14.2364 10.3473 14.2872C10.3821 14.2551 10.4048 14.2364 10.4249 14.2164C10.612 14.0305 10.7965 13.842 10.985 13.6576C11.0612 13.5827 11.1588 13.568 11.2457 13.6108C11.3299 13.6522 11.3861 13.7418 11.3647 13.8367C11.3527 13.8915 11.3206 13.949 11.2805 13.9904C11.104 14.1749 10.9208 14.3527 10.7417 14.5332C10.7216 14.5533 10.7029 14.5747 10.6695 14.6094C10.715 14.6121 10.7444 14.6134 10.7738 14.6134C11.0398 14.6134 11.3072 14.6121 11.5733 14.6148C11.6815 14.6161 11.7551 14.6749 11.7845 14.7712C11.8112 14.8581 11.7858 14.9597 11.7083 15.0078C11.6575 15.0386 11.592 15.0573 11.5318 15.0586C11.2791 15.064 11.0278 15.0613 10.7751 15.0613C10.747 15.0613 10.719 15.0613 10.6909 15.0613C10.6896 15.0666 10.6856 15.0747 10.6829 15.0813Z" fill="#CDCBCB"/>
+                                                                    <path d="M13.1829 14.5828C13.0933 14.4986 13.0038 14.4157 12.9155 14.3288C12.7952 14.2099 12.6749 14.0909 12.5573 13.9692C12.4623 13.8703 12.465 13.7339 12.5573 13.6457C12.6468 13.5615 12.7792 13.5628 12.8741 13.655C13.0599 13.8382 13.2444 14.0227 13.4276 14.2085C13.449 14.2299 13.4623 14.262 13.4797 14.2887C13.4917 14.2821 13.5038 14.2754 13.5158 14.2687C13.5158 14.2419 13.5158 14.2165 13.5158 14.1898C13.5158 13.9318 13.5158 13.6738 13.5158 13.4157C13.5158 13.258 13.6054 13.1564 13.7404 13.1577C13.8741 13.1591 13.9623 13.262 13.9623 13.4198C13.9623 13.7005 13.9623 13.9799 13.9623 14.2834C13.9971 14.2513 14.0198 14.2326 14.0412 14.2125C14.2284 14.0267 14.4128 13.8382 14.6013 13.6537C14.6829 13.5735 14.7845 13.5615 14.8768 13.6149C14.961 13.6631 15.0064 13.7593 14.977 13.8583C14.9636 13.905 14.9316 13.9505 14.8968 13.9866C14.719 14.1698 14.5372 14.3489 14.3567 14.5294C14.3366 14.5494 14.3179 14.5708 14.2845 14.6056C14.33 14.6083 14.358 14.6096 14.3874 14.6096C14.6575 14.6109 14.9262 14.6083 15.1963 14.6123C15.3166 14.6136 15.4035 14.7032 15.4088 14.8181C15.4155 14.9385 15.3393 15.0334 15.2163 15.0534C15.1856 15.0588 15.1535 15.0588 15.1227 15.0588C14.8794 15.0588 14.6361 15.0588 14.3915 15.0588C14.3634 15.0588 14.3353 15.0588 14.2832 15.0588C14.3139 15.0922 14.3313 15.1123 14.35 15.131C14.5318 15.3141 14.715 15.4959 14.8968 15.6791C15.0011 15.7834 15.0104 15.9237 14.9222 16.016C14.83 16.1109 14.6883 16.1029 14.5786 15.9946C14.3981 15.8155 14.2177 15.6336 14.0372 15.4532C14.0171 15.4331 13.9971 15.4157 13.965 15.3863C13.9623 15.4304 13.961 15.4612 13.961 15.4906C13.961 15.7513 13.9637 16.012 13.9596 16.2727C13.957 16.4558 13.7832 16.5628 13.6294 16.4786C13.5492 16.4344 13.5131 16.3636 13.5131 16.2727C13.5131 16.0093 13.5131 15.7446 13.5131 15.4812C13.5131 15.4532 13.5131 15.4264 13.5131 15.3743C13.4744 15.4104 13.453 15.4291 13.4316 15.4505C13.2511 15.631 13.0706 15.8114 12.8901 15.9919C12.7845 16.0962 12.6468 16.1082 12.5546 16.0187C12.457 15.9237 12.4637 15.7887 12.5746 15.6764C12.7524 15.4973 12.9316 15.3195 13.1094 15.1403C13.1308 15.1189 13.1508 15.0962 13.1829 15.0615C13.1375 15.0588 13.1067 15.0561 13.0773 15.0561C12.8313 15.0561 12.584 15.0574 12.338 15.0548C12.2926 15.0548 12.2458 15.0508 12.203 15.0361C12.1054 15.0026 12.0492 14.8984 12.0666 14.7954C12.0853 14.6858 12.1642 14.6123 12.2805 14.6109C12.5412 14.6069 12.8019 14.6096 13.0626 14.6096C13.096 14.6096 13.1294 14.6096 13.1629 14.6096C13.1722 14.6029 13.1776 14.5922 13.1829 14.5828Z" fill="#CDCBCB"/>
+                                                                    <path d="M17.5774 14.2886C17.6149 14.2538 17.6363 14.2351 17.655 14.2164C17.8422 14.0305 18.028 13.8434 18.2151 13.6576C18.2806 13.592 18.3609 13.568 18.4518 13.5987C18.54 13.6281 18.5881 13.6923 18.6002 13.7819C18.6122 13.8621 18.5788 13.9263 18.524 13.9824C18.3408 14.1642 18.159 14.3474 17.9772 14.5292C17.9571 14.5493 17.9384 14.5706 17.905 14.6067C17.9504 14.6094 17.9799 14.6121 18.0079 14.6121C18.2686 14.6121 18.5293 14.6108 18.79 14.6134C18.9518 14.6148 19.0507 14.7324 19.0226 14.8821C19.0012 14.9931 18.9117 15.0586 18.7726 15.0599C18.5601 15.0613 18.3488 15.0599 18.1363 15.0599C18.0654 15.0599 17.9946 15.0599 17.905 15.0599C17.9317 15.0907 17.9451 15.1108 17.9625 15.1268C18.147 15.3113 18.3314 15.4958 18.5159 15.6803C18.6242 15.7899 18.6336 15.9196 18.54 16.0158C18.4491 16.1107 18.306 16.1014 18.1978 15.9931C18.0173 15.8126 17.8368 15.6321 17.6563 15.4517C17.6363 15.4316 17.6149 15.4129 17.5815 15.3821C17.5788 15.4236 17.5761 15.4503 17.5761 15.4771C17.5761 15.7324 17.5761 15.9877 17.5761 16.2418C17.5761 16.4075 17.4906 16.5091 17.3515 16.5078C17.2125 16.5065 17.1309 16.4062 17.1309 16.2377C17.1309 15.9597 17.1309 15.6816 17.1309 15.3808C17.0975 15.4115 17.0748 15.4289 17.0547 15.449C16.8662 15.6375 16.6791 15.8273 16.4879 16.0131C16.4063 16.0934 16.294 16.1014 16.2045 16.0426C16.1216 15.9891 16.0815 15.8808 16.1202 15.7859C16.1376 15.7418 16.1697 15.703 16.2031 15.6682C16.3983 15.4704 16.5948 15.2752 16.8074 15.0626C16.7593 15.0599 16.7299 15.0573 16.7018 15.0573C16.4464 15.0573 16.1911 15.0586 15.9371 15.0573C15.7887 15.0559 15.6938 14.9771 15.6844 14.8541C15.6737 14.711 15.7673 14.6121 15.9197 14.6108C16.1777 14.6081 16.4357 14.6108 16.6938 14.6108C16.7245 14.6108 16.7553 14.6108 16.8101 14.6108C16.7766 14.5733 16.7579 14.5519 16.7366 14.5305C16.5561 14.3501 16.3756 14.1696 16.1951 13.9891C16.0841 13.8781 16.0761 13.7418 16.1724 13.6469C16.2673 13.5546 16.3996 13.5626 16.5079 13.6709C16.7085 13.8715 16.9063 14.0733 17.1055 14.2752C17.1136 14.2725 17.1216 14.2698 17.1296 14.2672C17.1296 14.2378 17.1296 14.2097 17.1296 14.1803C17.1296 13.9142 17.1283 13.6469 17.1309 13.3808C17.1323 13.2618 17.2151 13.1736 17.3301 13.1589C17.4331 13.1455 17.5373 13.2137 17.5668 13.318C17.5761 13.3501 17.5761 13.3862 17.5761 13.4196C17.5774 13.703 17.5774 13.9824 17.5774 14.2886Z" fill="#CDCBCB"/>
+                                                                    </svg>
+                                                                    
+
+                                                            </div>
+                                                        </div>
+                                                            
+                                                        
+                                                        <span class="d-block">Reset phone<br>
+                                                            password</span></button><!-- if Model tn--data-bs-toggle="modal" data-bs-target=".bs-example-modal-meeting"-->
+                                                    
+                                                            <button type="button" class="btn  text-white me-2 fs-14 top-rounded-status" > <!--style="background-color: var(--bs-card-bg) ;-->
+                                                                <div class="circle" data-size="60" data-value="0.8" data-thickness="4" data-fill="{
+                                                                    &quot;color&quot;: &quot;#35D00E&quot;
+                                                                }" style="width: 60px; height:60px"><canvas width="60" height="60"></canvas>
+                                                                    <div class="circle-content">
+        
+                                                                      
+                                                                        <svg width="30" height="34" viewBox="0 0 30 34" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                            <path d="M8.53744 19.5603C8.5865 19.3206 8.64258 19.0816 8.68323 18.8405C8.78206 18.2601 8.87738 17.6798 8.96779 17.098C9.03648 16.653 8.96709 16.2303 8.70986 15.8539C8.5038 15.5518 8.28442 15.2582 8.07064 14.961C8.02018 14.8902 7.96831 14.8208 7.92065 14.7479C7.66062 14.3526 7.73421 14.1872 8.21012 14.1697C8.84233 14.1458 9.47525 14.1472 10.1082 14.1437C10.3437 14.1423 10.5799 14.155 10.8154 14.1669C11.0263 14.1774 11.1076 14.279 11.027 14.4718C10.9464 14.6645 10.8364 14.8467 10.7221 15.0227C10.5532 15.2827 10.3668 15.5315 10.193 15.788C9.91261 16.2023 9.81168 16.66 9.88878 17.152C10.0072 17.9048 10.1348 18.6568 10.2596 19.4089C10.2673 19.4566 10.2862 19.5028 10.3142 19.5981C10.4081 19.4727 10.4845 19.3809 10.5497 19.2813C11.0137 18.5699 11.4546 17.8424 11.9445 17.1492C12.4127 16.4861 12.9419 15.8658 13.4241 15.2119C13.6701 14.879 13.8713 14.5124 14.0921 14.1613C14.1573 14.0575 14.2224 13.9685 14.3717 14.0029C15.4035 14.2426 16.4128 14.5411 17.2812 15.179C18.1131 15.7902 18.5484 16.6452 18.7019 17.644C18.7846 18.1816 18.8014 18.7297 18.854 19.2722C18.8652 19.3865 18.8105 19.4383 18.7257 19.4916C17.9989 19.9472 17.2938 20.4294 16.691 21.0483C15.4441 22.3274 14.7236 23.875 14.3619 25.6049C14.2932 25.9329 14.2946 25.9581 13.94 25.9651C12.2466 25.9967 10.5532 26.0303 8.85986 26.0415C7.75524 26.0485 6.64992 26.0436 5.5467 25.9981C4.24583 25.9441 2.94777 25.8347 1.68334 25.4857C1.28383 25.375 1.00978 25.1423 0.819835 24.7617C0.391585 23.9038 0.1694 22.9982 0.0838898 22.0506C-0.0401695 20.6866 -0.0177409 19.3227 0.0930013 17.9608C0.209351 16.5303 0.944595 15.4923 2.18098 14.7928C2.89099 14.3912 3.66619 14.1788 4.4568 14.0085C4.63553 13.9699 4.70002 14.0814 4.77711 14.1963C5.11425 14.701 5.42404 15.2273 5.79692 15.7039C6.64291 16.7847 7.46647 17.8788 8.16737 19.0613C8.2697 19.2337 8.37764 19.4019 8.48347 19.5722C8.50099 19.5694 8.51922 19.5645 8.53744 19.5603Z" fill="#CDCBCB"/>
+                                                                            <path d="M3.11304 6.4241C2.95253 3.83918 4.83515 0.927646 7.71374 0.224644C11.5182 -0.704749 14.7361 1.33207 15.568 4.81203C16.4259 8.40064 14.4312 11.5182 11.1657 12.4974C10.3379 12.7455 9.47581 12.7448 8.63473 12.6474C6.11289 12.3558 4.43914 10.9393 3.48031 8.62493C3.17752 7.89529 3.07098 7.13341 3.11304 6.4241Z" fill="#CDCBCB"/>
+                                                                            <path d="M15.803 26.9802C15.6985 23.5654 18.4671 20.049 22.7279 19.9971C26.491 19.9508 29.7439 23.0558 29.7383 26.9535C29.7327 31.2276 26.1798 33.9457 22.7818 33.9597C19.0019 33.9758 15.6488 30.7279 15.803 26.9802ZM22.6732 31.1057C22.6732 31.093 22.6732 31.0797 22.6732 31.0671C23.461 31.0671 24.2488 31.0748 25.0366 31.0643C25.4698 31.058 25.6597 30.9087 25.6632 30.5414C25.6751 29.1957 25.6681 27.8507 25.666 26.5049C25.6653 26.2786 25.5518 26.1103 25.3506 26.0171C25.2069 25.9505 25.1474 25.8475 25.1404 25.6982C25.1221 25.3267 25.0843 24.9553 25.085 24.5831C25.0864 23.5429 23.9159 22.2771 22.4545 22.4909C21.2272 22.6703 20.4303 23.6151 20.4177 24.8585C20.4149 25.1564 20.4002 25.4536 20.3932 25.7508C20.3904 25.8615 20.3434 25.9169 20.2383 25.9716C19.9873 26.1019 19.8009 26.2617 19.8065 26.6087C19.8275 27.9299 19.8149 29.2518 19.8149 30.5737C19.8149 30.8148 20.1058 31.105 20.3462 31.105C21.1221 31.1057 21.898 31.1057 22.6732 31.1057Z" fill="#CDCBCB"/>
+                                                                            <path d="M23.9417 25.9317C23.1441 25.9317 22.3864 25.9317 21.607 25.9317C21.6147 25.4333 21.5608 24.9434 21.7009 24.4661C21.8411 23.9902 22.2757 23.6839 22.7649 23.6993C23.2997 23.7161 23.7875 24.0946 23.8702 24.6294C23.9361 25.0527 23.9207 25.4887 23.9417 25.9317Z" fill="#CDCBCB"/>
+                                                                            <path d="M22.7809 27.0017C23.123 27.0164 23.376 27.1853 23.5141 27.5015C23.6493 27.8112 23.6297 28.1028 23.4047 28.3881C23.3073 28.5114 23.2751 28.7028 23.2582 28.8682C23.2274 29.1626 23.2428 29.4619 23.2162 29.7569C23.1917 30.0303 23.008 30.1901 22.7697 30.1817C22.5482 30.174 22.3457 29.9784 22.3239 29.7359C22.3029 29.5018 22.2952 29.2663 22.2833 29.0315C22.2707 28.7736 22.2574 28.5311 22.0709 28.3089C21.8543 28.0503 21.8564 27.7391 22.0268 27.4398C22.1908 27.1496 22.4431 27.0101 22.7809 27.0017Z" fill="#CDCBCB"/>
+                                                                            </svg>
+                                                                            
+                                                                            
+        
+                                                                    </div>
+                                                                </div>
+                                                                    
+                                                                
+                                                                <span class="d-block">Update client
+                                                                    <br>
+                                                                    portal credential</span></button>
+                                                                    <button type="button" class="btn  text-white me-2 fs-14 top-rounded-status" > <!--style="background-color: var(--bs-card-bg) ;-->
+                                                                        <div class="circle" data-size="60" data-value="0.8" data-thickness="4" data-fill="{
+                                                                            &quot;color&quot;: &quot;#35D00E&quot;
+                                                                        }" style="width: 60px; height:60px"><canvas width="60" height="60"></canvas>
+                                                                            <div class="circle-content">
+                
+                                                                              
+                                                                                <svg width="29" height="32" viewBox="0 0 29 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                    <path d="M22.6262 0C23.0522 0.179766 23.5186 0.300421 23.8967 0.552255C24.7373 1.11423 25.1049 1.96771 25.1065 2.95885C25.1162 7.41657 25.1106 11.8743 25.1098 16.332C25.1098 16.3733 25.1009 16.4138 25.096 16.4616C24.3883 16.2939 23.6862 16.1271 22.9445 15.9514C22.9445 15.8599 22.9445 15.7376 22.9445 15.6154C22.9445 11.4492 22.9445 7.28296 22.9445 3.11676C22.9445 2.38069 22.7105 2.14424 21.9728 2.14424C17.0243 2.14343 12.0759 2.14343 7.12829 2.14424C6.39546 2.14424 6.15335 2.38554 6.15011 3.1119C6.1493 3.39126 6.15011 3.67063 6.15011 3.99291C6.30153 3.99291 6.42138 3.99291 6.54203 3.99291C10.3754 3.99291 14.2088 3.99858 18.043 3.98967C19.0431 3.98725 19.8714 4.31682 20.5031 5.10633C20.9241 5.63186 21.1112 6.24485 21.1128 6.90318C21.1225 9.86122 21.1177 12.8193 21.1168 15.7773C21.1168 15.838 21.1063 15.898 21.1015 15.9417C20.3832 16.0874 19.6868 16.2292 18.9507 16.3782C18.9507 16.2462 18.9507 16.1255 18.9507 16.004C18.9507 13.0355 18.9507 10.0669 18.9507 7.09914C18.9507 6.37684 18.7054 6.13391 17.9742 6.13391C13.0258 6.13391 8.07733 6.1331 3.12971 6.13391C2.41875 6.13391 2.16691 6.38089 2.16691 7.08133C2.1661 14.2995 2.1661 21.5169 2.16691 28.735C2.16691 29.4452 2.41227 29.6889 3.12162 29.6898C6.52826 29.6898 9.93491 29.6922 13.3408 29.6841C13.5699 29.6833 13.6809 29.7634 13.8031 29.9505C14.2185 30.5805 14.6631 31.191 15.119 31.8405C15.0226 31.8405 14.9157 31.8405 14.8088 31.8405C10.9131 31.8405 7.01655 31.8372 3.12081 31.8421C1.85597 31.8437 0.862393 31.3651 0.310949 30.1975C0.122275 29.7974 0.0153869 29.3197 0.0145771 28.8768C-0.00323755 21.5655 -0.0024274 14.2533 0.00486042 6.94205C0.00647993 5.25128 1.22354 4.03583 2.9127 3.99615C3.26413 3.98806 3.61557 3.99534 4.03664 3.99534C4.03664 3.46576 3.98482 2.9629 4.04717 2.47462C4.20831 1.2114 5.09904 0.304468 6.35336 0.0526337C6.40356 0.0429166 6.45053 0.018624 6.4983 0.000809312C11.8743 -4.44795e-07 17.2503 0 22.6262 0Z" fill="#CDCBCB"/>
+                                                                                    <path d="M21.9176 18.6155C25.6118 18.6155 28.6143 21.6108 28.6216 25.3C28.6281 28.9933 25.6045 32.0072 21.9006 32C18.2122 31.9919 15.1886 28.9617 15.212 25.2984C15.2355 21.5938 18.2252 18.6147 21.9176 18.6155ZM21.9071 22.0383C21.9015 22.0124 21.8966 21.9865 21.8909 21.9606C21.3281 22.0926 20.7476 22.1744 20.2066 22.3671C18.839 22.8529 17.7571 23.7558 16.8105 24.8336C16.485 25.2045 16.4898 25.4126 16.8097 25.7834C17.4316 26.5074 18.1482 27.122 18.9523 27.6337C20.7087 28.752 22.5233 28.914 24.3874 27.9228C25.4174 27.3746 26.3025 26.6369 27.0572 25.7454C27.3398 25.4118 27.3422 25.2029 27.0564 24.8652C26.4045 24.0967 25.6482 23.4473 24.7923 22.9201C23.9088 22.3768 22.9598 22.0335 21.9071 22.0383Z" fill="#CDCBCB"/>
+                                                                                    <path d="M10.5657 14.945C11.888 14.945 13.2104 14.9377 14.5327 14.9474C15.3894 14.9539 15.915 15.728 15.5765 16.4673C15.3578 16.9459 14.9522 17.1079 14.4582 17.1087C13.5626 17.1103 12.667 17.1095 11.7722 17.1095C10.075 17.1095 8.37774 17.1111 6.68049 17.1087C6.08127 17.1079 5.68206 16.8617 5.50958 16.401C5.23669 15.6722 5.7687 14.9515 6.5987 14.9466C7.92104 14.9393 9.24337 14.945 10.5657 14.945Z" fill="#CDCBCB"/>
+                                                                                    <path d="M14.3977 19.7135C14.2114 20.005 14.0325 20.2568 13.8843 20.5241C13.6827 20.8868 13.4932 21.2569 13.3191 21.6334C13.2446 21.7954 13.1652 21.8699 12.9749 21.8691C10.8501 21.8618 8.72614 21.8691 6.60134 21.8618C5.91952 21.8593 5.4361 21.3905 5.44095 20.7718C5.44581 20.1653 5.92438 19.7013 6.58595 19.6997C9.12697 19.6932 11.668 19.6973 14.209 19.6973C14.2584 19.6981 14.307 19.7062 14.3977 19.7135Z" fill="#CDCBCB"/>
+                                                                                    <path d="M9.62137 10.1924C10.6417 10.1924 11.662 10.1867 12.6823 10.1948C13.2313 10.1996 13.6669 10.5673 13.7487 11.0661C13.837 11.6021 13.573 12.0929 13.079 12.2645C12.9066 12.3244 12.713 12.3479 12.5284 12.3487C10.5817 12.3544 8.63428 12.356 6.68762 12.3504C5.7896 12.3479 5.24139 11.6775 5.50295 10.9195C5.65599 10.4758 6.05115 10.1964 6.56049 10.194C7.58078 10.1883 8.60108 10.1924 9.62137 10.1924Z" fill="#CDCBCB"/>
+                                                                                    <path d="M12.5893 24.4748C12.5893 25.1842 12.5893 25.8781 12.5893 26.6174C12.5043 26.6174 12.3941 26.6174 12.2832 26.6174C10.4289 26.6174 8.57452 26.6199 6.72018 26.6134C6.51612 26.6126 6.29991 26.5891 6.10962 26.5203C5.67883 26.3648 5.40999 25.9105 5.44319 25.4579C5.4772 24.9898 5.81568 24.5979 6.28372 24.4934C6.39466 24.4683 6.50964 24.4521 6.62301 24.4521C8.51865 24.4497 10.4151 24.4497 12.3107 24.4513C12.3917 24.4513 12.4727 24.4643 12.5893 24.4748Z" fill="#CDCBCB"/>
+                                                                                    <path d="M26.0216 25.3146C25.1592 26.2053 24.2353 26.9414 23.0644 27.3277C21.9502 27.6945 20.9112 27.4928 19.9088 26.9641C19.1193 26.547 18.4447 25.9794 17.7734 25.2628C18.3249 24.8174 18.8496 24.3518 19.4189 23.9469C20.0238 23.5161 20.708 23.24 21.4514 23.1258C22.2903 22.9971 23.0628 23.2206 23.7988 23.5841C24.6442 24.0028 25.3657 24.5939 26.0216 25.3146ZM21.9162 26.8961C22.8012 26.8961 23.5041 26.2013 23.5089 25.3227C23.513 24.4279 22.8053 23.708 21.9194 23.7056C21.044 23.7032 20.3031 24.4482 20.3136 25.3203C20.3242 26.194 21.0384 26.8952 21.9162 26.8961Z" fill="#CDCBCB"/>
+                                                                                    </svg>
+                                                                                    
+                                                                                    
+                                                                                    
+                
+                                                                            </div>
+                                                                        </div>
+                                                                            
+                                                                        
+                                                                        <span class="d-block">View documents</span></button>
+                                                                        <button type="button" class="btn  text-white me-2 fs-14 top-rounded-status" > <!--style="background-color: var(--bs-card-bg) ;-->
+                                                                            <div class="circle" data-size="60" data-value="0.8" data-thickness="4" data-fill="{
+                                                                                &quot;color&quot;: &quot;#35D00E&quot;
+                                                                            }" style="width: 60px; height:60px"><canvas width="60" height="60"></canvas>
+                                                                                <div class="circle-content">
+                    
+                                                                                  
+                                                                                    <svg width="39" height="27" viewBox="0 0 39 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                        <path d="M38.6892 11.805C38.3657 12.1139 38.0504 12.4329 37.7158 12.7298C35.4463 14.7436 32.8596 15.3706 29.9576 14.4164C28.4993 13.937 27.3187 13.0112 26.3279 11.8481C26.2674 11.7775 26.2463 11.6391 26.2637 11.5419C26.601 9.62896 27.4965 8.07531 29.1785 7.02672C29.3398 6.92589 29.4315 6.91947 29.5708 7.05605C30.2867 7.75634 31.1419 8.16423 32.1492 8.23481C33.295 8.31547 34.2987 7.9809 35.1585 7.22012C35.5315 6.88923 35.5297 6.88373 35.944 7.16421C37.362 8.12389 38.1878 9.47589 38.5692 11.1239C38.5985 11.2504 38.648 11.3723 38.6892 11.4961C38.6892 11.5988 38.6892 11.7023 38.6892 11.805Z" fill="#CDCBCB"/>
+                                                                                        <path d="M0 11.496C0.030248 11.4235 0.0733287 11.353 0.088911 11.2778C0.347394 10.0211 0.86436 8.88913 1.78188 7.98077C2.16503 7.6013 2.6215 7.2924 3.06238 6.97617C3.11738 6.93676 3.30895 7.01651 3.38961 7.09167C3.96341 7.63521 4.62336 8.01011 5.4034 8.16135C6.81955 8.43541 8.04964 8.06327 9.09274 7.07975C9.25131 6.93034 9.35031 6.92393 9.53454 7.03942C11.2129 8.09535 12.1029 9.65083 12.431 11.5656C12.4457 11.6536 12.4228 11.7783 12.3678 11.8424C10.7628 13.6931 8.78109 14.8104 6.28884 14.8443C4.6472 14.8663 3.13846 14.3805 1.81946 13.3998C1.25483 12.9799 0.766284 12.4593 0.241068 11.9863C0.166823 11.9194 0.0815782 11.8654 0.000916802 11.8049C1.95829e-07 11.7022 0 11.5986 0 11.496Z" fill="#CDCBCB"/>
+                                                                                        <path d="M19.3066 26.4597C16.7355 26.4249 14.3945 25.6705 12.2707 24.2213C11.1323 23.4441 10.1405 22.5082 9.25507 21.4569C9.19457 21.3854 9.16799 21.2506 9.18357 21.1562C9.45489 19.5796 9.95352 18.0819 10.827 16.7345C11.5612 15.6025 12.4733 14.6318 13.6163 13.8948C13.7804 13.7894 13.9518 13.6914 14.103 13.5704C14.2918 13.4191 14.4302 13.4723 14.5778 13.629C15.4632 14.5685 16.5421 15.1891 17.7951 15.4677C19.8226 15.9187 21.6971 15.5585 23.3671 14.2908C23.6357 14.0864 23.885 13.8536 24.1243 13.6144C24.2746 13.464 24.3928 13.4503 24.5761 13.563C25.7366 14.2771 26.732 15.1625 27.5386 16.2689C28.612 17.74 29.1931 19.4018 29.5121 21.1718C29.5286 21.2634 29.4855 21.3945 29.4232 21.4678C27.8338 23.379 25.9025 24.819 23.5706 25.7108C22.424 26.149 20.7136 26.4597 19.3066 26.4597Z" fill="#CDCBCB"/>
+                                                                                        <path d="M25.4103 8.21748C25.4286 11.5154 22.7054 14.2616 19.401 14.2781C16.0297 14.2946 13.2891 11.5878 13.2818 8.23397C13.2744 4.89936 15.9665 2.18437 19.3066 2.15596C22.6623 2.12937 25.392 4.83978 25.4103 8.21748Z" fill="#CDCBCB"/>
+                                                                                        <path d="M2.53545 3.68284C2.55011 1.60489 4.29258 -0.0899156 6.39803 0.00449493C8.32749 0.0915726 9.94988 1.65164 9.93705 3.72592C9.92422 5.82678 8.22299 7.41343 6.19913 7.40793C4.17984 7.40334 2.50978 5.68654 2.53545 3.68284Z" fill="#CDCBCB"/>
+                                                                                        <path d="M32.4403 3.75685e-07C34.4954 -0.000916231 36.1636 1.67556 36.1581 3.73609C36.1535 5.74071 34.4587 7.41902 32.4431 7.41718C30.4412 7.41443 28.7372 5.70313 28.7501 3.70676C28.7638 1.67006 30.4256 3.75685e-07 32.4403 3.75685e-07Z" fill="#CDCBCB"/>
+                                                                                        </svg>
+                                                                                        
+                                                                                        
+                                                                                        
+                                                                                        
+                    
+                                                                                </div>
+                                                                            </div>
+                                                                                
+                                                                            
+                                                                            <span class="d-block">client<br>
+                                                                                categorisation</span></button>
+
+                                                                                <button type="button" class="btn  text-white me-2 fs-14 top-rounded-status" > <!--style="background-color: var(--bs-card-bg) ;-->
+                                                                                    <div class="circle" data-size="60" data-value="0.8" data-thickness="4" data-fill="{
+                                                                                        &quot;color&quot;: &quot;#35D00E&quot;
+                                                                                    }" style="width: 60px; height:60px"><canvas width="60" height="60"></canvas>
+                                                                                        <div class="circle-content">
+                            
+                                                                                          
+                                                                                            <svg width="35" height="31" viewBox="0 0 35 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                                <path d="M26.5113 18.8105C25.7176 18.4846 24.9462 18.1711 24.1772 17.8501C24.0722 17.8057 24.0118 17.8106 23.9278 17.8995C23.6785 18.1661 23.4168 18.4216 23.1526 18.6735C23.0835 18.7389 23.0773 18.7846 23.1119 18.8673C23.4205 19.6116 23.7254 20.3584 24.0315 21.1039C24.0475 21.1434 24.0624 21.1842 24.0846 21.2372C23.2921 21.6952 22.5058 22.1494 21.7097 22.6086C21.3776 22.1803 21.0517 21.7594 20.7246 21.3372C20.5308 21.0866 20.3346 20.8398 20.1482 20.5843C20.0865 20.5003 20.0322 20.5003 19.9421 20.5262C19.5964 20.625 19.2508 20.7213 18.9002 20.804C18.7756 20.8336 18.7398 20.8916 18.7237 21.0089C18.6188 21.8297 18.5065 22.6506 18.3954 23.4813C17.4807 23.4813 16.5722 23.4813 15.6465 23.4813C15.5934 23.0888 15.5391 22.6963 15.486 22.3037C15.4267 21.8668 15.3663 21.4286 15.3144 20.9904C15.3008 20.8768 15.2527 20.8299 15.1404 20.8027C14.796 20.7213 14.4528 20.6312 14.1146 20.5299C13.9986 20.4954 13.9393 20.5213 13.8702 20.6126C13.3814 21.2545 12.8877 21.8927 12.3952 22.5321C12.3791 22.5531 12.3606 22.5728 12.331 22.6074C11.5397 22.1507 10.7497 21.6952 9.95605 21.236C10.2819 20.4411 10.6004 19.661 10.925 18.8821C10.9658 18.7858 10.9509 18.7339 10.8756 18.6624C10.6189 18.4192 10.3683 18.1674 10.1239 17.9106C10.0425 17.8255 9.98444 17.7983 9.86347 17.8489C9.09569 18.1723 8.32298 18.4846 7.53052 18.8092C7.07504 18.0217 6.62203 17.2354 6.15791 16.4343C6.38997 16.2541 6.61956 16.0739 6.85038 15.8949C7.28241 15.5616 7.71074 15.2259 8.14894 14.9C8.25756 14.8198 8.2662 14.7507 8.22917 14.6285C8.12795 14.2952 8.04031 13.957 7.96008 13.6187C7.93416 13.5114 7.89219 13.4706 7.7811 13.4558C7.00221 13.3558 6.2258 13.2472 5.44815 13.1423C5.39507 13.1349 5.34199 13.1262 5.28027 13.1164C5.28027 12.1992 5.28027 11.292 5.28027 10.3711C5.8666 10.2921 6.44922 10.2131 7.03184 10.1354C7.29599 10.0996 7.56138 10.0699 7.82553 10.0267C7.86997 10.0193 7.93169 9.96873 7.94403 9.92552C8.05142 9.54904 8.15387 9.17009 8.24522 8.78991C8.25633 8.74177 8.21806 8.6566 8.17486 8.62327C7.56138 8.14187 6.94296 7.66664 6.32702 7.18894C6.27147 7.14574 6.21592 7.10377 6.15667 7.0581C6.61709 6.26193 7.07134 5.47564 7.53052 4.68071C8.04895 4.89302 8.55134 5.09916 9.05496 5.3053C9.33763 5.42133 9.6203 5.53365 9.9005 5.65462C9.98567 5.69165 10.0338 5.67561 10.0968 5.61019C10.3535 5.34356 10.6127 5.07818 10.8831 4.82513C10.9732 4.7412 10.9546 4.67701 10.9176 4.58567C10.5979 3.81542 10.2819 3.04518 9.95605 2.25395C10.7436 1.7997 11.5286 1.34546 12.3334 0.881338C12.526 1.12944 12.7161 1.37261 12.9049 1.61702C13.2358 2.04411 13.5666 2.46997 13.8924 2.89952C13.9492 2.97482 13.9974 2.9958 14.0949 2.96618C14.4393 2.86249 14.7861 2.76744 15.1354 2.68474C15.249 2.65759 15.2984 2.62056 15.3132 2.50206C15.4119 1.73428 15.5169 0.967742 15.6193 0.201202C15.6279 0.137015 15.6403 0.0728275 15.6526 0C16.5661 0 17.4733 0 18.3929 0C18.4608 0.498683 18.5275 0.988727 18.5929 1.47877C18.6398 1.82933 18.6879 2.18112 18.7311 2.53292C18.7422 2.62179 18.7805 2.65635 18.8719 2.67734C19.2261 2.76374 19.5792 2.85756 19.9285 2.96124C20.0334 2.9921 20.0902 2.98099 20.1593 2.88965C20.6333 2.26382 21.1159 1.64417 21.5949 1.02205C21.6282 0.978851 21.6628 0.938119 21.7097 0.881338C22.5009 1.33805 23.2859 1.79106 24.0846 2.25148C23.9044 2.69215 23.7266 3.12418 23.5501 3.5562C23.4069 3.90429 23.2674 4.25238 23.1193 4.59801C23.0761 4.69799 23.0872 4.75477 23.1711 4.83254C23.4291 5.07447 23.6797 5.32628 23.9229 5.58427C24.0031 5.6682 24.0636 5.68795 24.1735 5.64228C24.9017 5.33739 25.6337 5.03991 26.3644 4.73996C26.4089 4.72145 26.4546 4.70663 26.5138 4.68441C26.9705 5.47441 27.4248 6.25946 27.8852 7.05563C27.5075 7.34694 27.1384 7.63454 26.7681 7.91968C26.4706 8.14927 26.1744 8.38257 25.8732 8.60722C25.7917 8.66771 25.7707 8.72078 25.8003 8.822C25.904 9.1775 26.0003 9.53423 26.0867 9.89466C26.1114 9.99465 26.1583 10.0218 26.2521 10.0341C27.0841 10.1428 27.916 10.2551 28.7603 10.3687C28.7603 11.2784 28.7603 12.1869 28.7603 13.1151C28.4666 13.1559 28.1654 13.1978 27.8654 13.2386C27.3248 13.3114 26.7854 13.3817 26.246 13.4607C26.1929 13.4681 26.1151 13.5126 26.1028 13.5546C25.9904 13.9631 25.8905 14.3754 25.7818 14.805C26.4681 15.3357 27.1693 15.8789 27.884 16.4306C27.4248 17.2268 26.9718 18.0131 26.5113 18.8105ZM17.0067 8.743C15.3021 8.77139 13.985 10.1292 14.0146 11.8289C14.043 13.4459 15.4255 14.7741 17.0573 14.7494C18.7176 14.7247 20.0568 13.3509 20.0235 11.7055C19.9902 10.0477 18.6336 8.71585 17.0067 8.743ZM13.9838 17.7625C15.5823 18.5303 17.2141 18.6994 18.8916 18.2118C20.5765 17.723 21.88 16.7121 22.791 15.2135C24.3129 12.7078 23.8587 9.76999 22.633 8.05793C22.3663 8.23197 22.0997 8.40726 21.8331 8.5813C23.6056 11.3512 22.7305 14.7864 20.3013 16.4639C19.4582 17.0466 18.5262 17.3737 17.5042 17.4761C16.3846 17.5885 14.9565 17.2169 14.5973 16.9231C14.7503 16.9231 14.9021 16.9231 15.0552 16.9231C15.2132 16.9231 15.3712 16.9244 15.5304 16.9219C15.8304 16.9157 16.0402 16.7182 16.0439 16.443C16.0476 16.1603 15.8378 15.9393 15.5366 15.9356C14.8602 15.9282 14.1837 15.9282 13.5073 15.9344C13.2197 15.9369 13.0123 16.1344 13.0086 16.4158C12.9975 17.1083 12.9938 17.802 13.0012 18.4945C13.0037 18.7809 13.2395 18.9833 13.5172 18.9746C13.7887 18.966 13.9813 18.7562 13.9838 18.4673C13.985 18.2427 13.9838 18.0193 13.9838 17.7625ZM12.2063 14.9074C10.4782 12.2091 11.262 8.87138 13.5653 7.15191C14.4133 6.51868 15.365 6.1496 16.4192 6.0274C17.3622 5.91878 19.0644 6.20391 19.4335 6.56188C19.1175 6.56188 18.8077 6.55941 18.4966 6.56312C18.2028 6.56682 17.9942 6.77172 17.9918 7.05192C17.9893 7.32595 18.2028 7.54443 18.4917 7.54567C19.173 7.55061 19.8556 7.55061 20.537 7.5469C20.8135 7.54567 21.0209 7.35064 21.0234 7.07538C21.0308 6.37179 21.0271 5.6682 21.0246 4.96461C21.0246 4.7918 20.9332 4.66467 20.7888 4.57826C20.4518 4.37706 20.0544 4.61529 20.0445 5.02633C20.0383 5.25099 20.0433 5.47687 20.0433 5.71387C16.7018 4.09315 13.0691 5.42874 11.357 8.0962C9.70917 10.6649 10.1572 13.6903 11.4077 15.4308C11.6706 15.258 11.9335 15.0852 12.2063 14.9074Z" fill="#CDCBCB"/>
+                                                                                                <path d="M17.0228 30.7852C12.1779 30.7852 7.333 30.7852 2.48812 30.7852C1.03898 30.7852 -0.0546668 29.6483 0.00211397 28.2016C0.0527229 26.9228 1.15131 25.8922 2.46714 25.8922C8.01067 25.8909 13.553 25.8922 19.0965 25.8922C23.2427 25.8922 27.389 25.8922 31.5352 25.8922C32.7609 25.8922 33.7262 26.6636 33.9928 27.8573C34.2915 29.1953 33.3077 30.5914 31.9475 30.7568C31.7969 30.7753 31.6438 30.7852 31.4907 30.7852C26.6681 30.7852 21.8454 30.7852 17.0228 30.7852ZM17.0079 30.2495C19.9482 30.2495 22.8885 30.2495 25.8287 30.2495C27.7321 30.2495 29.6367 30.2482 31.5401 30.2507C32.1363 30.2519 32.6449 30.047 33.03 29.594C33.5472 28.9855 33.6608 28.2905 33.3337 27.5635C32.9991 26.8192 32.3918 26.4316 31.571 26.4303C28.0358 26.4242 24.5005 26.4266 20.9666 26.4266C15.4835 26.4266 10.0017 26.4279 4.51865 26.4279C3.81506 26.4279 3.11148 26.4205 2.40789 26.4303C1.08218 26.4476 0.17369 27.8079 0.661264 29.0348C0.962449 29.794 1.65369 30.2507 2.50664 30.2507C7.34041 30.2507 12.1742 30.2495 17.0079 30.2495Z" fill="#CDCBCB"/>
+                                                                                                <path d="M24.2167 26.8325C24.2167 27.8398 24.2167 28.826 24.2167 29.8382C24.1574 29.8382 24.1007 29.8382 24.0426 29.8382C16.8525 29.8382 9.66107 29.8382 2.4709 29.8382C1.6377 29.8382 0.977316 29.1741 0.976081 28.3409C0.973612 27.5077 1.63029 26.835 2.46472 26.835C5.76048 26.8313 9.05499 26.8338 12.3507 26.8325C16.2353 26.8325 20.1198 26.8325 24.0044 26.8325C24.0673 26.8325 24.1328 26.8325 24.2167 26.8325Z" fill="#CDCBCB"/>
+                                                                                                </svg>
+                                                                                                
+                                                                                                
+                                                                                                
+                                                                                                
+                                                                                                
+                            
+                                                                                        </div>
+                                                                                    </div>
+                                                                                        
+                                                                                    
+                                                                                    <span class="d-block">Update</span></button>
+
+                                                                                    <button type="button" class="btn  text-white me-2 fs-14 top-rounded-status" > <!--style="background-color: var(--bs-card-bg) ;-->
+                                                                                        <div class="circle" data-size="60" data-value="0.8" data-thickness="4" data-fill="{
+                                                                                            &quot;color&quot;: &quot;#35D00E&quot;
+                                                                                        }" style="width: 60px; height:60px"><canvas width="60" height="60"></canvas>
+                                                                                            <div class="circle-content">
+                                
+                                                                                              
+                                                                                                <svg width="30" height="31" viewBox="0 0 30 31" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                                                                    <path d="M22.7697 26.7552C22.739 27.2756 22.7232 27.6936 22.6878 28.1106C22.5519 29.71 21.4617 30.8142 19.8782 30.9594C19.6557 30.9799 19.4322 30.9966 19.2088 30.9966C13.9675 30.9985 8.72518 31.0041 3.48384 30.9948C1.64332 30.991 0.475892 30.1606 0.0830247 28.6078C0.0169261 28.348 0.00389202 28.0687 0.00389202 27.7978C0.000168158 21.0157 -0.00169417 14.2337 0.00202969 7.45156C0.00296066 5.58311 1.30911 4.26487 3.16918 4.24625C4.18579 4.23601 5.20148 4.24438 6.28978 4.24438C6.32795 3.71187 6.35122 3.22498 6.40056 2.74087C6.54579 1.3165 7.62944 0.217024 9.0473 0.0503814C9.29307 0.0215215 9.54257 0.00383311 9.79021 0.00383311C15.0567 0.00104021 20.3232 -0.00361513 25.5896 0.00476357C27.4339 0.00755647 28.592 0.826808 28.9905 2.39269C29.0621 2.67571 29.0705 2.98106 29.0705 3.27618C29.0752 10.008 29.0761 16.7407 29.0724 23.4726C29.0715 25.4751 27.7811 26.7458 25.7563 26.7552C24.7899 26.7589 23.8227 26.7552 22.7697 26.7552ZM8.17126 13.4116C8.17126 16.6914 8.16847 19.9712 8.17219 23.251C8.17312 24.5031 8.63209 24.9705 9.86189 24.9714C15.1042 24.9742 20.3474 24.9742 25.5896 24.9714C26.798 24.9705 27.2942 24.4668 27.2952 23.2408C27.297 16.6812 27.297 10.1216 27.2952 3.56199C27.2952 2.27818 26.8306 1.81363 25.5496 1.81456C20.3073 1.81922 15.0641 1.82666 9.82186 1.83597C8.61161 1.83784 8.17498 2.27725 8.17312 3.49775C8.16847 6.80268 8.17126 10.1076 8.17126 13.4116ZM20.9013 26.7552C20.5168 26.7552 20.2478 26.7552 19.9787 26.7552C16.576 26.7552 13.1733 26.757 9.76973 26.7514C9.42434 26.7505 9.06871 26.7486 8.73636 26.6676C7.19933 26.2925 6.3596 25.0999 6.35681 23.2603C6.3475 17.8458 6.35401 12.4304 6.35122 7.01587C6.35122 6.70307 6.32143 6.38933 6.3056 6.09142C6.15106 6.0607 6.07845 6.03463 6.00676 6.03463C5.18751 6.02998 4.36733 6.02625 3.54808 6.02812C2.26707 6.03091 1.78018 6.5057 1.78018 7.76995C1.77831 14.3277 1.77831 20.8845 1.78018 27.4422C1.78018 28.7223 2.241 29.1831 3.53225 29.185C7.08389 29.1887 10.6365 29.1868 14.1881 29.1859C15.9513 29.1859 17.7155 29.1971 19.4788 29.1775C20.4125 29.1673 20.878 28.6748 20.9022 27.7438C20.9078 27.4497 20.9013 27.1545 20.9013 26.7552Z" fill="#CDCBCB"/>
+                                                                                                    <path d="M16.6953 13.0189C17.8991 11.8012 18.993 10.6887 20.0943 9.58267C20.6147 9.0604 21.2021 8.98127 21.5876 9.36017C22.0205 9.78655 21.9637 10.2604 21.3893 10.8376C20.1483 12.086 18.9054 13.3317 17.6552 14.5708C17.05 15.1703 16.4719 15.175 15.8472 14.5838C15.217 13.988 14.5969 13.3801 13.9862 12.7647C13.4863 12.2601 13.4351 11.7109 13.8698 11.3431C14.353 10.9344 14.8259 11.0303 15.2449 11.4744C15.7038 11.9594 16.1591 12.4473 16.6953 13.0189Z" fill="#CDCBCB"/>
+                                                                                                    <path d="M17.6849 20.337C16.3927 20.337 15.1014 20.3407 13.8093 20.3352C13.0542 20.3314 12.6902 20.0373 12.6856 19.4498C12.6819 18.8642 13.0477 18.5598 13.8009 18.5589C16.4094 18.5533 19.018 18.5533 21.6266 18.5589C22.3602 18.5598 22.7633 18.8838 22.767 19.4414C22.7707 19.9879 22.3462 20.3324 21.634 20.3361C20.3186 20.3417 19.0013 20.338 17.6849 20.337Z" fill="#CDCBCB"/>
+                                                                                                    </svg>
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                                                                                    
+                                
+                                                                                            </div>
+                                                                                        </div>
+                                                                                            
+                                                                                        
+                                                                                        <span class="d-block">Approve</span></button>
+                                                            <button type="button" class="btn bg-soft-secondarycolor text-white me-2"  style="background-color: var(--bs-card-bg) ;">Account close</button><!-- if Model tn--data-bs-toggle="modal" data-bs-target=".bs-example-modal-meeting"-->
+                                                    <!-- /.modal -->
+                                                    <button type="button" class="btn bg-soft-secondarycolor text-white me-2"  style="background-color: var(--bs-card-bg) ;">Set language</button><!-- if Model tn--data-bs-toggle="modal" data-bs-target=".bs-example-modal-meeting"-->
+                                                    <!-- /.modal -->
+                
+                                            
+                                              
+                
+                                          
+                
+                                                    <button type="button" class="btn bg-soft-secondarycolor text-white me-2"  style="background-color: var(--bs-card-bg) ;">Up date client portal credential</button><!-- if Model tn--data-bs-toggle="modal" data-bs-target=".bs-example-modal-meeting"-->
+                                                    <!-- /.modal -->
+                                                    <button type="button" class="btn bg-soft-secondarycolor text-white me-2"  style="background-color: var(--bs-card-bg) ;">View document</button><!-- if Model tn--data-bs-toggle="modal" data-bs-target=".bs-example-modal-meeting"-->
+                                                    <!-- /.modal -->
+                                               
+                                
+                                        
+                                                    <button type="button" class="btn bg-soft-secondarycolor text-white me-2"  style="background-color: var(--bs-card-bg) ;">Reset password</button><!-- if Model tn--data-bs-toggle="modal" data-bs-target=".bs-example-modal-meeting"-->
+                                                    <!-- /.modal -->
+                                                    <button type="button" class="btn bg-soft-secondarycolor text-white me-2"  style="background-color: var(--bs-card-bg) ;">Email bank details</button><!-- if Model tn--data-bs-toggle="modal" data-bs-target=".bs-example-modal-meeting"-->
+                                                    <!-- /.modal -->
+                                                    <button type="button" class="btn bg-soft-secondarycolor text-white me-2"  style="background-color: var(--bs-card-bg) ;">Sales communication structure</button><!-- if Model tn--data-bs-toggle="modal" data-bs-target=".bs-example-modal-meeting"-->
+                                                    <!-- /.modal -->
+                
+                                            
+                                               
+                                
+                                        
+                                                    <button type="button" class="btn bg-soft-secondarycolor text-white me-2"  style="background-color: var(--bs-card-bg) ;">Email templates</button><!-- if Model tn--data-bs-toggle="modal" data-bs-target=".bs-example-modal-meeting"-->
+                                                    <!-- /.modal -->
+                                                    <button type="button" class="btn bg-soft-secondarycolor text-white me-2"  style="background-color: var(--bs-card-bg) ;">Comments</button><!-- if Model tn--data-bs-toggle="modal" data-bs-target=".bs-example-modal-meeting"-->
+                                                    <!-- /.modal -->
+                                                    <button type="button" class="btn bg-soft-secondarycolor text-white me-2"  style="background-color: var(--bs-card-bg) ;">Create multiple account</button><!-- if Model tn--data-bs-toggle="modal" data-bs-target=".bs-example-modal-meeting"-->
+                                                    <!-- /.modal -->
+                
+                                            
+                                                
+                                            </div>
+                                        
+                                            <div class="col-sm-6 col-md-4 col-xxl-3">
+                                                <div class=" mb-2 d-flex align-items-center ">
+                                                    <label class="form-label flex-shrink-0 me-2" for="Accountno">Account no1</label>
+                                                    <input type="text" id="Accountno" class=" form-control py-2 ">
+                                                </div>
+                                            </div>
+                                        
+                                            <div class="col ">
+                                                <button class="btn btn-info btn-lg  me-2  mb-2" type="submit">Load</button>
+                                                <button class="btn btn-outline-light  btn-lg    mb-2" type="reset">Reset1</button>
+                
+                                            </div>
+
+                                        
+                                        </div>
+
+                                        <table class="table mb-0  change  mt-5" >
+
+                                        
+                                            <tbody class="gilory-regular-type fs-15 " >
+                                                <tr>
+                                                    <td class=" ps-0 " style="width:calc(100%/7)">Created by <span class="text-white d-block">Admin</span></td>
+                                                    <td class="  " style="width:calc(100%/7)">Source <span class="text-white d-block">Multiple account master</span></td>
+                                                    <td class="  " style="width:calc(100%/7)">Ticket <span class="text-white d-block">6288</span></td>
+                                                    <td class="  " style="width:calc(100%/7)">Reg. date<span class="text-white d-block">12-06-2022</span></td>
+                                                    <td class="  " style="width:calc(100%/7)">Approvel date<span class="text-white d-block">18-06-2022</span></td>
+                                                    <td  class=" "style="width:calc(100%/7)" >Approved by<span class="text-white d-block">Noura Mikati</span></td>
+                                                    <td  class="text-end " style="width:calc(100%/7)">Currency<span class="text-white d-block">USD</span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td class=" ps-0 " style="width:calc(100%/7)">MT4 IP <span class="text-white d-block">Admin</span></td>
+                                                    <td class="  " style="width:calc(100%/7)">Register IP <span class="text-white d-block">Multiple account master</span></td>
+                                                    <td class="  " style="width:calc(100%/7)">Client area IP <span class="text-white d-block">6288</span></td>
+                                                    <td class="  " style="width:calc(100%/7)">Master account<span class="text-white d-block">12-06-2022</span></td>
+                                                    <td class="  " style="width:calc(100%/7)">Balance<span class="text-white d-block">18-06-2022</span></td>
+                                                    <td  class=" "style="width:calc(100%/7)" >EWallet balance<span class="text-white d-block">Noura Mikati</span></td>
+                                                    <td  class="text-end " style="width:calc(100%/7)">Available margin<span class="text-white d-block">USD</span></td>
+                                                </tr>
+                                            
+            
+                                            </tbody>
+                                        
+                                        </table>
+
+                                        <form class="needs-validation my-5" novalidate>
+                                            <div class="row">
+                                                
+                                                <div class="d-flex flex-wrap align-items-center mb-3">
+                                                    <h4 class="card-title fs-20 almarenamonolight-type">Contact details
+                                                    </h4>
+                
+                                                </div>
+
+                                                <div class="col-sm-2 col-md-2 col-xxl-1">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="title">Title<span class="color-orange">*</span></label>
+                                                        <select  class="form-select" id="title"  value="" required>
+                                                            <option value="">Mr</option>
+                                                            <option value="">Mrs</option>
+                                                        </select>
+                                                        <div class="invalid-feedback position-absolute bottom-0">
+                                                            Please provide a valid entry.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="col-sm-4 col-md-2 col-xxl-2 ">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="firstname*">Name<span class="color-orange">*</span></label>
+                                                        <input type="text" class="form-control" id="firstname" placeholder="both name(s) e.g Jon Doe" value="" required>
+                                                        <div class="invalid-feedback position-absolute bottom-0">
+                                                            Please provide a valid entry.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                        
+                                                <div class="col-sm-6 col-md-4 col-xxl-3">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="Email1">Email1<span class="color-orange">*</span></label>
+                                                        
+                                                        <input type="email" class="form-control" id="Email1" placeholder=" " required>
+                                                        <div class="invalid-feedback position-absolute bottom-0">
+                                                            Please provide a valid  Email.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-4 col-xxl-3">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="Email2">Email2<span class="color-orange">*</span></label>
+                                                        
+                                                        <input type="email" class="form-control" id="Email2" placeholder=" " required>
+                                                        <div class="invalid-feedback position-absolute bottom-0">
+                                                            Please provide a valid  Email.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-4 col-xxl-3">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="Address1">Address1<span class="color-orange">*</span></label>
+                                                        
+                                                        <input type="text" class="form-control" id="Address1" placeholder=" " required>
+                                                        <div class="invalid-feedback position-absolute bottom-0">
+                                                            Please provide a valid  Email.
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-6 col-md-4 col-xxl-3">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="City">City<span class="color-orange">*</span></label>
+                                                        
+                                                        <input type="text" class="form-control" id="City" placeholder=" " required>
+                                                        <div class="invalid-feedback position-absolute bottom-0">
+                                                            Please provide a valid  Email.
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            
+                                                
+                                                <div class="col-sm-6 col-md-4 col-xxl-3">
+                                                    
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="State">State<span class="color-orange">*</span></label>
+                                                        
+                                                        <input type="text" class="form-control" id="State" placeholder="" required>
+                                                        <div class="invalid-feedback position-absolute bottom-0" >
+                                                            Please provide a valid  Email.
+                                                        </div>
+                                                    </div>         
+                                                    
+                                                </div>
+                                                <div class="col-sm-6 col-md-4 col-xxl-3 ">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="Nationality">Nationality<span class="color-orange">*</span></label>
+                                                        <input type="text" class="form-control" id="Nationality*" placeholder="" required>
+                                                        <div class="invalid-feedback position-absolute bottom-0">
+                                                            Please provide a valid Age.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+
+                                                <div class="col-sm-6 col-md-4 col-xxl-3 ">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="Zipcode">Zipcode<span class="color-orange">*</span> </label>
+                                                        <input type="number" class="form-control" id="Zipcode" placeholder="" required>
+                                                        <div class="invalid-feedback position-absolute bottom-0">
+                                                            Please provide a valid Age.
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-6 col-md-4 col-xxl-3 ">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="Profession">Profession<span class="color-orange">*</span></label>
+                                                        <input type="text" class="form-control" id="Profession" placeholder="" required>
+                                                        <div class="invalid-feedback position-absolute bottom-0">
+                                                            Please provide a valid Age.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-4 col-xxl-3 ">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="dob">DOB<span class="color-orange">*</span></label>
+                                                        <input 
+                                                        class="form-control" id="dob" placeholder="Date of Birth" >
+                                                    
+                                                        <div class="invalid-feedback position-absolute bottom-0">
+                                                            Please provide a valid Age.
+                                                        </div>
+                                                    </div>
+                                                
+                                                </div>
+
+                                                <div class="col-sm-6 col-md-4 col-xxl-3 ">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="Phone1">Phone 1<span class="color-orange">*</span></label>
+                                                        <div class="d-flex align-items-center">
+                                                            
+                                                            <input type="tel" class="form-control " id="phone" required>
+                                                            <span id="error-msg" class="hide position-absolute bottom-0 order-3 "></span>
+                                                            <span id="valid-msg" class="hide position-absolute bottom-0 order-3">✓ Valid</span>
+                                                        
+                                                            <svg width="42" height="48" viewBox="0 0 42 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <rect width="42" height="48" rx="4" fill="#00A54F"/>
+                                                            <path d="M29.3087 29.2743C29.3087 29.5743 29.242 29.8827 29.1003 30.1827C28.9587 30.4827 28.7753 30.766 28.5337 31.0327C28.1253 31.4827 27.6753 31.8077 27.167 32.016C26.667 32.2243 26.1253 32.3327 25.542 32.3327C24.692 32.3327 23.7837 32.1327 22.8253 31.7243C21.867 31.316 20.9087 30.766 19.9587 30.0743C19.0003 29.3743 18.092 28.5993 17.2253 27.741C16.367 26.8743 15.592 25.966 14.9003 25.016C14.217 24.066 13.667 23.116 13.267 22.1743C12.867 21.2243 12.667 20.316 12.667 19.4493C12.667 18.8827 12.767 18.341 12.967 17.841C13.167 17.3327 13.4837 16.866 13.9253 16.4493C14.4587 15.9243 15.042 15.666 15.6587 15.666C15.892 15.666 16.1253 15.716 16.3337 15.816C16.5503 15.916 16.742 16.066 16.892 16.2827L18.8253 19.0077C18.9753 19.216 19.0837 19.4077 19.1587 19.591C19.2337 19.766 19.2753 19.941 19.2753 20.0993C19.2753 20.2993 19.217 20.4993 19.1003 20.691C18.992 20.8827 18.8337 21.0827 18.6337 21.2827L18.0003 21.941C17.9087 22.0327 17.867 22.141 17.867 22.2743C17.867 22.341 17.8753 22.3993 17.892 22.466C17.917 22.5327 17.942 22.5827 17.9587 22.6327C18.1087 22.9077 18.367 23.266 18.7337 23.6993C19.1087 24.1327 19.5087 24.5743 19.942 25.016C20.392 25.4577 20.8253 25.866 21.267 26.241C21.7003 26.6077 22.0587 26.8577 22.342 27.0077C22.3837 27.0243 22.4337 27.0493 22.492 27.0743C22.5587 27.0993 22.6253 27.1077 22.7003 27.1077C22.842 27.1077 22.9503 27.0577 23.042 26.966L23.6753 26.341C23.8837 26.1327 24.0837 25.9743 24.2753 25.8743C24.467 25.7577 24.6587 25.6993 24.867 25.6993C25.0253 25.6993 25.192 25.7327 25.3753 25.8077C25.5587 25.8827 25.7503 25.991 25.9587 26.1327L28.717 28.091C28.9337 28.241 29.0837 28.416 29.1753 28.6243C29.2587 28.8327 29.3087 29.041 29.3087 29.2743Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10"/>
+                                                            <path d="M26.4167 21.4987C26.4167 20.9987 26.025 20.232 25.4417 19.607C24.9083 19.032 24.2 18.582 23.5 18.582" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M29.3333 21.4993C29.3333 18.2743 26.725 15.666 23.5 15.666" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                            
+                                                            </div>
+                                                        
+                                                        <div class="invalid-feedback position-absolute bottom-0">
+                                                            Please provide a Profession.
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+
+                                                <div class="col-sm-6 col-md-4 col-xxl-3 ">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="Phone2">Phone 2<span class="color-orange">*</span></label>
+                                                        <div class="d-flex align-items-center"> 
+                                                            <input type="tel" class="form-control flex-grow-1" id="phone2" required="" autocomplete="off"
+                                                            >
+                                                            <span id="error-msg2" class="hide position-absolute bottom-0 order-3 "></span>
+                                                            <span id="valid-msg2" class="hide position-absolute  bottom-0 order-3">✓ Valid</span>
+                                                            <svg width="42" height="48" viewBox="0 0 42 48" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <rect width="42" height="48" rx="4" fill="#00A54F"/>
+                                                            <path d="M29.3087 29.2743C29.3087 29.5743 29.242 29.8827 29.1003 30.1827C28.9587 30.4827 28.7753 30.766 28.5337 31.0327C28.1253 31.4827 27.6753 31.8077 27.167 32.016C26.667 32.2243 26.1253 32.3327 25.542 32.3327C24.692 32.3327 23.7837 32.1327 22.8253 31.7243C21.867 31.316 20.9087 30.766 19.9587 30.0743C19.0003 29.3743 18.092 28.5993 17.2253 27.741C16.367 26.8743 15.592 25.966 14.9003 25.016C14.217 24.066 13.667 23.116 13.267 22.1743C12.867 21.2243 12.667 20.316 12.667 19.4493C12.667 18.8827 12.767 18.341 12.967 17.841C13.167 17.3327 13.4837 16.866 13.9253 16.4493C14.4587 15.9243 15.042 15.666 15.6587 15.666C15.892 15.666 16.1253 15.716 16.3337 15.816C16.5503 15.916 16.742 16.066 16.892 16.2827L18.8253 19.0077C18.9753 19.216 19.0837 19.4077 19.1587 19.591C19.2337 19.766 19.2753 19.941 19.2753 20.0993C19.2753 20.2993 19.217 20.4993 19.1003 20.691C18.992 20.8827 18.8337 21.0827 18.6337 21.2827L18.0003 21.941C17.9087 22.0327 17.867 22.141 17.867 22.2743C17.867 22.341 17.8753 22.3993 17.892 22.466C17.917 22.5327 17.942 22.5827 17.9587 22.6327C18.1087 22.9077 18.367 23.266 18.7337 23.6993C19.1087 24.1327 19.5087 24.5743 19.942 25.016C20.392 25.4577 20.8253 25.866 21.267 26.241C21.7003 26.6077 22.0587 26.8577 22.342 27.0077C22.3837 27.0243 22.4337 27.0493 22.492 27.0743C22.5587 27.0993 22.6253 27.1077 22.7003 27.1077C22.842 27.1077 22.9503 27.0577 23.042 26.966L23.6753 26.341C23.8837 26.1327 24.0837 25.9743 24.2753 25.8743C24.467 25.7577 24.6587 25.6993 24.867 25.6993C25.0253 25.6993 25.192 25.7327 25.3753 25.8077C25.5587 25.8827 25.7503 25.991 25.9587 26.1327L28.717 28.091C28.9337 28.241 29.0837 28.416 29.1753 28.6243C29.2587 28.8327 29.3087 29.041 29.3087 29.2743Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10"/>
+                                                            <path d="M26.4167 21.4987C26.4167 20.9987 26.025 20.232 25.4417 19.607C24.9083 19.032 24.2 18.582 23.5 18.582" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M29.3333 21.4993C29.3333 18.2743 26.725 15.666 23.5 15.666" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg></div>
+                                                        <div class="invalid-feedback position-absolute bottom-0">
+                                                            Please provide a Profession.
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+
+                                                <hr class="my-5">
+                                                <div class="d-flex flex-wrap align-items-center mb-2">
+                                                    <h4 class="card-title fs-20 almarenamonolight-type">Account details
+                                                    </h4>
+                
+                                                </div>
+                                                
+                                                <div class="col-sm-6 col-md-4 col-xxl-3">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="Agent">Agent<span class="color-orange">*</span></label>
+                                                        
+                                                        <input type="text" class="form-control" id="Agent" placeholder=" " required>
+                                                        <div class="invalid-feedback position-absolute bottom-0">
+                                                            Please provide a valid  Email.
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-6 col-md-4 col-xxl-3">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="Leverage">Leverage<span class="color-orange">*</span></label>
+                                                        
+                                                        <input type="text" class="form-control" id="Leverage" placeholder=" " required>
+                                                        <div class="invalid-feedback position-absolute bottom-0">
+                                                            Please provide a valid  Email.
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                            
+                                                
+                                                <div class="col-sm-6 col-md-4 col-xxl-3">
+                                                    
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="Clientarealogin">Client area login*<span class="color-orange">*</span></label>
+                                                        
+                                                        <input type="text" class="form-control" id="Clientarealogin" placeholder="" required>
+                                                        <div class="invalid-feedback position-absolute bottom-0" >
+                                                            Please provide a valid  Email.
+                                                        </div>
+                                                    </div>         
+                                                    
+                                                </div>
+                                            <div class="col-sm-6 col-md-4 col-xxl-3 ">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="Score">Score<span class="color-orange">*</span></label>
+                                                        <input type="text" class="form-control" id="Score" placeholder="" required>
+                                                        <div class="invalid-feedback position-absolute bottom-0">
+                                                            Please provide a valid Age.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            
+
+                                                <div class="col-sm-6 col-md-4 col-xxl-3 ">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="Risk*">Risk<span class="color-orange">*</span></label>
+                                                        <input type="number" class="form-control" id="Risk" placeholder="" required>
+                                                        <div class="invalid-feedback position-absolute bottom-0">
+                                                            Please provide a valid Age.
+                                                        </div>
+                                                    </div>
+                                                </div>
+
+                                                <div class="col-sm-6 col-md-4 col-xxl-3 ">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="Profession">Profession<span class="color-orange">*</span></label>
+                                                        <input type="text" class="form-control" id="Profession" placeholder="" required>
+                                                        <div class="invalid-feedback position-absolute bottom-0">
+                                                            Please provide a valid Age.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-6 col-md-4 col-xxl-3 ">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="Riskcategory">Risk category<span class="color-orange">*</span></label>
+                                                        <input type="tel" class="form-control" id="Riskcategory" placeholder="" required>
+                                                        <div class="invalid-feedback position-absolute bottom-0">
+                                                            Please provide a Profession.
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="col-sm-6 col-md-4 col-xxl-3 ">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="IDNo">ID No<span class="color-orange">*</span></label>
+                                                        <input type="tel" class="form-control" id="IDNo" placeholder="" required>
+                                                        <div class="invalid-feedback position-absolute bottom-0">
+                                                            Please provide a Profession.
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="col-sm-6 col-md-4 col-xxl-3 ">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="Initialdeposit">Initial deposit<span class="color-orange">*</span></label>
+                                                        <input type="tel" class="form-control" id="Initialdeposit" placeholder="" required>
+                                                        <div class="invalid-feedback position-absolute bottom-0">
+                                                            Please provide a Profession.
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="col-sm-6 col-md-4 col-xxl-3 ">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="Annualincome">Annual income<span class="color-orange">*</span></label>
+                                                        <input type="tel" class="form-control" id="Annualincome" placeholder="" required>
+                                                        <div class="invalid-feedback position-absolute bottom-0">
+                                                            Please provide a Profession.
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="col-sm-6 col-md-4 col-xxl-3 ">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="Networth">Networth<span class="color-orange">*</span></label>
+                                                        <input type="tel" class="form-control" id="Networth" placeholder="" required>
+                                                        <div class="invalid-feedback position-absolute bottom-0">
+                                                            Please provide a Profession.
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="col-sm-6 col-md-4 col-xxl-3 ">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="Group">Group<span class="color-orange">*</span></label>
+                                                        <input type="tel" class="form-control" id="Group" placeholder="" >
+                                                        <div class="invalid-feedback position-absolute bottom-0" >
+                                                            Please provide a Profession.
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+
+                                                <div class="col-sm-6 col-md-4 col-xxl-3 ">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for=" Account type"> Account type</label>
+                                                        <input type="tel" class="form-control" id=" Account type" placeholder="" required>
+                                                        <div class="invalid-feedback position-absolute bottom-0">
+                                                            Please provide a Profession.
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+
+                                                <div class="col-sm-6 col-md-4 col-xxl-3 ">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for=" Tinno"> Tin no<span class="color-orange">*</span></label>
+                                                        <input type="tel" class="form-control" id="Tinno" placeholder="" >
+                                                        <div class="invalid-feedback position-absolute bottom-0" required>
+                                                            Please provide a Profession.
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="col-sm-6 col-md-4 col-xxl-3 ">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for=" Color">    Color<span class="color-orange">*</span></label>
+                                                        <input type="tel" class="form-control" id="Color" placeholder="" >
+                                                        <div class="invalid-feedback position-absolute bottom-0" required>
+                                                            Please provide a Profession.
+                                                        </div>
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="col-sm-6 col-md-4 col-xxl-4 ">
+                                                    <div class="x">
+                                                        <label class="form-label" for="Comment">Comment<span class="color-orange">*</span></label>
+                                                        <textarea name="" id="Comment" cols="20" rows="5" class="form-control" required></textarea>
+                                                    </div>
+                                                    <div class="invalid-feedback position-absolute bottom-0">
+                                                        Please provide a valid Age.
+                                                    </div>
+
+                                                    <div class="">
+                                                    
+                                                    
+                                                        <div class="my-2 position-absolute">
+                                                        
+                                                            <div class="form-check">
+                                                                <input type="checkbox" class="form-check-input" id="Readonly" required="">
+                                                                <label class="form-check-label fs-12" for="Readonly1"> Read only</label>
+                                                                <div class="invalid-feedback position-absolute bottom-0 ">
+                                                                    Read only
+                                                                </div>
+                                                            </div>
+                                                        </div>    
+                                                            
+                                                                    
+                                                    
+                                                                
+                                                        
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="col-sm-6 col-md-4 col-xxl-4 ">
+                                                    <div class="x">
+                                                        <label class="form-label" for="Comment">Comment<span class="color-orange">*</span></label>
+                                                        <textarea name="" id="Comment" cols="20" rows="5" class="form-control" required=""></textarea>
+                                                    </div>
+                                                    <div class="invalid-feedback position-absolute bottom-0">
+                                                        Please provide a valid Age.
+                                                    </div>
+
+                                                    <div class="">
+                                                    
+                                                    
+                                                        <div class="my-2 position-absolute">
+                                                        
+                                                            <div class="form-check">
+                                                                <input type="checkbox" class="form-check-input" id="Terminated" required="">
+                                                                <label class="form-check-label fs-12" for="Terminated"> Terminated</label>
+                                                                <div class="invalid-feedback position-absolute bottom-0  ">
+                                                                    Terminated
+                                                                </div>
+                                                            </div>
+                                                        </div>    
+                                                            
+                                                                    
+                                                    
+                                                                
+                                                        
+                                                    </div>
+                                                    
+                                                </div>
+                                                <div class="col-sm-6 col-md-4 col-xxl-4 ">
+                                                    <div class="card-h-100 d-flex align-items-end">
+                                                        <div>
+                                                            <div class="d-flex flex-wrap mb-3">
+
+                                                                <div class="form-check me-2">
+                                                                    <input type="checkbox" class="form-check-input" id="Enabled" required="">
+                                                                    <label class="form-check-label fs-12" for="Enabled"> Enabled</label>
+                                                                    <div class="invalid-feedback fs-10 py-0 ">
+                                                                        Enabled
+                                                                    </div>
+                                                                </div>
+                
+                                                                <div class="form-check me-2">
+                                                                    <input type="checkbox" class="form-check-input" id="AllowchangePWD" required="">
+                                                                    <label class="form-check-label fs-12" for="AllowchangePWD"> Allow change PWD</label>
+                                                                    <div class="invalid-feedback fs-10 py-0 ">
+                                                                        Read only
+                                                                    </div>
+                                                                </div>
+                
+                                                                <div class="form-check">
+                                                                    <input type="checkbox" class="form-check-input" id="Sendreports" required="">
+                                                                    <label class="form-check-label fs-12" for="Sendreports"> Send reports</label>
+                                                                    <div class="invalid-feedback fs-10 py-0 ">
+                                                                        Read only
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div class="row align-items-center">
+                                                                <div class="col-5">
+                                                                    <input type="tel" class="form-control py-1" id="Group" placeholder="" >
+                                                                    <div class="invalid-feedback position-absolute bottom-0">
+                                                                        Please provide a Profession.
+                                                                    </div>
+                                                                </div>
+                                                                <div class="col">
+                                                                    <button class="btn btn-primary btn-md   flex-grow-0   ms-2" type=" ">Stipulated deposit update</button>
+                                                                </div>
+                                                            </div>
+                                                    
+                                
+                                                    
+                                                        </div>
+                                                    
+                                                        
+                                                    </div>
+                                                    
+                                                </div>
+                                            
+                                                
+                                            
+                                            
+                                                
+                                            </div>
+                                            
+                                        
+                                        </form>
+                                        <!--Navigation-->
+                                        
+                                    
+                                
+                                    </div>
+                                </div>
+                                <!-- end card -->
+                            </div> <!-- end col -->
+                        
+
+
+                        </div>
+
+                        <div class="row">
+
+                            <!--button moveed up-->
+                        </div>
+                        <!--action btns-->
+                        <div class="row">
+                            <div class="col-md-12 mt-4">
+                                <button type="button" class="btn btn-lg  btn-primary text-white me-2"  > Update</button>
+                                <button type="button" class="btn btn-outline-light  btn-lg  me-2 color-color1"  >Temporary approve</button>
+                                <button type="button" class="btn btn-outline-light  btn-lg   me-2 color-color1"  >Final approve</button>
+                            </div>
+            
+                        </div>
+                        <!-- end row-->
+
+                        <!-- container -->
+                    </div>
+                    <!-- End Page-content -->
+                </div>
+                    
+            </div>
+                <!-- end main content-->
+        </div>
+        <!-- END layout-wrapper -->
+        
+        <!-- Right Sidebar -->
+        <div class="right-bar">
+            <div data-simplebar class="h-100">
+                <div class="rightbar-title d-flex align-items-center p-3">
+
+                    <h5 class="m-0 me-2">Theme Customizer</h5>
+
+                    <a href="javascript:void(0);" class="right-bar-toggle ms-auto">
+                        <i class="mdi mdi-close noti-icon"></i>
+                    </a>
+                </div>
+
+                <!-- Settings -->
+                <hr class="m-0" />
+
+                <div class="p-4">
+                    <h6 class="mb-3">Layout</h6>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="layout"
+                            id="layout-vertical" value="vertical">
+                        <label class="form-check-label" for="layout-vertical">Vertical</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="layout"
+                            id="layout-horizontal" value="horizontal">
+                        <label class="form-check-label" for="layout-horizontal">Horizontal</label>
+                    </div>
+
+                    <h6 class="mt-4 mb-3 pt-2">Layout Mode</h6>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="layout-mode"
+                            id="layout-mode-light" value="light">
+                        <label class="form-check-label" for="layout-mode-light">Light</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="layout-mode"
+                            id="layout-mode-dark" value="dark">
+                        <label class="form-check-label" for="layout-mode-dark">Dark</label>
+                    </div>
+
+                    <h6 class="mt-4 mb-3 pt-2">Layout Width</h6>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="layout-width"
+                            id="layout-width-fuild" value="fuild" onchange="document.body.setAttribute('data-layout-size', 'fluid')">
+                        <label class="form-check-label" for="layout-width-fuild">Fluid</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="layout-width"
+                            id="layout-width-boxed" value="boxed" onchange="document.body.setAttribute('data-layout-size', 'boxed')">
+                        <label class="form-check-label" for="layout-width-boxed">Boxed</label>
+                    </div>
+
+                    <h6 class="mt-4 mb-3 pt-2">Layout Position</h6>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="layout-position"
+                            id="layout-position-fixed" value="fixed" onchange="document.body.setAttribute('data-layout-scrollable', 'false')">
+                        <label class="form-check-label" for="layout-position-fixed">Fixed</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="layout-position"
+                            id="layout-position-scrollable" value="scrollable" onchange="document.body.setAttribute('data-layout-scrollable', 'true')">
+                        <label class="form-check-label" for="layout-position-scrollable">Scrollable</label>
+                    </div>
+
+                    <h6 class="mt-4 mb-3 pt-2">Topbar Color</h6>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="topbar-color"
+                            id="topbar-color-light" value="light" onchange="document.body.setAttribute('data-topbar', 'light')">
+                        <label class="form-check-label" for="topbar-color-light">Light</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="topbar-color"
+                            id="topbar-color-dark" value="dark" onchange="document.body.setAttribute('data-topbar', 'dark')">
+                        <label class="form-check-label" for="topbar-color-dark">Dark</label>
+                    </div>
+
+                    <h6 class="mt-4 mb-3 pt-2 sidebar-setting">Sidebar Size</h6>
+
+                    <div class="form-check sidebar-setting">
+                        <input class="form-check-input" type="radio" name="sidebar-size"
+                            id="sidebar-size-default" value="default" onchange="document.body.setAttribute('data-sidebar-size', 'lg')">
+                        <label class="form-check-label" for="sidebar-size-default">Default</label>
+                    </div>
+                    <div class="form-check sidebar-setting">
+                        <input class="form-check-input" type="radio" name="sidebar-size"
+                            id="sidebar-size-compact" value="compact" onchange="document.body.setAttribute('data-sidebar-size', 'md')">
+                        <label class="form-check-label" for="sidebar-size-compact">Compact</label>
+                    </div>
+                    <div class="form-check sidebar-setting">
+                        <input class="form-check-input" type="radio" name="sidebar-size"
+                            id="sidebar-size-small" value="small" onchange="document.body.setAttribute('data-sidebar-size', 'sm')">
+                        <label class="form-check-label" for="sidebar-size-small">Small (Icon View)</label>
+                    </div>
+
+                    <h6 class="mt-4 mb-3 pt-2 sidebar-setting">Sidebar Color</h6>
+
+                    <div class="form-check sidebar-setting">
+                        <input class="form-check-input" type="radio" name="sidebar-color"
+                            id="sidebar-color-light" value="light" onchange="document.body.setAttribute('data-sidebar', 'light')">
+                        <label class="form-check-label" for="sidebar-color-light">Light</label>
+                    </div>
+                    <div class="form-check sidebar-setting">
+                        <input class="form-check-input" type="radio" name="sidebar-color"
+                            id="sidebar-color-dark" value="dark" onchange="document.body.setAttribute('data-sidebar', 'dark')">
+                        <label class="form-check-label" for="sidebar-color-dark">Dark</label>
+                    </div>
+                    <div class="form-check sidebar-setting">
+                        <input class="form-check-input" type="radio" name="sidebar-color"
+                            id="sidebar-color-brand" value="brand" onchange="document.body.setAttribute('data-sidebar', 'brand')">
+                        <label class="form-check-label" for="sidebar-color-brand">Brand</label>
+                    </div>
+
+                    <h6 class="mt-4 mb-3 pt-2">Direction</h6>
+
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="layout-direction"
+                            id="layout-direction-ltr" value="ltr">
+                        <label class="form-check-label" for="layout-direction-ltr">LTR</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                        <input class="form-check-input" type="radio" name="layout-direction"
+                            id="layout-direction-rtl" value="rtl">
+                        <label class="form-check-label" for="layout-direction-rtl">RTL</label>
+                    </div>
+
+                </div>
+
+            </div> <!-- end slimscroll-menu-->
+        </div>
+        <!-- /Right-bar -->
+
+        <!-- Right bar overlay-->
+        <div class="rightbar-overlay"></div>
+        <!-- JAVASCRIPT -->
+        <script src="assets/libs/jquery/jquery.min.js" ></script>
+        <script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js" ></script>
+        <script src="assets/libs/metismenu/metisMenu.min.js" ></script>
+        <script src="assets/libs/simplebar/simplebar.min.js" ></script>
+        <script src="assets/libs/node-waves/waves.min.js" ></script>
+        <script src="assets/libs/feather-icons/feather.min.js" ></script>
+        <!-- pace js -->
+        <script src="assets/libs/pace-js/pace.min.js"></script>
+        <!-- datepicker js -->
+        <script src="assets/libs/flatpickr/flatpickr.min.js"></script>
+        <!-- form intTel -->
+        <script src="assets/js/pages/data.init.js"></script> 
+        <script src="assets/js/pages/intTellinput.init.js"></script>   
+        <script src="assets/js/pages/utils.init.js"></script>
+        <!-- form validation -->
+        <script src="assets/js/pages/form-validation-backoffice-management.init.js"></script>  
+       
+        <script src="assets/js/app.js"></script>
+        <script src="assets/js/theme.js"></script>
+        <script src="assets/js/theme.js"></script>
+        <script src="assets/js/pages/circle-progress.init.js"></script> 
+
+        <script>
+
+var gray = '#F5F6FA';
+            var circle = $('.circle');
+        if(circle.length !== 0) {
+            circle.circleProgress ({
+            lineCap: "round",
+            startAngle: 4.8,
+            emptyFill: [gray]
+            })
+        };
+
+
+        </script>
+         
+    </body>
+
+</html>

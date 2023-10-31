@@ -1,0 +1,311 @@
+@@include("partials/main.html")
+
+<head>
+
+    @@include("partials/title-meta.html", {"title": "Dashboard"})
+
+    <!-- plugin css -->
+    <!--<link href="assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet"
+        type="text/css" />-->
+
+    @@include("partials/head-css.html")
+
+</head>
+
+@@include("partials/body.html")
+
+<!-- Begin page -->
+<div id="layout-wrapper">
+
+
+    @@include("partials/menutc.html")
+
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="main-content">
+
+        <div class="page-content" id="sales">
+            <div class="container-fluid">
+                <!--container-fluid px-md-5 me-md5-->
+
+                @@include("partials/page-title.html", {"pagetitle": "Dashboard", "title": "Analytics Overview"})
+                <!--Analytics overview-->
+
+                <!--Row1-->
+                <div class="row">
+                    <!--New Accounts-->
+                    <div class="col-xl-6">
+                        <div class="card card-h-100">
+
+
+
+                            <div class="card-body">
+
+
+                                <div class="d-flex flex-wrap align-items-center mb-4">
+                                    <h5 class="card-title me-2 almarenamonolight-type fs-21">New Accounts</h5>
+                                    <div class="ms-auto">
+                                        <div>
+                                            <a href="" class=" mb-0 my-n1  gilorymedium-type fs-15"
+                                                style="color: var(--color1);">Sales graph this week</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+
+                                <div id="spline_area_new_accounts"
+                                    data-colors='["#FF0000", "#06C3FF","#DD9406","#39AA7B"]'
+                                    class="apex-charts d-flex card-h-100 align-items-center" dir="ltr"></div>
+                            </div>
+                        </div>
+                        <!--end card-->
+                    </div>
+
+                    <div class="col-xl-6">
+
+
+                        <div class="row">
+
+                            <!--Tickets-->
+                            <div class="col-xl-6 col-lg-6  ">
+
+                                <div class="card card-h-100">
+                                    <div class="card-body">
+
+                                        <h5 class="card-title  fs-21 almarenamonolight-type">
+                                            Tickets</h5>
+                                        <div id="tickets" data-colors='["#B750BE","#DD9406","#3AACFF"]'
+                                            class="apex-charts" dir="ltr">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                            <!--Leads Converted-->
+                            <div class="col-xl-6 col-lg-6">
+                                <div class="card card-h-100">
+
+                                    <div class="card-body">
+                                        <div class="d-flex flex-wrap align-items-center mb-4">
+                                            <h5 class="card-title me-2 fs-21 almarenamonolight-type">Leads Converted
+                                            </h5>
+                                            <!--<div class="ms-auto">
+                                                <div>
+                                                    <button type="button"
+                                                        class="btn bg-soft-gunmetal btn-sm fs-13 gilroymedium-type text-white"
+                                                        onclick="switchtab(this,'#tab01','#tab02')">
+                                                        Daily
+                                                    </button>
+                                                    <button type="button"
+                                                        class="btn  btn-sm fs-13 gilroymedium-type text-white"
+                                                        onclick="switchtab(this,'#tab02','#tab01')">
+                                                        Weekly
+                                                    </button>
+        
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                        <div id="tab01" class="d-block">
+
+                                            <div id="column_chart_new_accounts" data-colors='["#E33399","#2D8CFF"]'
+                                                class="apex-charts" dir="ltr">
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                                <!--end card-->
+                            </div>
+                            <!--Journal-->
+                            <div class="col-xl-12 col-lg-12">
+                                <div class="card">
+
+
+
+
+                                    <div class="card-body ">
+
+                                        <div class="d-flex flex-wrap align-items-left flex-column mb-3 ">
+                                            <h5 class="card-title me-2 almarenamonolight-type fs-21 mb-0">Journal</h5>
+
+
+                                        </div>
+                                        <span class="mb-2  gilroymedium-type fs-13 color-color1">Recent
+                                            activities</span>
+                                        <div class="px-3 pt-2" data-simplebar style="max-height: 145px;">
+                                            <ul class="list-unstyled activity-wid mb-0 journel2 ">
+
+                                                <li class="activity-list activity-border">
+                                                    <div class="activity-icon avatar-sm me-3">
+                                                        <span class="avatar-title   rounded-circle">
+                                                            <!--<i class="bx bx-bitcoin font-size-24"></i>-->
+                                                            <img class="rounded-circle avatar-md"
+                                                                src="assets/images/users/firasmonzer.png" alt="">
+                                                        </span>
+                                                    </div>
+                                                    <div class="timeline-list-item flex-grow-1">
+                                                        <div class="d-flex">
+                                                            <div class="flex-grow-1 overflow-hidden me-4">
+                                                                <h5 class="font-size-14 mb-1 gilroymedium-type fs-15">
+                                                                    Firas
+                                                                    Monzer</h5>
+                                                                <p
+                                                                    class="text-truncate color-color1 font-size-13 gilroymedium-type fs-12 d-flex justify-content-between mb-0">
+                                                                    Added
+                                                                    Comments to ticket: 507059
+
+                                                                    <span class="flex-shrink-0 text-end me-3">
+                                                                        <svg width="15" height="15" viewBox="0 0 15 15"
+                                                                            fill="none"
+                                                                            xmlns="http://www.w3.org/2000/svg">
+                                                                            <path
+                                                                                d="M13.75 7.5C13.75 10.95 10.95 13.75 7.5 13.75C4.05 13.75 1.25 10.95 1.25 7.5C1.25 4.05 4.05 1.25 7.5 1.25C10.95 1.25 13.75 4.05 13.75 7.5Z"
+                                                                                stroke="#9C9C9C" stroke-width="1.5"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                            <path
+                                                                                d="M9.81875 9.48751L7.88125 8.33126C7.54375 8.13126 7.26875 7.65001 7.26875 7.25626V4.69376"
+                                                                                stroke="var(--color1)"
+                                                                                stroke-width="1.5"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                        </svg> <span class="ms-1 color-color1">3 hr
+                                                                            ago</span>
+                                                                    </span>
+
+                                                                </p>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="activity-list activity-border">
+                                                    <div class="activity-icon avatar-sm me-3">
+                                                        <span class="avatar-title   rounded-circle">
+                                                            <!--<i class="bx bx-bitcoin font-size-24"></i>-->
+                                                            <img class="rounded-circle avatar-md"
+                                                                src="assets/images/users/firasmonzer.png" alt="">
+                                                        </span>
+                                                    </div>
+                                                    <div class="timeline-list-item flex-grow-1">
+                                                        <div class="d-flex">
+                                                            <div class="flex-grow-1 overflow-hidden me-4">
+                                                                <h5 class="font-size-14 mb-1 gilroymedium-type fs-15">
+                                                                    Firas
+                                                                    Monzer</h5>
+                                                                <p
+                                                                    class="text-truncate color-color1 font-size-13 gilroymedium-type fs-12 d-flex justify-content-between mb-0">
+                                                                    Added
+                                                                    Comments to ticket: 507059
+
+                                                                    <span class="flex-shrink-0 text-end me-3">
+                                                                        <svg width="15" height="15" viewBox="0 0 15 15"
+                                                                            fill="none"
+                                                                            xmlns="http://www.w3.org/2000/svg">
+                                                                            <path
+                                                                                d="M13.75 7.5C13.75 10.95 10.95 13.75 7.5 13.75C4.05 13.75 1.25 10.95 1.25 7.5C1.25 4.05 4.05 1.25 7.5 1.25C10.95 1.25 13.75 4.05 13.75 7.5Z"
+                                                                                stroke="#9C9C9C" stroke-width="1.5"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                            <path
+                                                                                d="M9.81875 9.48751L7.88125 8.33126C7.54375 8.13126 7.26875 7.65001 7.26875 7.25626V4.69376"
+                                                                                stroke="var(--color1)"
+                                                                                stroke-width="1.5"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                        </svg> <span class="ms-1 color-color1">3 hr
+                                                                            ago</span>
+                                                                    </span>
+
+                                                                </p>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+
+
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- end card body -->
+                                </div>
+                                <!-- end card -->
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!--Row2-->
+
+                <div class="row">
+
+
+                    
+                    
+                </div>
+                <!-- end col -->
+
+
+
+            </div>
+        </div>
+
+
+
+
+
+
+
+
+
+
+
+
+    </div>
+    <!-- container-fluid -->
+</div>
+<!-- End Page-content -->
+
+
+
+<!--@@include("partials/footer.html")-->
+</div>
+<!-- end main content-->
+
+</div>
+<!-- END layout-wrapper -->
+
+
+
+<!--Popup common -->
+@@include("partials/popup-insta.html")
+@@include("partials/popup-linkedin.html")
+@@include("partials/popup-twitter.html")
+@@include("partials/popup-facebook.html")
+@@include("partials/popup-yt.html")
+@@include("partials/right-sidebar.html")
+@@include("partials/vendor-scripts.html")
+
+<!-- apexcharts -->
+<script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+<!-- dashboard init -->
+<script src="assets/js/pages/dashboardsales.init.js"></script>
+
+<script src="assets/js/app.js"></script>
+
+
+
+</body>
+
+</html>

@@ -1,0 +1,2 @@
+$(document).ready(function(){
+    var a=$("#datatableseminar-confirm").DataTable({responsive:!0,ordering:!0,info:!0,fixedHeader:!0});$("#myinputsearch-semconf").keyup(function(){a.search($(this).val()).draw()});let e=flatpickr("#todate-semr",{allowInput:!0,dateFormat:"Y-m-d",altFormat:"Y-m-d",mode:"single",enableTime:!1,altInput:!0}),t=flatpickr("#fromdate-semr",{allowInput:!0,dateFormat:"Y-m-d",altFormat:"Y-m-d",mode:"single",altInput:!0});$("#load-btn-sc").click(function(){t.clear(),e.clear(),flatpickr.clear()})});

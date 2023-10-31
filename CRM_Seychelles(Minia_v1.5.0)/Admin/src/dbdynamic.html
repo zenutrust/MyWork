@@ -1,0 +1,1360 @@
+@@include("partials/main.html")
+
+<head>
+
+    @@include("partials/title-meta.html", {"title": "Dashboard"})
+
+    <!-- plugin css -->
+    <!--<link href="assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet"
+        type="text/css" />-->
+
+    @@include("partials/head-css.html")
+
+    <style>
+
+        li.box .card-body{
+
+            display: none;
+        }
+        .row .box .item>span.link{
+
+            display: none;
+        } 
+         li.box .card-body, li.box .item>span.link{padding: 0.4rem 1.5rem 0.4rem 3.3rem;
+    font-size: .85rem;
+    color: var(--bs-sidebar-menu-sub-item-color);}
+    </style>
+
+</head>
+
+@@include("partials/body.html")
+
+<!-- Begin page -->
+<div id="layout-wrapper">
+
+
+    @@include("partials/menutc.html")
+
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="main-content">
+
+        <div class="page-content" id="sales">
+            <div class="container-fluid">
+                <!--container-fluid px-md-5 me-md5-->
+
+                @@include("partials/page-title.html", {"pagetitle": "Dashboard", "title": "Analytics Overview"})
+                <!--Analytics overview-->
+                <div class="row">
+              
+            
+                    <div class="col-xxl-4  col-lg-4">
+                       
+                        <div class="card card-h-100 box"    class="h-100">
+
+                            <button class="btn btn-outline-light btn-lg ms-3"> <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M10 18.3332C14.5833 18.3332 18.3333 14.5832 18.3333 9.99984C18.3333 5.4165 14.5833 1.6665 10 1.6665C5.41667 1.6665 1.66667 5.4165 1.66667 9.99984C1.66667 14.5832 5.41667 18.3332 10 18.3332Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M6.66667 10H13.3333" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                <path d="M10 13.3332V6.6665" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"></path>
+                                </svg>
+                                
+                            </button>
+
+                               
+                               
+                            
+                        </div>
+
+
+                    </div>
+                   
+                </div>
+                <!--Row1-->
+                <div class="row">
+                    <!--New Accounts-->
+                    <div class="col-xl-6">
+                        <div class="card card-h-100">
+
+
+
+                            <div class="card-body">
+
+
+                                <div class="d-flex flex-wrap align-items-center mb-4">
+                                    <h5 class="card-title me-2 almarenamonolight-type fs-21">New Accounts</h5>
+                                    <div class="ms-auto">
+                                        <div>
+                                            <a href="" class=" mb-0 my-n1  gilorymedium-type fs-15"
+                                                style="color: var(--color1);">Sales graph this week</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="  text-center d-none ">
+
+                                    <img src="assets/images/nodata/nodata.png" alt="">
+
+
+
+                                    <p class="gilory-regular-type fs-20 mt-2">Webinars this week not
+                                        sheduled</p>
+
+                                </div>
+
+                                <div id="spline_area_new_accounts"
+                                    data-colors='["#FF0000", "#06C3FF","#DD9406","#39AA7B"]'
+                                    class="apex-charts d-flex card-h-100 align-items-center" dir="ltr"></div>
+                            </div>
+                        </div>
+                        <!--end card-->
+                    </div>
+
+                    <div class="col-xl-6">
+
+
+                        <div class="row">
+
+                            <!--Tickets-->
+                            <div class="col-xl-6 col-lg-6  ">
+
+                                <div class="card card-h-100">
+                                    <div class="card-body">
+
+                                        <div class="d-flex flex-wrap align-items-center mb-4">
+                                            <h5 class="card-title me-2 almarenamonolight-type fs-21"> Tickets</h5>
+                                            <div class="ms-auto">
+                                                <div>
+                                                    <button type="button"
+                                                        class="btn bg-soft-gunmetal  text-white btn-sm fs-13 gilroyregular-type almarenamonolight-type"
+                                                        onclick="btnclickactive(this,'.bg-soft-gunmetal')">
+                                                        Daily
+                                                    </button>
+                                                    <button type="button"
+                                                        class="btn  btn-sm  text-white fs-13 gilroyregular-type"
+                                                        onclick="btnclickactive(this,'.bg-soft-gunmetal')" o="">
+                                                        Weekly
+                                                    </button>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class="  text-center  d-none">
+
+                                            <img src="assets/images/nodata/nodata.png" alt="" style="max-height: 80px;">
+
+
+
+                                            <p class="gilory-regular-type fs-20 mt-2">Tickets not
+                                                sheduled</p>
+
+                                        </div>
+                                        <div id="tickets" data-colors='["#B750BE","#DD9406","#3AACFF"]'
+                                            class="apex-charts " dir="ltr">
+                                        </div>
+                                    </div>
+                                </div>
+
+
+                            </div>
+                            <!--Leads Converted-->
+                            <div class="col-xl-6 col-lg-6">
+                                <div class="card card-h-100">
+
+                                    <div class="card-body">
+                                        <div class="d-flex flex-wrap align-items-center mb-4">
+                                            <h5 class="card-title me-2 fs-21 almarenamonolight-type">Leads Converted
+                                            </h5>
+                                            <!--<div class="ms-auto">
+                                                <div>
+                                                    <button type="button"
+                                                        class="btn bg-soft-gunmetal btn-sm fs-13 gilroymedium-type text-white"
+                                                        onclick="switchtab(this,'#tab01','#tab02')">
+                                                        Daily
+                                                    </button>
+                                                    <button type="button"
+                                                        class="btn  btn-sm fs-13 gilroymedium-type text-white"
+                                                        onclick="switchtab(this,'#tab02','#tab01')">
+                                                        Weekly
+                                                    </button>
+        
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                        <div id="tab01" class="d-block">
+                                            <div class="  text-center d-none ">
+
+                                                <img src="assets/images/nodata/nodata.png" alt=""
+                                                    style="max-height: 80px;">
+
+
+
+                                                <p class="gilory-regular-type fs-20 mt-2">Leads not
+                                                    Generated</p>
+
+                                            </div>
+
+                                            <div id="column_chart_new_accounts" data-colors='["#E33399","#2D8CFF"]'
+                                                class="apex-charts  " dir="ltr">
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                                <!--end card-->
+                            </div>
+                            <!--Journal-->
+                            <div class="col-xl-12 col-lg-12">
+                                <div class="card">
+
+
+
+
+                                    <div class="card-body ">
+
+                                        <div class="d-flex flex-wrap align-items-left flex-column mb-3 ">
+                                            <h5 class="card-title me-2 almarenamonolight-type fs-21 mb-0">Journal</h5>
+
+
+                                        </div>
+                                        <span class="mb-4  gilroymedium-type fs-13 color-color1">Recent
+                                            activities</span>
+                                        <div class="ps-3 pt-2 " data-simplebar
+                                            style="max-height: 145px;margin-left: -20px;">
+                                            <ul class="list-unstyled activity-wid mb-0 journel2 ">
+
+                                                <li class="activity-list activity-border ">
+                                                    <div class="activity-icon avatar-sm me-3">
+                                                        <span class="avatar-title   rounded-circle">
+                                                            <!--<i class="bx bx-bitcoin font-size-24"></i>-->
+                                                            <img class="rounded-circle avatar-md"
+                                                                src="assets/images/users/firasmonzer.png" alt="">
+                                                        </span>
+                                                    </div>
+                                                    <div class="timeline-list-item flex-grow-1">
+                                                        <div class="d-flex">
+                                                            <div class="flex-grow-1 overflow-hidden me-4">
+                                                                <h5 class="font-size-14 mb-1 gilroymedium-type fs-15">
+                                                                    Firas
+                                                                    Monzer</h5>
+                                                                <p
+                                                                    class="text-truncate color-color1 font-size-13 gilroymedium-type fs-12 d-flex justify-content-between mb-0">
+                                                                    Added
+                                                                    Comments to ticket: 507059
+
+                                                                    <span class="flex-shrink-0 text-end me-3">
+                                                                        <svg width="15" height="15" viewBox="0 0 15 15"
+                                                                            fill="none"
+                                                                            xmlns="http://www.w3.org/2000/svg">
+                                                                            <path
+                                                                                d="M13.75 7.5C13.75 10.95 10.95 13.75 7.5 13.75C4.05 13.75 1.25 10.95 1.25 7.5C1.25 4.05 4.05 1.25 7.5 1.25C10.95 1.25 13.75 4.05 13.75 7.5Z"
+                                                                                stroke="#9C9C9C" stroke-width="1.5"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                            <path
+                                                                                d="M9.81875 9.48751L7.88125 8.33126C7.54375 8.13126 7.26875 7.65001 7.26875 7.25626V4.69376"
+                                                                                stroke="var(--color1)"
+                                                                                stroke-width="1.5"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                        </svg> <span class="ms-1 color-color1">3 hr
+                                                                            ago</span>
+                                                                    </span>
+
+                                                                </p>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="activity-list activity-border ">
+                                                    <div class="activity-icon avatar-sm me-3">
+                                                        <span class="avatar-title   rounded-circle">
+                                                            <!--<i class="bx bx-bitcoin font-size-24"></i>-->
+                                                            <img class="rounded-circle avatar-md"
+                                                                src="assets/images/users/firasmonzer.png" alt="">
+                                                        </span>
+                                                    </div>
+                                                    <div class="timeline-list-item flex-grow-1">
+                                                        <div class="d-flex">
+                                                            <div class="flex-grow-1 overflow-hidden me-4">
+                                                                <h5 class="font-size-14 mb-1 gilroymedium-type fs-15">
+                                                                    Firas
+                                                                    Monzer</h5>
+                                                                <p
+                                                                    class="text-truncate color-color1 font-size-13 gilroymedium-type fs-12 d-flex justify-content-between mb-0">
+                                                                    Added
+                                                                    Comments to ticket: 507059
+
+                                                                    <span class="flex-shrink-0 text-end me-3">
+                                                                        <svg width="15" height="15" viewBox="0 0 15 15"
+                                                                            fill="none"
+                                                                            xmlns="http://www.w3.org/2000/svg">
+                                                                            <path
+                                                                                d="M13.75 7.5C13.75 10.95 10.95 13.75 7.5 13.75C4.05 13.75 1.25 10.95 1.25 7.5C1.25 4.05 4.05 1.25 7.5 1.25C10.95 1.25 13.75 4.05 13.75 7.5Z"
+                                                                                stroke="#9C9C9C" stroke-width="1.5"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                            <path
+                                                                                d="M9.81875 9.48751L7.88125 8.33126C7.54375 8.13126 7.26875 7.65001 7.26875 7.25626V4.69376"
+                                                                                stroke="var(--color1)"
+                                                                                stroke-width="1.5"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                        </svg> <span class="ms-1 color-color1">3 hr
+                                                                            ago</span>
+                                                                    </span>
+
+                                                                </p>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+
+
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- end card body -->
+                                </div>
+                                <!-- end card -->
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!--Row2-->
+                <!--<div class="row">
+
+
+                  
+                    <div class="col-xl-3  col-md-6">
+          
+                        <div class="card card-h-100">
+                    
+                            <div class="card-body">
+                                <div class="d-flex flex-wrap align-items-center mb-4">
+                                    <h5 class="card-title me-2 almarenamonolight-type fs-21">Today’s Meetings</h5>
+                                </div>
+                                <div data-simplebar="" style="max-height: 320px;">
+
+                                    <div class="  text-center d-none">
+
+                                        <img src="assets/images/nodata/nodata.png" alt="">
+
+
+
+                                        <p class="gilory-regular-type fs-20 mt-2">No Meeting
+                                            sheduled</p>
+
+                                    </div>
+
+
+                               
+                                    <div class=" mb-3 px-3 py-3 card-inside ">
+
+
+                                        <div>
+                                            <div class="d-flex justify-content-between mb-1 gilory-medium-type">
+
+                                                <span class="fs-14 m-0 p-0 flex-grow-1 color-color1">9: 30 AM</span>
+                                            
+                                              
+                
+                                                <div class="dropdown d-inline-block">
+                                                    <a class="ms-2 " href="#" id="meeting-dd1" data-bs-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false" class="position-relative">
+                                                        <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M12.8333 4.99215C12.8333 3.98381 12.0083 3.15881 10.9999 3.15881C9.99159 3.15881 9.16659 3.98381 9.16659 4.99215C9.16659 6.00048 9.99159 6.82548 10.9999 6.82548C12.0083 6.82548 12.8333 6.00048 12.8333 4.99215Z"
+                                                                stroke="#73759D" stroke-width="1.5" />
+                                                            <path
+                                                                d="M12.8333 17.8255C12.8333 16.8172 12.0083 15.9922 10.9999 15.9922C9.99159 15.9922 9.16659 16.8172 9.16659 17.8255C9.16659 18.8339 9.99159 19.6589 10.9999 19.6589C12.0083 19.6589 12.8333 18.8339 12.8333 17.8255Z"
+                                                                stroke="#73759D" stroke-width="1.5" />
+                                                            <path
+                                                                d="M12.8333 11.409C12.8333 10.4007 12.0083 9.57568 10.9999 9.57568C9.99159 9.57568 9.16659 10.4007 9.16659 11.409C9.16659 12.4173 9.99159 13.2423 10.9999 13.2424C12.0083 13.2424 12.8333 12.4174 12.8333 11.409Z"
+                                                                stroke="#73759D" stroke-width="1.5" />
+                                                        </svg>
+
+
+                                                    </a>
+
+                                                    
+
+                                                  
+                                                   
+                                                    <div class="dropdown-menu dropdown-menu-sm dropdown-menu-end p-0 border-0 " 
+                                                        aria-labelledby="meeting-dd1"
+                                                        style="background-color: var(--bs-card-bg);">
+                                                        <div class=" py-2 px-2 d-flex flex-column">
+                                                            <button type="button"
+                                                                class="btn btn-md btn-bg-soft-color1 mb-2 fs-14 gilory-semibold-type bg-soft-purple text-white ">Send
+                                                                Reminder</button>
+                                                            <button type="button"
+                                                                class="btn btn-md btn-bg-soft-color1   fs-14 gilory-semibold-type bg-soft-purple text-white">Cancel
+                                                                Meeting</button>
+                                                        </div>
+
+
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <h5 class="mb-0 fs-15  mb-2 gilory-semibold-type">Meeting with noura</h5>
+                                            <div
+                                                class="d-flex justify-content-between align-items-center  gilroymedium-type flex-wrap flex-xxl-nowrap">
+
+                                                <p class="mb-0   flex-grow-1 color-color1"><svg width="20" height="21"
+                                                        viewBox="0 0 20 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M9.9999 11.7532C11.4358 11.7532 12.5999 10.5495 12.5999 9.0646C12.5999 7.57975 11.4358 6.37604 9.9999 6.37604C8.56396 6.37604 7.3999 7.57975 7.3999 9.0646C7.3999 10.5495 8.56396 11.7532 9.9999 11.7532Z"
+                                                            stroke="#73759D" stroke-width="1.5" />
+                                                        <path
+                                                            d="M3.01675 7.49631C4.65842 0.0338179 15.3501 0.0424353 16.9834 7.50493C17.9418 11.8825 15.3084 15.5879 13.0001 17.88C11.3251 19.5518 8.67508 19.5518 6.99175 17.88C4.69175 15.5879 2.05842 11.8738 3.01675 7.49631Z"
+                                                            stroke="#73759D" stroke-width="1.5" />
+                                                    </svg>
+                                                    <span class="  fs-14 ">Trust capital office</span>
+                                                </p>
+                                                <span
+                                                    class="fs-14 d-block ms-xxl-2 mt-xxl-0 ms-0 mt-2 text-xxl-end">Ticket
+                                                    : 65010</span>
+
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+                                 
+                                      <div class=" mb-3 px-3 py-3 card-inside ">
+
+
+                                        <div>
+                                            <div class="d-flex justify-content-between mb-1 gilory-medium-type">
+
+                                                <span class="fs-14 m-0 p-0 flex-grow-1 color-color1">9: 30 AM</span>
+                                            
+                                              
+                                               
+                                                <div class="dropdown d-inline-block">
+                                                    <a class="ms-2 " href="#" id="meeting-dd2" data-bs-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false" class="position-relative">
+                                                        <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M12.8333 4.99215C12.8333 3.98381 12.0083 3.15881 10.9999 3.15881C9.99159 3.15881 9.16659 3.98381 9.16659 4.99215C9.16659 6.00048 9.99159 6.82548 10.9999 6.82548C12.0083 6.82548 12.8333 6.00048 12.8333 4.99215Z"
+                                                                stroke="#73759D" stroke-width="1.5" />
+                                                            <path
+                                                                d="M12.8333 17.8255C12.8333 16.8172 12.0083 15.9922 10.9999 15.9922C9.99159 15.9922 9.16659 16.8172 9.16659 17.8255C9.16659 18.8339 9.99159 19.6589 10.9999 19.6589C12.0083 19.6589 12.8333 18.8339 12.8333 17.8255Z"
+                                                                stroke="#73759D" stroke-width="1.5" />
+                                                            <path
+                                                                d="M12.8333 11.409C12.8333 10.4007 12.0083 9.57568 10.9999 9.57568C9.99159 9.57568 9.16659 10.4007 9.16659 11.409C9.16659 12.4173 9.99159 13.2423 10.9999 13.2424C12.0083 13.2424 12.8333 12.4174 12.8333 11.409Z"
+                                                                stroke="#73759D" stroke-width="1.5" />
+                                                        </svg>
+
+
+                                                    </a>
+
+                                                    
+
+                                                  
+                                                 
+                                                    <div class="dropdown-menu dropdown-menu-sm dropdown-menu-end p-0 border-0 " 
+                                                        aria-labelledby="meeting-dd2"
+                                                        style="background-color: var(--bs-card-bg);">
+                                                        <div class=" py-2 px-2 d-flex flex-column">
+                                                            <button type="button"
+                                                                class="btn btn-md btn-bg-soft-color1 mb-2 fs-14 gilory-semibold-type bg-soft-purple text-white ">Send
+                                                                Reminder</button>
+                                                            <button type="button"
+                                                                class="btn btn-md btn-bg-soft-color1   fs-14 gilory-semibold-type bg-soft-purple text-white">Cancel
+                                                                Meeting</button>
+                                                        </div>
+
+
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <h5 class="mb-0 fs-15  mb-2 gilory-semibold-type">Meeting with noura</h5>
+                                            <div
+                                                class="d-flex justify-content-between align-items-center  gilroymedium-type flex-wrap flex-xxl-nowrap">
+
+                                                <p class="mb-0   flex-grow-1 color-color1"><svg width="20" height="21"
+                                                        viewBox="0 0 20 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M9.9999 11.7532C11.4358 11.7532 12.5999 10.5495 12.5999 9.0646C12.5999 7.57975 11.4358 6.37604 9.9999 6.37604C8.56396 6.37604 7.3999 7.57975 7.3999 9.0646C7.3999 10.5495 8.56396 11.7532 9.9999 11.7532Z"
+                                                            stroke="#73759D" stroke-width="1.5" />
+                                                        <path
+                                                            d="M3.01675 7.49631C4.65842 0.0338179 15.3501 0.0424353 16.9834 7.50493C17.9418 11.8825 15.3084 15.5879 13.0001 17.88C11.3251 19.5518 8.67508 19.5518 6.99175 17.88C4.69175 15.5879 2.05842 11.8738 3.01675 7.49631Z"
+                                                            stroke="#73759D" stroke-width="1.5" />
+                                                    </svg>
+                                                    <span class="  fs-14 ">Trust capital office</span>
+                                                </p>
+                                                <span
+                                                    class="fs-14 d-block ms-xxl-2 mt-xxl-0 ms-0 mt-2 text-xxl-end">Ticket
+                                                    : 65010</span>
+
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+                                     
+                                </div>
+
+
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+
+          
+                    <div class="col-xl-3  col-md-6">
+                
+                        <div class="card card-h-100">
+                           
+                            <div class="card-body">
+                                <div class="d-flex flex-wrap align-items-center mb-4">
+                                    <h5 class="card-title me-2 almarenamonolight-type fs-21">Reminders</h5>
+                                </div>
+
+                                <div data-simplebar="" style="max-height:320px ;">
+                           
+                                    <div class="  text-center d-none ">
+
+                                        <img src="assets/images/nodata/nodata.png" alt="" style="">
+
+
+
+                                        <p class="gilory-regular-type fs-20 mt-2">No Reminders
+                                            sheduled</p>
+
+                                    </div>
+                                 
+                                    <h4 class="fs-14 gilroymedium-type text-info">Pinned</h4>
+
+
+
+
+                                 
+                                    <div class=" mb-3 px-3 py-3 card ">
+
+
+                                        <div>
+
+
+                                            <h5 class=" fs-15  mb-1 gilory-semibold-type">Appointment</h5>
+                                            <div
+                                                class="d-flex justify-content-between align-items-center  gilroymedium-type flex-wrap  flex-xxl-nowrap">
+
+                                                <p class="mb-0  fs-14  color-color1 me-2">
+                                                    <span class=" ">Lorem Ipsum has been the industry's standard dummy
+                                                        text</span>
+                                                </p>
+                                                <a href=""
+                                                    class="btn btn-sm btn-outline-success gilroymedium-type flex-shrink-0  mt-2 mt-xxl-0">5
+                                                    Sep, 5:00</a>
+
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+
+
+                                    <h4 class="fs-14 gilroymedium-type text-warning">Up Coming </h4>
+
+
+                            
+                                    <div class=" mb-3 px-3 py-3 card ">
+
+
+                                        <div>
+
+
+                                            <h5 class=" fs-15  mb-1 gilory-semibold-type">Appointment</h5>
+                                            <div
+                                                class="d-flex justify-content-between align-items-center  gilroymedium-type flex-wrap  flex-xxl-nowrap">
+
+                                                <p class="mb-0  fs-14  color-color1 me-2">
+                                                    <span class=" ">Lorem Ipsum has been the industry's standard dummy
+                                                        text</span>
+                                                </p>
+                                                <a href=""
+                                                    class="btn btn-sm btn-outline-success gilroymedium-type flex-shrink-0  mt-2 mt-xxl-0">5
+                                                    Sep, 5:00</a>
+
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+                         
+                                    <div class=" mb-3 px-3 py-3 card ">
+
+
+                                        <div>
+
+
+                                            <h5 class=" fs-15  mb-1 gilory-semibold-type">Appointment</h5>
+                                            <div
+                                                class="d-flex justify-content-between align-items-center  gilroymedium-type flex-wrap  flex-xxl-nowrap">
+
+                                                <p class="mb-0  fs-14  color-color1 me-2">
+                                                    <span class=" ">Lorem Ipsum has been the industry's standard dummy
+                                                        text</span>
+                                                </p>
+                                                <a href=""
+                                                    class="btn btn-sm btn-outline-success gilroymedium-type flex-shrink-0  mt-2 mt-xxl-0">5
+                                                    Sep, 5:00</a>
+
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+
+
+
+
+                                </div>
+
+
+
+
+
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+
+            
+                    <div class="col-xl-3  col-md-6 d-none ">
+                  
+                        <div class="card card-h-100">
+                        
+                            <div class="card-body">
+                                <div class="d-flex flex-wrap align-items-center mb-4">
+                                    <h5 class="card-title me-2 almarenamonolight-type fs-21">Webinars this week</h5>
+                                </div>
+
+                                <div data-simplebar="" style="max-height:320px;overflow-x: hidden;">
+
+
+
+
+                                    <div class="row   ">
+                                
+                                        <div class="  col-xl-12 text-center d-none">
+
+                                            <img src="assets/images/nodata/nodata.png" alt="">
+
+
+
+                                            <p class="gilory-regular-type fs-20 mt-2">Webinars this week not
+                                                sheduled</p>
+
+                                        </div>
+                                      
+                                        <div class="  col-xxl-6  col-xl-12  col-md-6 mb-3   ">
+
+                                            <div class="position-relative rounded-3"
+                                                style="height: 150px;overflow:hidden;background-image: url('assets/images/webinars/web1.png');">
+
+                                                <div class="fade-overlay d-flex align-items-end ">
+                                                    <div class="px-2 py-2">
+
+                                                        <span class="color-color1 fs-12 gilory-medium-type">12.00
+                                                            PM</span>
+                                                        <h2 class="gilory-semibold-type fs-14">Forex Trading</h2>
+                                                    </div>
+
+
+
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+                                    
+                                        <div class="  col-xxl-6   col-xl-12 col-md-6 mb-3   ">
+
+                                            <div class="position-relative rounded-3"
+                                                style="height: 150px;overflow:hidden;background-image: url('assets/images/webinars/web3.png');">
+
+                                                <div class="fade-overlay d-flex align-items-end ">
+                                                    <div class="px-2 py-2">
+
+                                                        <span class="color-color1 fs-12 gilory-medium-type">12.00
+                                                            PM</span>
+                                                        <h2 class="gilory-semibold-type fs-14">Forex Trading</h2>
+                                                    </div>
+
+
+
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+                                  
+                                        <div class="  col-xxl-6   col-xl-12 col-md-6 mb-3   ">
+
+                                            <div class="position-relative rounded-3"
+                                                style="height: 150px;overflow:hidden;background-image: url('assets/images/webinars/web4.png');">
+
+                                                <div class="fade-overlay d-flex align-items-end ">
+                                                    <div class="px-2 py-2">
+
+                                                        <span class="color-color1 fs-12 gilory-medium-type">12.00
+                                                            PM</span>
+                                                        <h2 class="gilory-semibold-type fs-14">Forex Trading</h2>
+                                                    </div>
+
+
+
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+                                     
+                                        <div class="   col-xxl-6  col-xl-12  col-md-6 mb-3   ">
+
+                                            <div class="position-relative rounded-3"
+                                                style="height: 150px;overflow:hidden;background-image: url('assets/images/webinars/web2.png');">
+
+                                                <div class="fade-overlay d-flex align-items-end ">
+                                                    <div class="px-2 py-2">
+
+                                                        <span class="color-color1 fs-12 gilory-medium-type">12.00
+                                                            PM</span>
+                                                        <h2 class="gilory-semibold-type fs-14">Forex Trading</h2>
+                                                    </div>
+
+
+
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+
+
+
+
+
+
+                                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                                </div>
+
+
+
+
+
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+                        </div>
+                    </div>
+
+                    
+                    <div class="col-xl-6 col-md-6">
+
+                        <div class="card border-top-0  card-h-100 "
+                            style="border-left: 1px solid transparent;border-right: 1px solid transparent;">
+                            <div class="row">
+
+                                <div class="col-xxl-6 col-md-6">
+                                  
+                                    <div class="card card-h-100">
+
+
+                                        <div class="card-body ">
+
+
+                                            <div class="d-flex flex-no-wrap align-items-center ">
+                                                <h5 class="card-title me-2 almarenamonolight-type fs-21">Webinars this
+                                                    week
+                                                </h5>
+                                                <div class="ms-auto">
+                                                    <div class="dropdown d-inline-block">
+                                                        <a class="  position-relative " id="live-chats-dropdown"
+                                                            data-bs-toggle="dropdown" aria-haspopup="true"
+                                                            aria-expanded="false">
+
+                                                            <span
+                                                                class="badge bg-info rounded-pill rounded-circle p-2 fs-11">04</span>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                                                            aria-labelledby="live-chats-dropdown">
+                                                            <div class="p-3">
+                                                                <div class="row align-items-center">
+                                                                    <div class="col">
+                                                                        <h6 class="m-0"> Notifications </h6>
+                                                                    </div>
+                                                                    <div class="col-auto">
+                                                                        <a href="#!"
+                                                                            class="small text-reset text-decoration-underline">
+                                                                            Unread (3)</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div data-simplebar="init" style="max-height: 230px;">
+                                                                <div class="simplebar-wrapper" style="margin: 0px;">
+                                                                    <div class="simplebar-height-auto-observer-wrapper">
+                                                                        <div class="simplebar-height-auto-observer">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="simplebar-mask">
+                                                                        <div class="simplebar-offset"
+                                                                            style="right: 0px; bottom: 0px;">
+                                                                            <div class="simplebar-content-wrapper"
+                                                                                style="height: auto; overflow: hidden;">
+                                                                                <div class="simplebar-content"
+                                                                                    style="padding: 0px;">
+                                                                                    <a href="#!"
+                                                                                        class="text-reset notification-item">
+                                                                                        <div class="d-flex">
+                                                                                            <div
+                                                                                                class="flex-shrink-0 me-3">
+                                                                                                <img src="assets/images/users/avatar-3.jpg"
+                                                                                                    class="rounded-circle avatar-sm"
+                                                                                                    alt="user-pic">
+                                                                                            </div>
+                                                                                            <div class="flex-grow-1">
+                                                                                                <h6 class="mb-1">James
+                                                                                                    Lemire
+                                                                                                </h6>
+                                                                                                <div
+                                                                                                    class="font-size-13 text-muted">
+                                                                                                    <p class="mb-1">It
+                                                                                                        will seem
+                                                                                                        like simplified
+                                                                                                        English.</p>
+                                                                                                    <p class="mb-0"><i
+                                                                                                            class="mdi mdi-clock-outline"></i>
+                                                                                                        <span>1
+                                                                                                            hour
+                                                                                                            ago</span>
+                                                                                                    </p>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </a>
+                                                                                    <a href="#!"
+                                                                                        class="text-reset notification-item">
+                                                                                        <div class="d-flex">
+                                                                                            <div
+                                                                                                class="flex-shrink-0 avatar-sm me-3">
+                                                                                                <span
+                                                                                                    class="avatar-title bg-primary rounded-circle font-size-16">
+                                                                                                    <i
+                                                                                                        class="bx bx-cart"></i>
+                                                                                                </span>
+                                                                                            </div>
+                                                                                            <div class="flex-grow-1">
+                                                                                                <h6 class="mb-1">Your
+                                                                                                    order is
+                                                                                                    placed</h6>
+                                                                                                <div
+                                                                                                    class="font-size-13 text-muted">
+                                                                                                    <p class="mb-1">If
+                                                                                                        several
+                                                                                                        languages
+                                                                                                        coalesce the
+                                                                                                        grammar</p>
+                                                                                                    <p class="mb-0"><i
+                                                                                                            class="mdi mdi-clock-outline"></i>
+                                                                                                        <span>3
+                                                                                                            min
+                                                                                                            ago</span>
+                                                                                                    </p>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </a>
+                                                                                    <a href="#!"
+                                                                                        class="text-reset notification-item">
+                                                                                        <div class="d-flex">
+                                                                                            <div
+                                                                                                class="flex-shrink-0 avatar-sm me-3">
+                                                                                                <span
+                                                                                                    class="avatar-title bg-success rounded-circle font-size-16">
+                                                                                                    <i
+                                                                                                        class="bx bx-badge-check"></i>
+                                                                                                </span>
+                                                                                            </div>
+                                                                                            <div class="flex-grow-1">
+                                                                                                <h6 class="mb-1">Your
+                                                                                                    item is
+                                                                                                    shipped</h6>
+                                                                                                <div
+                                                                                                    class="font-size-13 text-muted">
+                                                                                                    <p class="mb-1">If
+                                                                                                        several
+                                                                                                        languages
+                                                                                                        coalesce the
+                                                                                                        grammar</p>
+                                                                                                    <p class="mb-0"><i
+                                                                                                            class="mdi mdi-clock-outline"></i>
+                                                                                                        <span>3
+                                                                                                            min
+                                                                                                            ago</span>
+                                                                                                    </p>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </a>
+
+                                                                                    <a href="#!"
+                                                                                        class="text-reset notification-item">
+                                                                                        <div class="d-flex">
+                                                                                            <div
+                                                                                                class="flex-shrink-0 me-3">
+                                                                                                <img src="assets/images/users/avatar-6.jpg"
+                                                                                                    class="rounded-circle avatar-sm"
+                                                                                                    alt="user-pic">
+                                                                                            </div>
+                                                                                            <div class="flex-grow-1">
+                                                                                                <h6 class="mb-1">Salena
+                                                                                                    Layfield
+                                                                                                </h6>
+                                                                                                <div
+                                                                                                    class="font-size-13 text-muted">
+                                                                                                    <p class="mb-1">As a
+                                                                                                        skeptical
+                                                                                                        Cambridge
+                                                                                                        friend of
+                                                                                                        mine occidental.
+                                                                                                    </p>
+                                                                                                    <p class="mb-0"><i
+                                                                                                            class="mdi mdi-clock-outline"></i>
+                                                                                                        <span>1
+                                                                                                            hour
+                                                                                                            ago</span>
+                                                                                                    </p>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="simplebar-placeholder"
+                                                                        style="width: 0px; height: 0px;"></div>
+                                                                </div>
+                                                                <div class="simplebar-track simplebar-horizontal"
+                                                                    style="visibility: hidden;">
+                                                                    <div class="simplebar-scrollbar"
+                                                                        style="transform: translate3d(0px, 0px, 0px); display: none;">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="simplebar-track simplebar-vertical"
+                                                                    style="visibility: hidden;">
+                                                                    <div class="simplebar-scrollbar"
+                                                                        style="transform: translate3d(0px, 0px, 0px); display: none;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+
+                                        </div>
+                                        
+                                    </div>
+
+                                </div>
+                                <div class="col-xxl-6 col-md-6">
+                                  
+                                    <div class="card card-h-100">
+
+
+                                        <div class="card-body ">
+
+
+                                            <div class="d-flex flex-no-wrap align-items-center ">
+                                                <h5 class="card-title me-2 almarenamonolight-type fs-21">Live chats this
+                                                    week
+                                                </h5>
+                                                <div class="ms-auto">
+                                                    <div class="dropdown d-inline-block">
+                                                        <a class="  position-relative " id="live-chats-dropdown"
+                                                            data-bs-toggle="dropdown" aria-haspopup="true"
+                                                            aria-expanded="false">
+
+                                                            <span
+                                                                class="badge bg-success rounded-pill rounded-circle p-2 fs-11">04</span>
+                                                        </a>
+                                                       
+                                                    </div>
+                                                </div>
+                                                 <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                                                            aria-labelledby="live-chats-dropdown">
+                                                            <div class="p-3">
+                                                                <div class="row align-items-center">
+                                                                    <div class="col">
+                                                                        <h6 class="m-0"> Notifications </h6>
+                                                                    </div>
+                                                                    <div class="col-auto">
+                                                                        <a href="#!"
+                                                                            class="small text-reset text-decoration-underline">
+                                                                            Unread (3)</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div data-simplebar="init" style="max-height: 230px;">
+                                                                <div class="simplebar-wrapper" style="margin: 0px;">
+                                                                    <div class="simplebar-height-auto-observer-wrapper">
+                                                                        <div class="simplebar-height-auto-observer">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="simplebar-mask">
+                                                                        <div class="simplebar-offset"
+                                                                            style="right: 0px; bottom: 0px;">
+                                                                            <div class="simplebar-content-wrapper"
+                                                                                style="height: auto; overflow: hidden;">
+                                                                                <div class="simplebar-content"
+                                                                                    style="padding: 0px;">
+                                                                                    <a href="#!"
+                                                                                        class="text-reset notification-item">
+                                                                                        <div class="d-flex">
+                                                                                            <div
+                                                                                                class="flex-shrink-0 me-3">
+                                                                                                <img src="assets/images/users/avatar-3.jpg"
+                                                                                                    class="rounded-circle avatar-sm"
+                                                                                                    alt="user-pic">
+                                                                                            </div>
+                                                                                            <div class="flex-grow-1">
+                                                                                                <h6 class="mb-1">James
+                                                                                                    Lemire
+                                                                                                </h6>
+                                                                                                <div
+                                                                                                    class="font-size-13 text-muted">
+                                                                                                    <p class="mb-1">It
+                                                                                                        will seem
+                                                                                                        like simplified
+                                                                                                        English.</p>
+                                                                                                    <p class="mb-0"><i
+                                                                                                            class="mdi mdi-clock-outline"></i>
+                                                                                                        <span>1
+                                                                                                            hour
+                                                                                                            ago</span>
+                                                                                                    </p>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </a>
+                                                                                    <a href="#!"
+                                                                                        class="text-reset notification-item">
+                                                                                        <div class="d-flex">
+                                                                                            <div
+                                                                                                class="flex-shrink-0 avatar-sm me-3">
+                                                                                                <span
+                                                                                                    class="avatar-title bg-primary rounded-circle font-size-16">
+                                                                                                    <i
+                                                                                                        class="bx bx-cart"></i>
+                                                                                                </span>
+                                                                                            </div>
+                                                                                            <div class="flex-grow-1">
+                                                                                                <h6 class="mb-1">Your
+                                                                                                    order is
+                                                                                                    placed</h6>
+                                                                                                <div
+                                                                                                    class="font-size-13 text-muted">
+                                                                                                    <p class="mb-1">If
+                                                                                                        several
+                                                                                                        languages
+                                                                                                        coalesce the
+                                                                                                        grammar</p>
+                                                                                                    <p class="mb-0"><i
+                                                                                                            class="mdi mdi-clock-outline"></i>
+                                                                                                        <span>3
+                                                                                                            min
+                                                                                                            ago</span>
+                                                                                                    </p>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </a>
+                                                                                    <a href="#!"
+                                                                                        class="text-reset notification-item">
+                                                                                        <div class="d-flex">
+                                                                                            <div
+                                                                                                class="flex-shrink-0 avatar-sm me-3">
+                                                                                                <span
+                                                                                                    class="avatar-title bg-success rounded-circle font-size-16">
+                                                                                                    <i
+                                                                                                        class="bx bx-badge-check"></i>
+                                                                                                </span>
+                                                                                            </div>
+                                                                                            <div class="flex-grow-1">
+                                                                                                <h6 class="mb-1">Your
+                                                                                                    item is
+                                                                                                    shipped</h6>
+                                                                                                <div
+                                                                                                    class="font-size-13 text-muted">
+                                                                                                    <p class="mb-1">If
+                                                                                                        several
+                                                                                                        languages
+                                                                                                        coalesce the
+                                                                                                        grammar</p>
+                                                                                                    <p class="mb-0"><i
+                                                                                                            class="mdi mdi-clock-outline"></i>
+                                                                                                        <span>3
+                                                                                                            min
+                                                                                                            ago</span>
+                                                                                                    </p>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </a>
+
+                                                                                    <a href="#!"
+                                                                                        class="text-reset notification-item">
+                                                                                        <div class="d-flex">
+                                                                                            <div
+                                                                                                class="flex-shrink-0 me-3">
+                                                                                                <img src="assets/images/users/avatar-6.jpg"
+                                                                                                    class="rounded-circle avatar-sm"
+                                                                                                    alt="user-pic">
+                                                                                            </div>
+                                                                                            <div class="flex-grow-1">
+                                                                                                <h6 class="mb-1">Salena
+                                                                                                    Layfield
+                                                                                                </h6>
+                                                                                                <div
+                                                                                                    class="font-size-13 text-muted">
+                                                                                                    <p class="mb-1">As a
+                                                                                                        skeptical
+                                                                                                        Cambridge
+                                                                                                        friend of
+                                                                                                        mine occidental.
+                                                                                                    </p>
+                                                                                                    <p class="mb-0"><i
+                                                                                                            class="mdi mdi-clock-outline"></i>
+                                                                                                        <span>1
+                                                                                                            hour
+                                                                                                            ago</span>
+                                                                                                    </p>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="simplebar-placeholder"
+                                                                        style="width: 0px; height: 0px;"></div>
+                                                                </div>
+                                                                <div class="simplebar-track simplebar-horizontal"
+                                                                    style="visibility: hidden;">
+                                                                    <div class="simplebar-scrollbar"
+                                                                        style="transform: translate3d(0px, 0px, 0px); display: none;">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="simplebar-track simplebar-vertical"
+                                                                    style="visibility: hidden;">
+                                                                    <div class="simplebar-scrollbar"
+                                                                        style="transform: translate3d(0px, 0px, 0px); display: none;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                            </div>
+
+
+
+
+                                        </div>
+                                     
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+
+                   
+
+                           
+                            <div class="card   border-bottom-0 h-100 mb-0">
+
+
+                                <div class="card-body ">
+
+
+                                    <div class="d-flex flex-wrap align-items-center mb-2">
+                                        <h5 class="card-title me-2 almarenamonolight-type fs-21">Active Campaigns</h5>
+                                       
+                                    </div>
+
+
+
+                                    <div class="table-responsive" data-simplebar="" style="max-height:200px ">
+
+                                        <table class="table mb-0 ">
+
+                                            <thead>
+                                                <tr class="almarenamonolight-type fs-14 color-color1">
+                                                    <th>Source</th>
+                                                    <th>Duration</th>
+
+                                                    <th class="text-end">Count</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="gilroyregular-type fs-15">
+                                                <tr>
+                                                    <th scope="row">UAE campaign
+                                                        072022</th>
+                                                    <td>Nov 08-2022 / Aug 13-2022</td>
+
+                                                    <td class="text-end">22</td>
+                                                </tr>
+
+
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+                             
+                            </div>
+                    
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+              
+
+
+
+            </div>
+
+
+
+        </div>-->
+
+
+
+    </div>
+    <!-- container-fluid -->
+</div>
+<!-- End Page-content -->
+
+<!--@@include("partials/footer.html")-->
+    </div>
+<!-- end main content-->
+
+</div>
+<!-- END layout-wrapper -->
+
+<!--Popup common -->
+
+<!--@@include("partials/sales/salesperformance2.html")-->
+@@include("partials/sales/popupnot.html")
+@@include("partials/popup-insta.html")
+@@include("partials/popup-linkedin.html")
+@@include("partials/popup-twitter.html")
+@@include("partials/popup-facebook.html")
+@@include("partials/popup-yt.html")
+@@include("partials/right-sidebar.html")
+@@include("partials/vendor-scripts.html")
+
+<!-- apexcharts -->
+<script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+<!-- dashboard init -->
+<script src="assets/js/pages/dashboardsales.init.js"></script>
+
+<script src="assets/js/app.js"></script>
+<script src="assets/js/theme.js"></script>
+<script src="assets/js/pages/dragndrop1.init.js"></script>
+
+</body>
+
+</html>

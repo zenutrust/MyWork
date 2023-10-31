@@ -1,0 +1,530 @@
+@@include("partials/main.html")
+
+    <head>
+
+        @@include("partials/title-meta.html", {"title": "Dashboard"})
+        <!-- flatpickr css -->
+        <link href="assets/libs/flatpickr/flatpickr.min.css" rel="stylesheet" type="text/css">
+        <link href="https://cdn.jsdelivr.net/npm/flatpickr@latest/dist/plugins/monthSelect/style.css" rel="stylesheet" >
+        <!-- DataTables -->
+        <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+        <!-- Responsive datatable examples -->
+        <!---Commmented Now Later might needed
+            <link href="assets/libs/datatables.net-responsive-bs4/css/responsive.bootstrap4.min.css" rel="stylesheet" type="text/css" /> 
+        
+        -->   
+        @@include("partials/head-css.html")
+
+    </head>
+
+    @@include("partials/body.html")
+
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+                                                
+            @@include("partials/menutc.html")
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
+                <div class="page-content" id="sales">
+                    <div class="container-fluid"> <!--container-fluid px-md-5 me-md5-->
+
+                        <!--@@include("partials/page-title.html", {"pagetitle": "Dashboard", "title": "New Accounts"})-->
+
+                        <div class="row">
+                            <div class="col-xl-3    col-md-6 col-sm-6 ">
+                                <!-- card -->
+                                <div class="card card-h-100 ">
+                                    <!-- card body -->
+                                    <div class="card-body py-2">
+                                        <div class="">
+                                            <div class="d-flex align-items-center  flex-xl-column flex-xxl-row">
+                                                <span class=" mb-3 lh-1 d-block flex-shrink-0 " >
+                                                    <i class="  rounded-circle d-inline-block p-3  " style="background-color: var(--bs-card-bg);">
+
+                                                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M10.3198 27.2247V24.1197" stroke="#DD9406" stroke-width="2" stroke-linecap="round"/>
+                                                            <path d="M18 27.2247V21.0147" stroke="#DD9406" stroke-width="2" stroke-linecap="round"/>
+                                                            <path d="M25.6797 27.2247V17.8947" stroke="#DD9406" stroke-width="2" stroke-linecap="round"/>
+                                                            <path d="M25.6798 8.77469L24.9898 9.58469C21.1648 14.0547 16.0348 17.2197 10.3198 18.6447" stroke="#DD9406" stroke-width="2" stroke-linecap="round"/>
+                                                            <path d="M21.2847 8.77469H25.6797V13.1547" stroke="#DD9406" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M13.5 32.9995H22.5C30 32.9995 33 29.9995 33 22.4995V13.4995C33 5.99951 30 2.99951 22.5 2.99951H13.5C6 2.99951 3 5.99951 3 13.4995V22.4995C3 29.9995 6 32.9995 13.5 32.9995Z" stroke="#DD9406" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                            
+                                                            
+                                                            
+
+
+
+                                                    </i>
+                                                </span>
+                                                <div class="ms-3 ms-xl-0 me-1 ms-xxl-2 flex-shrink-0">
+                                                
+                                                    <div class="text-wrap mb-1 text-xl-center text-xxl-start" >
+                                                        <!--<span class="badge bg-soft-success text-success">+$20.9k</span>-->
+                                                        <span class=" color-color1 fs-20 almarenamonolight-type">Today’s <br>
+                                                        total leads</span>
+                                                    </div>
+                                                    
+                                                    <h2 class=" gilory-semibold-type fs-40 mb-0 text-xl-center text-xxl-start" data-target="12">12</h2>
+                                                    
+                                                </div>
+                                                
+                                            </div>
+
+
+                                        </div>
+                                        
+                                    </div><!-- end card body -->
+                                </div>
+                                <!-- end card -->
+                            </div><!-- end col -->
+                            <div class="col-xl-3    col-md-6 col-sm-6 ">
+                                <!-- card -->
+                                <div class="card card-h-100 ">
+                                    <!-- card body -->
+                                    <div class="card-body py-2">
+                                        <div class="">
+                                            <div class=" d-flex align-items-center  flex-xl-column flex-xxl-row">
+                                                <span class=" mb-3 lh-1 d-block flex-shrink-0 " >
+                                                    <i class="  rounded-circle d-inline-block p-3  " style="background-color: var(--bs-card-bg);">
+
+                                                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M27.48 17.9999C31.38 17.9999 33 16.4999 31.56 11.5799C30.585 8.26493 27.735 5.41493 24.42 4.43993C19.5 2.99993 18 4.61993 18 8.51993V12.8399C18 16.4999 19.5 17.9999 22.5 17.9999H27.48Z" stroke="#00A651" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M30.0001 22.05C28.6051 28.995 21.9451 34.035 14.3701 32.805C8.68514 31.89 4.11014 27.315 3.18014 21.63C1.96514 14.085 6.97514 7.42495 13.8901 6.01495" stroke="#00A651" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                            
+                                                            
+
+
+
+                                                    </i>
+                                                </span>
+                                                <div class="ms-3 ms-xl-0 me-1 ms-xxl-2 flex-shrink-0">
+                                                
+                                                    <div class="text-wrap mb-1 text-xl-center text-xxl-start" >
+                                                        <!--<span class="badge bg-soft-success text-success">+$20.9k</span>-->
+                                                        <span class=" color-color1 fs-20 almarenamonolight-type">Today’s <br>
+                                                            unconverted leads</span>
+                                                    </div>
+                                                    
+                                                    <h2 class=" gilory-semibold-type fs-40 mb-0 text-xl-center text-xxl-start" data-target="12">12</h2>
+                                                    
+                                                </div>
+                                                
+                                            </div>
+
+
+                                        </div>
+                                        
+                                    </div><!-- end card body -->
+                                </div>
+                                <!-- end card -->
+                            </div><!-- end col -->
+                            <div class="col-xl-3   col-md-6 col-sm-6 ">
+                                <!-- card -->
+                                <div class="card card-h-100 ">
+                                    <!-- card body -->
+                                    <div class="card-body py-2">
+                                        <div class="">
+                                            <div class=" d-flex align-items-center  flex-xl-column flex-xxl-row">
+                                                <span class=" mb-3 lh-1 d-block flex-shrink-0 " >
+                                                    <i class="  rounded-circle d-inline-block p-3  " style="background-color: var(--bs-card-bg);">
+
+                                                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M13.5 33H22.5C30 33 33 30 33 22.5V13.5C33 6 30 3 22.5 3H13.5C6 3 3 6 3 13.5V22.5C3 30 6 33 13.5 33Z" stroke="#55CED7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M23.25 27.75C24.9 27.75 26.25 26.4 26.25 24.75V11.25C26.25 9.6 24.9 8.25 23.25 8.25C21.6 8.25 20.25 9.6 20.25 11.25V24.75C20.25 26.4 21.585 27.75 23.25 27.75Z" stroke="#55CED7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M12.75 27.75C14.4 27.75 15.75 26.4 15.75 24.75V19.5C15.75 17.85 14.4 16.5 12.75 16.5C11.1 16.5 9.75 17.85 9.75 19.5V24.75C9.75 26.4 11.085 27.75 12.75 27.75Z" stroke="#55CED7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                            
+                                                            
+                                                            
+
+
+
+                                                    </i>
+                                                </span>
+                                                <div class="ms-3 ms-xl-0 me-1 ms-xxl-2 flex-shrink-0">
+                                                
+                                                    <div class="text-wrap mb-1 text-xl-center text-xxl-start" >
+                                                        <!--<span class="badge bg-soft-success text-success">+$20.9k</span>-->
+                                                        <span class=" color-color1 fs-20 almarenamonolight-type">Today’s <br>
+                                                            converted leads</span>
+                                                    </div>
+                                                    
+                                                    <h2 class=" gilory-semibold-type fs-40 mb-0 text-xl-center text-xxl-start" data-target="12">12</h2>
+                                                    
+                                                </div>
+                                                
+                                            </div>
+
+
+                                        </div>
+                                        
+                                    </div><!-- end card body -->
+                                </div>
+                                <!-- end card -->
+                            </div><!-- end col -->
+                            <div class="col-xl-3    col-md-6 col-sm-6 ">
+                                <!-- card -->
+                                <div class="card card-h-100 ">
+                                    <!-- card body -->
+                                    <div class="card-body py-2">
+                                        <div class="">
+                                            <div class=" d-flex align-items-center  flex-xl-column flex-xxl-row">
+                                                <span class=" mb-3 lh-1 d-block flex-shrink-0 " >
+                                                    <i class="  rounded-circle d-inline-block p-3  " style="background-color: var(--bs-card-bg);">
+
+                                                        <svg width="36" height="36" viewBox="0 0 36 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M4.5 33H31.5" stroke="#FE464B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M8.39996 12.57H6C5.175 12.57 4.5 13.245 4.5 14.07V27C4.5 27.825 5.175 28.5 6 28.5H8.39996C9.22496 28.5 9.89996 27.825 9.89996 27V14.07C9.89996 13.245 9.22496 12.57 8.39996 12.57Z" stroke="#FE464B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M19.1998 7.785H16.7998C15.9748 7.785 15.2998 8.46 15.2998 9.285V27C15.2998 27.825 15.9748 28.5 16.7998 28.5H19.1998C20.0248 28.5 20.6998 27.825 20.6998 27V9.285C20.6998 8.46 20.0248 7.785 19.1998 7.785Z" stroke="#FE464B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M29.9996 3H27.5996C26.7746 3 26.0996 3.675 26.0996 4.5V27C26.0996 27.825 26.7746 28.5 27.5996 28.5H29.9996C30.8246 28.5 31.4996 27.825 31.4996 27V4.5C31.4996 3.675 30.8246 3 29.9996 3Z" stroke="#FE464B" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                            
+                                                            
+                                                            
+
+
+
+                                                    </i>
+                                                </span>
+                                                <div class="ms-3 ms-xl-0 me-1 ms-xxl-2 flex-shrink-0">
+                                                
+                                                    <div class="text-wrap mb-1 text-xl-center text-xxl-start" >
+                                                        <!--<span class="badge bg-soft-success text-success">+$20.9k</span>-->
+                                                        <span class=" color-color1 fs-20 almarenamonolight-type">Today’s <br>
+                                                            unconverted leads</span>
+                                                    </div>
+                                                    
+                                                    <h2 class="  gilory-semibold-type fs-40 mb-0 text-xl-center text-xxl-start" data-target="12">12</h2>
+                                                    
+                                                </div>
+                                                
+                                            </div>
+
+
+                                        </div>
+                                        
+                                    </div><!-- end card body -->
+                                </div>
+                                <!-- end card -->
+                            </div><!-- end col -->
+
+                        </div>
+                        <!--Analytics overview-->
+                        <div class="row">
+
+                            <div class="col-12">
+                                <div class="card">
+                                
+                                    <div class="card-body ">
+                                        <h4 class="card-title almarenamonolight-type mb-4 fs-23">Leads</h4>
+                                        <div class="d-md-flex flex-no-wrap justify-content-between align-items-start  mb-4">
+
+                                            <p class="gilroymedium-type fs-15 color-color1 mb-0">This page allows you to view details of leads<br>
+                                                from website and social sites.</p>
+                                            <div class=" mt-2  mt-md-0">
+                                                <!--<form class="needs-validation " novalidate="" id="action-call">-->
+                                                    <div class="row align-items-end justify-content-end">
+
+
+                                                            <div class="col-sm-3">
+                                                                <div class="mb-2">
+                                                                    <label class="form-label " for="fromdate">From Date</label>
+                                                                    <input type="text" id="fromdate" class="py-1">
+            
+                                                                
+                                                                </div>
+                                                            </div>
+                                                            <div class="col-sm-3">
+
+                                                                <div class="mb-2">
+                                                                    <label class="form-label " for="todate">To Date</label>
+            
+                                                                    <input type="text" id="todate" class="py-1">
+                                                                    
+                                                                </div>
+
+
+
+
+                                                            </div>
+                                                            <div class="col-sm-3 ">
+                                                                <button class="btn btn-info btn-md mb-2 py-1" type="submit" id="load-btn">Load</button>
+                                                                
+
+
+
+
+                                                            </div>
+                                                        
+
+
+
+
+
+                                                    </div>
+
+
+                                                <!--</form>-->
+                                                
+                                            </div>
+                                            
+                                        </div>
+                                        
+                                        <div class=" px-1 table-responsive">
+                                            <table id="datatableleads" class="table dt-responsive  nowrap  w-100">
+                                                <thead >
+                                                    <tr  class=" ">
+                                                        <th  data-id="datepicker-range" class="filterhead" > Date range</th>
+                                                        <th  data-timer="option" class="filterhead">Name</th>
+                                                        <th  data-text="select" class="filterhead">Email</th>
+                                                        <th  data-text="text" class="filterhead">Phone</th>
+                                                        <th  data-text="select" class="filterhead">Source</th>
+                                                        <th  data-text="text" class="filterhead text-end">Country</th>
+                                                    </tr>
+                                                </thead>
+
+
+                                                <tbody>
+                                                <!--
+                                                <tr>
+                                                    <td ><span class="skeleton skeleton-text"></span> </td>
+                                                    <td ><span class="skeleton skeleton-text"></span></td>
+                                                    <td><span class="skeleton skeleton-text"></span></td>
+                                                    <td><span class="skeleton skeleton-text"></span></td>
+                                                    <td><span class="skeleton skeleton-text"></span></td>
+                                                    <td class="text-end"><span class="skeleton skeleton-text"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td ><span class="skeleton skeleton-text"></span> </td>
+                                                    <td ><span class="skeleton skeleton-text"></span></td>
+                                                    <td><span class="skeleton skeleton-text"></span></td>
+                                                    <td><span class="skeleton skeleton-text"></span></td>
+                                                    <td><span class="skeleton skeleton-text"></span></td>
+                                                    <td class="text-end"><span class="skeleton skeleton-text"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td ><span class="skeleton skeleton-text"></span> </td>
+                                                    <td ><span class="skeleton skeleton-text"></span></td>
+                                                    <td><span class="skeleton skeleton-text"></span></td>
+                                                    <td><span class="skeleton skeleton-text"></span></td>
+                                                    <td><span class="skeleton skeleton-text"></span></td>
+                                                    <td class="text-end"><span class="skeleton skeleton-text"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td ><span class="skeleton skeleton-text"></span> </td>
+                                                    <td ><span class="skeleton skeleton-text"></span></td>
+                                                    <td><span class="skeleton skeleton-text"></span></td>
+                                                    <td><span class="skeleton skeleton-text"></span></td>
+                                                    <td><span class="skeleton skeleton-text"></span></td>
+                                                    <td class="text-end"><span class="skeleton skeleton-text"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td ><span class="skeleton skeleton-text"></span> </td>
+                                                    <td ><span class="skeleton skeleton-text"></span></td>
+                                                    <td><span class="skeleton skeleton-text"></span></td>
+                                                    <td><span class="skeleton skeleton-text"></span></td>
+                                                    <td><span class="skeleton skeleton-text"></span></td>
+                                                    <td class="text-end"><span class="skeleton skeleton-text"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td ><span class="skeleton skeleton-text"></span> </td>
+                                                    <td ><span class="skeleton skeleton-text"></span></td>
+                                                    <td><span class="skeleton skeleton-text"></span></td>
+                                                    <td><span class="skeleton skeleton-text"></span></td>
+                                                    <td><span class="skeleton skeleton-text"></span></td>
+                                                    <td class="text-end"><span class="skeleton skeleton-text"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td ><span class="skeleton skeleton-text"></span> </td>
+                                                    <td ><span class="skeleton skeleton-text"></span></td>
+                                                    <td><span class="skeleton skeleton-text"></span></td>
+                                                    <td><span class="skeleton skeleton-text"></span></td>
+                                                    <td><span class="skeleton skeleton-text"></span></td>
+                                                    <td class="text-end"><span class="skeleton skeleton-text"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td ><span class="skeleton skeleton-text"></span> </td>
+                                                    <td ><span class="skeleton skeleton-text"></span></td>
+                                                    <td><span class="skeleton skeleton-text"></span></td>
+                                                    <td><span class="skeleton skeleton-text"></span></td>
+                                                    <td><span class="skeleton skeleton-text"></span></td>
+                                                    <td class="text-end"><span class="skeleton skeleton-text"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td ><span class="skeleton skeleton-text"></span> </td>
+                                                    <td ><span class="skeleton skeleton-text"></span></td>
+                                                    <td><span class="skeleton skeleton-text"></span></td>
+                                                    <td><span class="skeleton skeleton-text"></span></td>
+                                                    <td><span class="skeleton skeleton-text"></span></td>
+                                                    <td class="text-end"><span class="skeleton skeleton-text"></span></td>
+                                                </tr>
+                                                <tr>
+                                                    <td ><span class="skeleton skeleton-text"></span> </td>
+                                                    <td ><span class="skeleton skeleton-text"></span></td>
+                                                    <td><span class="skeleton skeleton-text"></span></td>
+                                                    <td><span class="skeleton skeleton-text"></span></td>
+                                                    <td><span class="skeleton skeleton-text"></span></td>
+                                                    <td class="text-end"><span class="skeleton skeleton-text"></span></td>
+                                                </tr>-->
+                                        
+                                                    <tr>
+                                                        <td data-order="1558357779">27 Aug 2022</td>
+                                                        <td>System Architect</td>
+                                                        <td>Edinburgh</td>
+                                                        <td>61</td>
+                                                        <td>Admin</td>
+                                                        <td>$320,800</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td data-order="1558090241">28 Aug 2022</td>
+                                                        <td>Accountant</td>
+                                                        <td>Tokyo</td>
+                                                        <td>63</td>
+                                                        <td>Admin</td>
+                                                        <td>$170,750</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td data-order="1558090241">29 Aug 2022</td>
+                                                        <td>Accountant</td>
+                                                        <td>Tokyo</td>
+                                                        <td>63</td>
+                                                        <td>Sales</td>
+                                                        <td>$170,750</td>
+                                                    </tr>
+                                                    <tr>
+                                                        <td data-order="1558090241">25/09/2022</td>
+                                                        <td>Accountant</td>
+                                                        <td>Tokyo</td>
+                                                        <td>63</td>
+                                                        <td>Sales</td>
+                                                        <td>$170,750</td>
+                                                    </tr>
+                                                    
+                                                
+                                            
+                                                
+                                                </tbody>
+                                            
+                                            </table>
+                                        </div>
+                                        
+
+                                    </div>
+                                </div>
+                            </div> <!-- end col -->
+
+                            <div class="col-12">
+
+                                <!-- modal-temp -->
+                                <!--<button type="button" class="btn btn-primary waves-effect waves-light" data-bs-toggle="modal" data-bs-target=".bs-example-modal-temp" style="background-color: var(--bs-card-bg) ;">Templates</button>-->
+                                
+                                <!-- modal-Chat Logs -->
+                                <!--<button type="button" class="btn btn-primary waves-effect waves-light" style="background-color: var(--bs-card-bg) ;">Seminars</button>-->
+
+                                <div class="modal fade  bs-example-modal-leads" tabindex="-1" role="dialog" aria-hidden="true">
+                                    
+                                    <div class="modal-dialog modal-dialog-centered  modal-xl d-block">
+                                        
+
+                                    
+
+                                        <div class="modal-content">
+                                            
+                                            
+                                    
+                                            <div class="modal-body ">
+
+                                                <!--<button class="btn btn-lg btn-info  ms-3" type="submit">Load</button>-->
+
+                                            <div class="border rounded-3 px-2 py-2">
+                                                <div class="modal-header border-0 ">
+                                                    <h5 class="modal-title fs-21 ">Duplicate phone   <a href="" class="btn btn-md btn-success  ms-3">Create new ticket</a> </h5>
+                                                    
+                                                    <a href="" data-bs-dismiss="modal" aria-label="Close">
+                                                        <svg width="24" height="24" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M9.16992 14.83L14.8299 9.17" stroke="var(--white)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M14.8299 14.83L9.16992 9.17" stroke="var(--white)" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M9 22H15C20 22 22 20 22 15V9C22 4 20 2 15 2H9C4 2 2 4 2 9V15C2 20 4 22 9 22Z" stroke="white" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                            
+                                                        </a>
+                                                </div>
+                                            
+
+                                                @@include("partials/leadspopup/leadspopup1.html") 
+
+                                            </div>
+                                                
+                                            
+                                            
+
+
+                                            
+                                            
+                                                
+                                            </div>
+
+                                            
+                                        </div><!-- /.modal-content -->
+
+                                        
+
+                                    </div><!-- /.modal-dialog -->
+                                </div>
+                                
+                                <!-- /.modal -->
+                            </div>
+
+
+
+                        </div>
+                        <!-- end row-->
+
+                        </div>
+                        <!-- container -->
+                    </div>
+                    <!-- End Page-content -->
+
+                    <!--@@include("partials/footer.html")-->
+                </div>
+                <!-- end main content-->
+
+        </div>
+        <!-- END layout-wrapper -->
+        @@include("partials/right-sidebar.html")
+        @@include("partials/vendor-scripts.html")
+        <!-- Plugins js-->
+        <!--<script src="assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.min.js"></script>
+        <script src="assets/libs/admin-resources/jquery.vectormap/maps/jquery-jvectormap-world-mill-en.js"></script>-->
+        <!-- dashboard init -->
+        <script src="assets/js/pages/moment.min.js"></script>
+        <!-- datepicker js -->
+        <script src="assets/libs/flatpickr/flatpickr.min.js"></script>
+    <script src="assets/js/pages/monthselect.js"></script>
+        <!-- Required datatable js -->
+        <script src="assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+        <script src="assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+
+        <!-- Responsive examples -->
+        <!---Commmented Now Later might needed
+    
+        <script src="assets/libs/datatables.net-responsive/js/dataTables.responsive.min.js"></script>
+        <script src="assets/libs/datatables.net-responsive-bs4/js/responsive.bootstrap4.min.js"></script>
+        -->  
+
+        <!-- Datatable init js -->
+        <script src="assets/js/pages/datatables-filtercolumn-leads.init.js"></script> 
+
+        <!-- init js -->
+        <!--<script src="assets/js/pages/form-advancedcustom.init.js"></script>-->
+
+        <script src="assets/js/app.js"></script>
+        <script src="assets/js/theme.js"></script>
+
+    </body>
+
+</html>

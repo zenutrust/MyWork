@@ -1,0 +1,217 @@
+<div class="col-md-8">
+    <div class="btn-group d-block mb-2">
+        <!-- modal-temp -->
+
+    <div class="modal fade  bs-example-modal-assessment" tabindex="-1" role="dialog"
+        aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered  modal-lg  r">
+            <div class="modal-content bg-soft-secondarycolor">
+                @@include("partials/modal-header.html", {"title": "Set Assessment Score"})
+
+                <div class="modal-body">
+                    @@include("partials/managetickets/assesment.html")
+
+                </div>
+            </div><!-- /.modal-content -->
+        </div><!-- /.modal-dialog -->
+    </div>
+<!-- /.modal -->
+
+<div class="modal fade bs-example-modal-temp" tabindex="-1" role="dialog"
+    aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered">
+        <div class="modal-content ">
+            @@include("partials/modal-header.html", {"title": "Manage Ticket"})
+            <div class="modal-body">
+                @@include("partials/managetickets/assesment.html")
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+
+<!-- modal-Assessment -->
+
+
+    </div>
+
+        <div class="btn-group d-block mb-2">
+     
+
+<div class="modal fade  bs-example-modal-chatlogs" tabindex="-1" role="dialog"
+    aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered  ">
+
+
+
+        <div class="modal-content ">
+
+
+
+            <div class="modal-body ">
+
+
+                <div class="mx-2 my-1 border rounded-3">
+
+                    @@include("partials/modal-header.html", {"title": "Live Chat Logs"})
+                    @@include("partials/managetickets/newchat-logs.html")
+                </div>
+
+
+
+
+
+
+
+            </div>
+        </div><!-- /.modal-content -->
+
+
+
+    </div><!-- /.modal-dialog -->
+</div>
+<!-- /.modal -->
+<button type="button" class="btn   btn-info text-white me-2"
+data-bs-toggle="modal" data-bs-target=".bs-example-modal-multipleaccount"
+style="background-color: var(--bs-card-bg) ;">Create multiple account</button>
+
+<button type="button" class="btn  bg-soft-secondarycolor text-white me-2 " >Sales communication structure</button>
+<!-- modal-Chat Logs -->
+<button type="button" class="btn bg-soft-secondarycolor text-white me-2"
+data-bs-toggle="modal" data-bs-target=".bs-example-modal-chatlogs"
+style="background-color: var(--bs-card-bg) ;">Email bank details</button>
+
+
+<!-- modal-Chat Logs -->
+<button type="button" class="btn bg-soft-secondarycolor text-white me-2"
+    data-bs-toggle="modal" data-bs-target=".bs-example-modal-meeting"
+    style="background-color: var(--bs-card-bg) ;">Reset phone password </button>
+<div class="modal fade  bs-example-modal-meeting" tabindex="-1" role="dialog"
+    aria-hidden="true">
+
+    <div class="modal-dialog modal-dialog-centered  ">
+
+
+
+        <div class="modal-content ">
+
+
+
+            <div class="modal-body ">
+
+
+                <div class="  px-3 border rounded-3">
+
+                    @@include("partials/modal-header.html", {"title": "Business Development Strategy Webinar"})
+
+
+                    @@include("partials/managetickets/book-meeting.html")
+
+
+
+
+
+
+
+                </div>
+            </div><!-- /.modal-content -->
+
+
+
+        </div><!-- /.modal-dialog -->
+    </div>
+    <!-- /.modal -->
+
+
+
+
+
+
+
+
+
+</div>
+
+<button type="button" class="btn bg-soft-secondarycolor text-white me-2"
+data-bs-toggle="modal" data-bs-target=".bs-example-modal-meeting"
+style="background-color: var(--bs-card-bg) ;">Update client portal credential </button>
+        </div>
+
+    <div class="btn-group d-block mb-2">
+        <!-- modal-seminar -->
+    <button type="button" class="btn bg-soft-secondarycolor text-white me-2" data-bs-toggle="modal" data-bs-target=".bs-example-modal-seminars" style="background-color: var(--bs-card-bg) ;">Set language</button>
+
+    <div class="modal fade  bs-example-modal-seminars" tabindex="-1" role="dialog" aria-hidden="true">
+        
+        <div class="modal-dialog modal-dialog-centered  modal-lg d-block">
+            
+
+        
+            <div class="modal-content mb-4">
+                
+                
+        
+                <div class="modal-body">
+
+                
+
+                    
+                    <div class="border-dashed rounded-3 px-3 py-3">
+                        @@include("partials/modal-header.html", {"title": "Up Coming Webinar"})
+                    
+
+                        @@include("partials/managetickets/webinar.html") 
+                    </div>
+                    
+
+
+                    
+                
+                    
+                </div>
+
+                
+            </div><!-- /.modal-content -->
+
+            <div class="modal-content mb-4">
+                
+                
+        
+                <div class="modal-body">
+
+                
+
+                
+                    @@include("partials/modal-header.html", {"title": "Webinar Details"})
+                
+
+                    @@include("partials/managetickets/webinar-details.html") 
+                
+                
+
+
+                
+                
+                    
+                </div>
+
+                
+            </div><!-- /.modal-content -->
+
+            
+
+        </div><!-- /.modal-dialog -->
+    </div>
+    <button type="button" class="btn bg-soft-secondarycolor text-white me-2" data-bs-toggle="modal" data-bs-target=".bs-example-modal-seminars" style="background-color: var(--bs-card-bg) ;">View documents</button>
+    <button type="button" class="btn bg-soft-secondarycolor text-white me-2" data-bs-toggle="modal" data-bs-target=".bs-example-modal-seminars" style="background-color: var(--bs-card-bg) ;">Close account</button>
+    <button type="button" class="btn bg-soft-secondarycolor text-white me-2" data-bs-toggle="modal" data-bs-target=".bs-example-modal-seminars" style="background-color: var(--bs-card-bg) ;">Terminates</button>
+    </div>
+
+
+
+
+
+
+
+</div>

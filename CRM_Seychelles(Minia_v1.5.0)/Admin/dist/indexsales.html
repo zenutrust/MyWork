@@ -1,0 +1,2783 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <meta charset="utf-8" />
+    <title>Dashboard | Minia - Minimal Admin & Dashboard Template</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta content="Premium Multipurpose Admin & Dashboard Template" name="description" />
+    <meta content="Themesbrand" name="author" />
+    <!-- App favicon -->
+    <link rel="shortcut icon" href="assets/images/favicon.ico">
+
+    <!-- plugin css -->
+    <!--<link href="assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet"
+        type="text/css" />-->
+
+    
+
+    <!-- preloader css -->
+    <link rel="stylesheet" href="assets/css/preloader.min.css" type="text/css" />
+
+    <!-- Bootstrap Css -->
+    <link href="assets/css/bootstrap.min.css" id="bootstrap-style" rel="stylesheet" type="text/css" />
+    <!-- Icons Css -->
+    <link href="assets/css/icons.min.css" rel="stylesheet" type="text/css" />
+    <!-- App Css-->
+    <link href="assets/css/app.min.css" id="app-style" rel="stylesheet" type="text/css" />
+
+</head>
+
+<body data-layout-mode="dark">
+
+<!-- <body data-layout="horizontal"> -->
+
+<!-- Begin page -->
+<div id="layout-wrapper">
+
+
+    
+    <header id="page-topbar" class="border-0">
+        <div class="navbar-header">
+            <div class="d-flex">
+                <!-- LOGO -->
+                <div class="navbar-brand-box border-0  mt-0">
+                    <a href="index.html" class="logo logo-dark">
+                        <span class="logo-sm">
+                            <img src="assets/images/logo-sm.svg" alt="" height="28">
+                        </span>
+                        <span class="logo-lg">
+                            <img src="assets/images/logo-sm.svg" alt="" height="48"> <!--<span class="logo-txt">Minia</span>-->
+                        </span>
+                    </a>
+                    <a href="index.html" class="logo logo-light">
+                        <span class="logo-sm">
+                            <img src="assets/images/logo_light.svg" alt="" height="24">
+                        </span>
+                        <span class="logo-lg">
+                            <img src="assets/images/logo_light.svg" alt="" height="48"> <!--<span class="logo-txt">Minia</span>-->
+                        </span>
+                    </a>
+                </div>
+
+                <button type="button" class="btn btn-sm px-3 font-size-16 header-item" id="vertical-menu-btn">
+                    <i class="fa fa-fw fa-bars"></i>
+                </button>
+
+            
+            </div>
+            <div class="d-flex">
+                <div class=" d-flex align-items-center me-2 me-md-4">
+                    <div class=" d-inline-block  ">
+                        <button  type="button"  class="btn position-relative"  
+                        data-bs-toggle="modal" data-bs-target=".bs-example-modal-insta"  >
+                        
+                                <img src="assets/images/social-icons/instagram_w.png" alt="instagram" class=" badge-to-show" height="16"  >
+                                <span class="badge position-absolute translate-middle bg-success rounded-pill top-0 gilroysemibold-type fs-11">5</span>
+                            
+                        
+                        
+                        
+                        </button>
+                        <button  type="button"  class="btn position-relative"  
+                        data-bs-toggle="modal" data-bs-target=".bs-example-modal-linkedin"  >
+                        
+                                <img src="assets/images/social-icons/linkedin_w.png" alt="linkedin" class="badge-to-show " height="16"  >
+                                <span class="badge position-absolute translate-middle bg-success rounded-pill top-0 gilroysemibold-type fs-11"> 5</span>
+                           
+                        
+                        
+                        </button>
+                        <button  type="button"  class="btn position-relative"  
+                        data-bs-toggle="modal" data-bs-target=".bs-example-modal-twitter"  >
+                        
+                                <img src="assets/images/social-icons/twitter_w.png" alt="instagram" class=" badge-to-show" height="16"  >
+                                <span class="badge position-absolute translate-middle bg-success rounded-pill top-0 gilroysemibold-type fs-11"> 5</span>
+                            
+                        
+                        
+                        
+                        </button>
+
+                        <button  type="button"  class="btn position-relative"  
+                        data-bs-toggle="modal" data-bs-target=".bs-example-modal-facebook"  >
+                        
+                                <img src="assets/images/social-icons/facebook_w.png" alt="facebook" class=" badge-to-show" height="16"  >
+                                <span class="badge position-absolute translate-middle bg-success rounded-pill top-0 gilroysemibold-type fs-11"> 5</span>
+                           
+                        
+                        
+                        
+                        </button>
+
+                        <button  type="button"  class="btn position-relative"  
+                        data-bs-toggle="modal" data-bs-target=".bs-example-modal-yt"  >
+                        
+                                <img src="assets/images/social-icons/yt_w.png" alt="yt" class=" badge-to-show" height="16"  >
+                                <span class="badge position-absolute translate-middle bg-success rounded-pill top-0 gilroysemibold-type fs-11"> 5</span>
+                            
+                        
+                        
+                        
+                        </button>
+
+                   
+                    
+                    
+                
+                    </div>
+
+
+                </div>
+            
+                <div class="dropdown d-inline-block">
+                    <button type="button" class="btn header-item " id="page-header-user-dropdown"
+                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><!--bg-soft-light border-start border-end-->
+                        <span class="d-none d-xl-inline-block me-2 fw-medium">Hi, Shibu Kizhepat</span>
+                        <img class="rounded-circle header-profile-user" src="assets/images/users/avatar-1.jpg"
+                            alt="Header Avatar">
+                    
+                        <i class="mdi mdi-chevron-down d-none d-xl-inline-block"></i>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-end">
+                        <!-- item-->
+                        <a class="dropdown-item" href="apps-contacts-profile.html"><i class="mdi mdi-face-profile font-size-16 align-middle me-1"></i> Profile</a>
+                        <a class="dropdown-item" href="auth-lock-screen.html"><i class="mdi mdi-lock font-size-16 align-middle me-1"></i> Lock Screen</a>
+                        <div class="dropdown-divider"></div>
+                        <a class="dropdown-item" href="auth-logout.html"><i class="mdi mdi-logout font-size-16 align-middle me-1"></i> Logout</a>
+                    </div>
+                </div>
+          
+                <div class="dropdown d-inline-block">
+                    <button type="button" class="btn header-item noti-icon position-relative" id="page-header-notifications-dropdown"
+                    data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i data-feather="bell" class="icon-lg"></i>
+                        <span class="badge bg-danger rounded-pill">5</span>
+                    </button>
+                    <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                        aria-labelledby="page-header-notifications-dropdown">
+                        <div class="p-3">
+                            <div class="row align-items-center">
+                                <div class="col">
+                                    <h6 class="m-0"> Notifications </h6>
+                                </div>
+                                <div class="col-auto">
+                                    <a href="#!" class="small text-reset text-decoration-underline"> Unread (3)</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div data-simplebar style="max-height: 230px;">
+                            <a href="#!" class="text-reset notification-item">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0 me-3">
+                                        <img src="assets/images/users/avatar-3.jpg" class="rounded-circle avatar-sm" alt="user-pic">
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-1">James Lemire</h6>
+                                        <div class="font-size-13 text-muted">
+                                            <p class="mb-1">It will seem like simplified English.</p>
+                                            <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>1 hour ago</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#!" class="text-reset notification-item">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0 avatar-sm me-3">
+                                        <span class="avatar-title bg-primary rounded-circle font-size-16">
+                                            <i class="bx bx-cart"></i>
+                                        </span>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-1">Your order is placed</h6>
+                                        <div class="font-size-13 text-muted">
+                                            <p class="mb-1">If several languages coalesce the grammar</p>
+                                            <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>3 min ago</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="#!" class="text-reset notification-item">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0 avatar-sm me-3">
+                                        <span class="avatar-title bg-success rounded-circle font-size-16">
+                                            <i class="bx bx-badge-check"></i>
+                                        </span>
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-1">Your item is shipped</h6>
+                                        <div class="font-size-13 text-muted">
+                                            <p class="mb-1">If several languages coalesce the grammar</p>
+                                            <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>3 min ago</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+
+                            <a href="#!" class="text-reset notification-item">
+                                <div class="d-flex">
+                                    <div class="flex-shrink-0 me-3">
+                                        <img src="assets/images/users/avatar-6.jpg" class="rounded-circle avatar-sm" alt="user-pic">
+                                    </div>
+                                    <div class="flex-grow-1">
+                                        <h6 class="mb-1">Salena Layfield</h6>
+                                        <div class="font-size-13 text-muted">
+                                            <p class="mb-1">As a skeptical Cambridge friend of mine occidental.</p>
+                                            <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>1 hour ago</span></p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <div class="p-2 border-top d-grid">
+                            <a class="btn btn-sm btn-link font-size-14 text-center" href="javascript:void(0)">
+                                <i class="mdi mdi-arrow-right-circle me-1"></i> <span>View More..</span> 
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="dropdown d-none d-sm-inline-block">
+                    <button type="button" class="btn header-item" id="mode-setting-btn">
+                        <i data-feather="moon" class="icon-lg layout-mode-dark"></i>
+                        <i data-feather="sun" class="icon-lg layout-mode-light"></i>
+                    </button>
+                </div>
+
+            </div>
+        </div>
+    </header>
+
+    <!-- ========== Left Sidebar Start ========== -->
+    <div class="vertical-menu border-0" >
+
+        <div data-simplebar class="h-100">
+
+            <!--- Sidemenu -->
+            <div id="sidebar-menu">
+                <!-- Left Menu Start -->
+                <ul class="metismenu list-unstyled gilroymedium-type fs-15" id="side-menu">
+                    <!--<li class="menu-title" data-key="t-menu">Menu</li>-->
+
+                    <li>
+                        <a  href="javascript: void(0);" class="has-arrow"><!--href="indexsales.html"-->
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.1667 7.81004V3.64837C20.1667 2.35587 19.58 1.83337 18.1225 1.83337H14.4192C12.9617 1.83337 12.375 2.35587 12.375 3.64837V7.80087C12.375 9.10254 12.9617 9.61587 14.4192 9.61587H18.1225C19.58 9.62504 20.1667 9.10254 20.1667 7.81004Z" fill="#00A54F"/>
+                                <path d="M20.1667 18.1225V14.4192C20.1667 12.9617 19.58 12.375 18.1225 12.375H14.4192C12.9617 12.375 12.375 12.9617 12.375 14.4192V18.1225C12.375 19.58 12.9617 20.1667 14.4192 20.1667H18.1225C19.58 20.1667 20.1667 19.58 20.1667 18.1225Z" fill="#00A54F"/>
+                                <path d="M9.62498 7.81004V3.64837C9.62498 2.35587 9.03831 1.83337 7.58081 1.83337H3.87748C2.41998 1.83337 1.83331 2.35587 1.83331 3.64837V7.80087C1.83331 9.10254 2.41998 9.61587 3.87748 9.61587H7.58081C9.03831 9.62504 9.62498 9.10254 9.62498 7.81004Z" fill="#00A54F"/>
+                                <path d="M9.62498 18.1225V14.4192C9.62498 12.9617 9.03831 12.375 7.58081 12.375H3.87748C2.41998 12.375 1.83331 12.9617 1.83331 14.4192V18.1225C1.83331 19.58 2.41998 20.1667 3.87748 20.1667H7.58081C9.03831 20.1667 9.62498 19.58 9.62498 18.1225Z" fill="#00A54F"/>
+                            </svg>
+                            
+                    
+                            <span data-key="t-dashboard">Dashboard1</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li class="box">
+                                <!--<a href="Newcasereportform.html" data-key="t-crfr1"  class="box">-->
+                                <div class="item" id="item1" draggable="true">
+                                    <span class="link">Chart1</span>
+                                    <div class="card-body ">
+
+                                        <div class="d-flex flex-wrap align-items-center mb-4">
+                                            <h5 class="card-title me-2 almarenamonolight-type fs-21">New Accounts</h5>
+                                            <div class="ms-auto">
+                                                <div>
+                                                    <a href="" class=" mb-0 my-n1  gilorymedium-type fs-15"
+                                                        style="color: var(--color1);">Sales graph this week</a>
+
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="  text-center d-none ">
+
+                                            <img src="assets/images/nodata/nodata.png" alt="">
+
+
+
+                                            <p class="gilory-regular-type fs-20 mt-2">Webinars this week not
+                                                sheduled</p>
+
+                                        </div>
+
+                                        <div id="spline_area_new_accounts"
+                                            data-colors='["#FF0000", "#06C3FF","#DD9406","#39AA7B"]'
+                                            class="apex-charts d-flex card-h-100 align-items-center" dir="ltr"></div>
+                                    </div>
+
+                                
+                                
+                               
+                                <!--<div     class=" card-body d-flex align-items-center justify-content-center" draggable="true" >XXX</div></a>-->
+                            </li>
+                            <li class="box"><!--<a href="crfcase-details.html" data-key="t-crfd1">CRF Details</a>-->
+                        
+                                <div class="item"  id="item2" draggable="true">
+                                    <span class="link">Chart2</span>
+                                    <div class="card-body">
+
+                                        <div class="d-flex flex-wrap align-items-center mb-4">
+                                            <h5 class="card-title me-2 almarenamonolight-type fs-21"> Tickets</h5>
+                                            <div class="ms-auto">
+                                                <div>
+                                                    <button type="button"
+                                                        class="btn bg-soft-gunmetal  text-white btn-sm fs-13 gilroyregular-type almarenamonolight-type"
+                                                        onclick="btnclickactive(this,'.bg-soft-gunmetal')">
+                                                        Daily
+                                                    </button>
+                                                    <button type="button"
+                                                        class="btn  btn-sm  text-white fs-13 gilroyregular-type"
+                                                        onclick="btnclickactive(this,'.bg-soft-gunmetal')" o="">
+                                                        Weekly
+                                                    </button>
+    
+                                                </div>
+                                            </div>
+    
+                                        </div>
+    
+    
+                                        <div class="  text-center  d-none">
+    
+                                            <img src="assets/images/nodata/nodata.png" alt="" style="max-height: 80px;">
+    
+    
+    
+                                            <p class="gilory-regular-type fs-20 mt-2">Tickets not
+                                                sheduled</p>
+    
+                                        </div>
+                                        <div id="tickets" data-colors='["#B750BE","#DD9406","#3AACFF"]'
+                                            class="apex-charts " dir="ltr">
+                                        </div>
+                                    </div>
+                                </div>
+                        
+                            </li>
+
+                            <li class="box">
+                           
+                                <div class="item" id="item3" draggable="true">
+                                    <span class="link">Chart 3</span>
+                                    <div class="card-body">
+
+                                        <div class="d-flex flex-wrap align-items-center mb-4">
+                                            <h5 class="card-title me-2 almarenamonolight-type fs-21"> Tickets</h5>
+                                            <div class="ms-auto">
+                                                <div>
+                                                    <button type="button"
+                                                        class="btn bg-soft-gunmetal  text-white btn-sm fs-13 gilroyregular-type almarenamonolight-type"
+                                                        onclick="btnclickactive(this,'.bg-soft-gunmetal')">
+                                                        Daily
+                                                    </button>
+                                                    <button type="button"
+                                                        class="btn  btn-sm  text-white fs-13 gilroyregular-type"
+                                                        onclick="btnclickactive(this,'.bg-soft-gunmetal')" o="">
+                                                        Weekly
+                                                    </button>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class="  text-center  d-none">
+
+                                            <img src="assets/images/nodata/nodata.png" alt="" style="max-height: 80px;">
+
+
+
+                                            <p class="gilory-regular-type fs-20 mt-2">Tickets not
+                                                sheduled</p>
+
+                                        </div>
+                                        <div id="tickets" data-colors='["#B750BE","#DD9406","#3AACFF"]'
+                                            class="apex-charts " dir="ltr">
+                                        </div>
+                                    </div>
+                                </div>
+                            </li>
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow">
+                     
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M16.5 6.56338C16.445 6.55421 16.3808 6.55421 16.3258 6.56338C15.0608 6.51754 14.0525 5.48171 14.0525 4.19838C14.0525 2.88754 15.1067 1.83337 16.4175 1.83337C17.7283 1.83337 18.7825 2.89671 18.7825 4.19838C18.7733 5.48171 17.765 6.51754 16.5 6.56338Z" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15.5558 13.2367C16.8117 13.4476 18.1958 13.2276 19.1675 12.5767C20.46 11.7151 20.46 10.3034 19.1675 9.44173C18.1867 8.7909 16.7842 8.57089 15.5283 8.79089" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.4725 6.56338C5.5275 6.55421 5.59167 6.55421 5.64667 6.56338C6.91167 6.51754 7.92 5.48171 7.92 4.19838C7.92 2.88754 6.86584 1.83337 5.555 1.83337C4.24417 1.83337 3.19 2.89671 3.19 4.19838C3.19917 5.48171 4.2075 6.51754 5.4725 6.56338Z" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6.41667 13.2367C5.16084 13.4476 3.77667 13.2276 2.80501 12.5767C1.51251 11.7151 1.51251 10.3034 2.80501 9.44173C3.78584 8.7909 5.18834 8.57089 6.44417 8.79089" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11 13.4108C10.945 13.4016 10.8808 13.4016 10.8258 13.4108C9.56082 13.365 8.55249 12.3291 8.55249 11.0458C8.55249 9.73495 9.60666 8.68079 10.9175 8.68079C12.2283 8.68079 13.2825 9.74412 13.2825 11.0458C13.2733 12.3291 12.265 13.3741 11 13.4108Z" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8.33247 16.2983C7.03997 17.16 7.03997 18.5717 8.33247 19.4333C9.79914 20.4142 12.2008 20.4142 13.6675 19.4333C14.96 18.5717 14.96 17.16 13.6675 16.2983C12.21 15.3267 9.79914 15.3267 8.33247 16.2983Z" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>
+                            <span data-key="t-clients">All Clients</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="newaccount_sales.html" data-key="t-liveaccounts">Live Accounts</a></li>
+                            <!--<li><a href="#" data-key="t-pendingaccounts">Pending Accounts</a></li>
+                            <li><a href="#" data-key="t-rejectedaccounts">Rejected Accounts</a></li>
+                            <li><a href="#" data-key="t-terminatedaccounts">Terminated Accounts</a></li>
+                            <li><a href="#" data-key="t-closedaccounts">Closed Accounts</a></li>-->
+                        </ul>
+                    </li>
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow">
+                     
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M13.3332 1.66602H6.6665C3.33317 1.66602 1.6665 3.33268 1.6665 6.66602V17.4993C1.6665 17.9577 2.0415 18.3327 2.49984 18.3327H13.3332C16.6665 18.3327 18.3332 16.666 18.3332 13.3327V6.66602C18.3332 3.33268 16.6665 1.66602 13.3332 1.66602Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.8335 7.91602H14.1668" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.8335 12.082H11.6668" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                             
+                            <span data-key="t-crf">CRF</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="Newcasereportform.html" data-key="t-crfr">New Case Report Form</a></li>
+                            <li><a href="crfcase-details.html" data-key="t-crfd">CRF Details</a></li>
+                        
+                       
+                       
+                        
+                        </ul>
+                    </li>
+                   <li>
+                        <a href="javascript: void(0);" class="has-arrow">
+                     
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M3.28168 4.72998H15.9684C17.49 4.72998 18.7184 5.95831 18.7184 7.47998V10.5233" stroke="#989898" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6.17835 1.83337L3.28168 4.73002L6.17835 7.62671" stroke="#989898" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M18.7184 17.27H6.03168C4.51001 17.27 3.28168 16.0417 3.28168 14.52V11.4767" stroke="#989898" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15.8217 20.1668L18.7184 17.2701L15.8217 14.3734" stroke="#989898" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg>  
+                            <span data-key="t-backOffice">Back Office</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="changePassword.html" data-key="t-password">Change Password</a></li>
+                            <li><a href="backoffice_management1.html" data-key="t-manage">Manage Account</a></li>
+                            <li><a href="bo-cardapproval.html" data-key="t-approve">Approval</a></li>
+                            <li><a href="bo-viiewnupload.html" data-key="t-vnupload">View and Upload</a></li>
+                            <li><a href="backoffice-db.html" data-key="t-approve">Dashboard</a></li>
+                            <li><a href="bo-transaction.html" data-key="t-tran"> Transactions</a></li>
+                            <li><a href="bo-transactionhistory.html" data-key="t-tranh"> Transaction History</a></li>
+                       
+                       
+                        
+                        </ul>
+                    </li>
+                    <!--
+                    <li>
+                        <a href="javascript: void(0);" class="has-arrow">
+                        
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.2847 17.6459H5.88193C2.52082 17.6459 1.68054 16.8056 1.68054 13.4445V6.72226C1.68054 3.36115 2.52082 2.52087 5.88193 2.52087H14.2847C17.6458 2.52087 18.4861 3.36115 18.4861 6.72226V13.4445C18.4861 16.8056 17.6458 17.6459 14.2847 17.6459Z" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.7639 6.72217H15.9653" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12.6042 10.0834H15.9653" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.2847 13.4445H15.9653" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7.14236 9.48675C7.98233 9.48675 8.66327 8.80582 8.66327 7.96585C8.66327 7.12588 7.98233 6.44495 7.14236 6.44495C6.30239 6.44495 5.62146 7.12588 5.62146 7.96585C5.62146 8.80582 6.30239 9.48675 7.14236 9.48675Z" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M10.0834 13.7217C9.96572 12.5033 8.9994 11.5454 7.781 11.4362C7.36086 11.3942 6.93232 11.3942 6.50378 11.4362C5.28537 11.5538 4.31905 12.5033 4.20142 13.7217" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            
+                            <span data-key="t-affiliates">Affiliates</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a href="#" data-key="t-liveaffiliates">Live Affiliates</a></li>
+                            <li><a href="#" data-key="t-pendingaffiliates">Pending Affiliates</a></li>
+                            <li><a href="#" data-key="t-rejectedaffiliates">Rejected Affiliates</a></li>
+                     
+                        
+                        </ul>
+                    </li>-->
+
+                    <li>
+                        <a  href="javascript: void(0);" class="has-arrow">
+                        
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M6.30664 16.6375V14.74" stroke="#989898" stroke-width="1.5" stroke-linecap="round"/>
+                                <path d="M11 16.6375V12.8425" stroke="#989898" stroke-width="1.5" stroke-linecap="round"/>
+                                <path d="M15.6934 16.6375V10.9358" stroke="#989898" stroke-width="1.5" stroke-linecap="round"/>
+                                <path d="M15.6933 5.36255L15.2716 5.85755C12.9341 8.58922 9.79914 10.5234 6.30664 11.3942" stroke="#989898" stroke-width="1.5" stroke-linecap="round"/>
+                                <path d="M13.0075 5.36255H15.6933V8.03922" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8.24998 20.1667H13.75C18.3333 20.1667 20.1666 18.3334 20.1666 13.75V8.25004C20.1666 3.66671 18.3333 1.83337 13.75 1.83337H8.24998C3.66665 1.83337 1.83331 3.66671 1.83331 8.25004V13.75C1.83331 18.3334 3.66665 20.1667 8.24998 20.1667Z" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            
+                            <span data-key="t-sales">Sales</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a  href="apps-emailtc-inbox.html" data-key="t-inbox">Inbox</a></li>
+                            <li><a  href="newLeads.html" data-key="t-leads">Leads</a></li>
+                            <li><a  href="newLeadRegistration.html" data-key="t-LeadRegistration">Ticket Registration</a></li>
+                            <li><a  href="newLeadProcessing.html" data-key="t-LeadRegistration">Manage Tickets</a></li>
+                     
+                        
+                        </ul>
+                    </li>
+
+                    <li>
+                        <a  href="javascript: void(0);" class="has-arrow">
+                        
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M7.63338 9.05817C7.55005 9.04984 7.45005 9.04984 7.35838 9.05817C5.37505 8.9915 3.80005 7.3665 3.80005 5.3665C3.80005 3.32484 5.45005 1.6665 7.50005 1.6665C9.54172 1.6665 11.2 3.32484 11.2 5.3665C11.1917 7.3665 9.61671 8.9915 7.63338 9.05817Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M13.675 3.3335C15.2916 3.3335 16.5917 4.64183 16.5917 6.25016C16.5917 7.82516 15.3417 9.1085 13.7833 9.16683C13.7167 9.1585 13.6417 9.1585 13.5667 9.16683" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3.4666 12.1335C1.44993 13.4835 1.44993 15.6835 3.4666 17.0252C5.75827 18.5585 9.5166 18.5585 11.8083 17.0252C13.8249 15.6752 13.8249 13.4752 11.8083 12.1335C9.52494 10.6085 5.7666 10.6085 3.4666 12.1335Z" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15.2834 16.6665C15.8834 16.5415 16.4501 16.2998 16.9168 15.9415C18.2168 14.9665 18.2168 13.3582 16.9168 12.3832C16.4584 12.0332 15.9001 11.7998 15.3084 11.6665" stroke="white" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            
+                            
+                            <span data-key="t-sales">Management</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a  href="management-salesreport.html" data-key="t-salesreport">Sales Report</a></li>
+                     
+                     
+                        
+                        </ul>
+                    </li>
+                    <li>
+                        <a  href="javascript: void(0);" class="has-arrow">
+                        
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M20.1666 8.25004V13.75C20.1666 13.9609 20.1666 14.1625 20.1483 14.3642C20.1116 14.3092 20.0658 14.2542 20.02 14.2084C20.0108 14.1992 20.0016 14.1809 19.9925 14.1717C19.25 13.3467 18.1591 12.8334 16.9583 12.8334C15.8033 12.8334 14.7492 13.31 13.9975 14.08C13.2733 14.8225 12.8333 15.84 12.8333 16.9584C12.8333 17.7284 13.0533 18.4617 13.4291 19.085C13.6308 19.4242 13.8875 19.7359 14.1808 19.9925C14.1991 20.0017 14.2083 20.0109 14.2175 20.0201C14.2633 20.0659 14.3091 20.1025 14.3641 20.1484C14.1716 20.1667 13.9608 20.1667 13.75 20.1667H8.24998C3.66665 20.1667 1.83331 18.3334 1.83331 13.75V8.25004C1.83331 3.66671 3.66665 1.83337 8.24998 1.83337H13.75C18.3333 1.83337 20.1666 3.66671 20.1666 8.25004Z" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M2.31 6.51746H19.69" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M7.81 1.9342V6.38919" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.19 1.9342V5.97674" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M21.0833 16.9584C21.0833 17.2884 21.0466 17.6092 20.9641 17.9209C20.8633 18.3334 20.6983 18.7275 20.4875 19.085C19.7725 20.2767 18.4616 21.0834 16.9583 21.0834C15.9683 21.0834 15.07 20.735 14.3733 20.1484C14.3641 20.1484 14.3641 20.1484 14.3641 20.1484C14.3091 20.1025 14.2633 20.0659 14.2175 20.0201C14.2083 20.0109 14.1991 20.0017 14.1808 19.9925C13.8875 19.7359 13.6308 19.4242 13.4291 19.085C13.0533 18.4617 12.8333 17.7284 12.8333 16.9584C12.8333 15.84 13.2733 14.8225 13.9975 14.08C14.7492 13.31 15.8033 12.8334 16.9583 12.8334C18.1591 12.8334 19.25 13.3467 19.9925 14.1717C20.0016 14.1809 20.0108 14.1992 20.02 14.2084C20.0658 14.2542 20.1116 14.3092 20.1483 14.3642C20.735 15.07 21.0833 15.9775 21.0833 16.9584Z" stroke="#989898" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M18.4983 16.9399H15.4183" stroke="#989898" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16.9583 15.4366V18.5166" stroke="#989898" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            
+                            
+                            <span data-key="t-seminars">Seminars</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a  href="newEventRegistration-seminar.html" data-key="t-newe">New Event Registration</a></li>
+                            <li><a  href="seminarreport.html" data-key="t-semg">Report Generation</a></li>
+                            <li><a  href="seminarconfirmation.html" data-key="t-semrc">Seminar Confirmation</a></li>
+                        
+                        </ul>
+                    </li>    <!-- 
+                    <li>
+                        <a  href="javascript: void(0);" class="has-arrow">
+                            <i data-feather="layout"></i>
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.39666 9.96421C8.30499 9.95504 8.19499 9.95504 8.09416 9.96421C5.91249 9.89087 4.17999 8.10337 4.17999 5.90337C4.17999 3.65754 5.99499 1.83337 8.24999 1.83337C10.4958 1.83337 12.32 3.65754 12.32 5.90337C12.3108 8.10337 10.5783 9.89087 8.39666 9.96421Z" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M15.0425 3.66663C16.8208 3.66663 18.2508 5.10579 18.2508 6.87496C18.2508 8.60746 16.8758 10.0191 15.1617 10.0833C15.0883 10.0741 15.0058 10.0741 14.9233 10.0833" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M3.81335 13.3466C1.59501 14.8316 1.59501 17.2516 3.81335 18.7275C6.33418 20.4141 10.4683 20.4141 12.9892 18.7275C15.2075 17.2425 15.2075 14.8225 12.9892 13.3466C10.4775 11.6691 6.34335 11.6691 3.81335 13.3466Z" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M16.8116 18.3334C17.4716 18.1959 18.095 17.93 18.6083 17.5359C20.0383 16.4634 20.0383 14.6942 18.6083 13.6217C18.1041 13.2367 17.49 12.98 16.8391 12.8334" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            
+                            
+                            
+                            <span data-key="t-management">Management</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                            <li><a  href="Leads.html" data-key="t-leads">Leads</a></li>
+                            <li><a  href="LeadRegistration.html" data-key="t-LeadRegistration">Ticket Registration</a></li>-
+                        
+                        </ul>
+                    </li>   
+               
+                    <li>
+                        <a  href="javascript: void(0);" class="has-arrow">
+                            <i data-feather="layout"></i>
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.6666 1.83337H7.33331C3.66665 1.83337 1.83331 3.66671 1.83331 7.33337V19.25C1.83331 19.7542 2.24581 20.1667 2.74998 20.1667H14.6666C18.3333 20.1667 20.1666 18.3334 20.1666 14.6667V7.33337C20.1666 3.66671 18.3333 1.83337 14.6666 1.83337Z" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6.41669 8.70837H15.5834" stroke="#989898" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M6.41669 13.2917H12.8334" stroke="#989898" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            
+                            
+                            
+                            
+                            <span data-key="t-compliance">Compliance</span>
+                        </a>
+                        <ul class="sub-menu" aria-expanded="false">
+                           <li><a  href="Leads.html" data-key="t-leads">Leads</a></li>
+                            <li><a  href="LeadRegistration.html" data-key="t-LeadRegistration">Ticket Registration</a></li>
+                        
+                        </ul>
+                    </li>
+                        -->
+               
+                    <li>
+                        <a  href="changepassword.html" >
+                       
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.24998 20.1667H13.75C18.3333 20.1667 20.1666 18.3334 20.1666 13.75V8.25004C20.1666 3.66671 18.3333 1.83337 13.75 1.83337H8.24998C3.66665 1.83337 1.83331 3.66671 1.83331 8.25004V13.75C1.83331 18.3334 3.66665 20.1667 8.24998 20.1667Z" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M14.9233 12.4758C13.8875 13.5116 12.4025 13.8325 11.0916 13.42L8.71748 15.785C8.55248 15.9591 8.21331 16.0691 7.96581 16.0325L6.86581 15.8858C6.49914 15.84 6.16914 15.4916 6.11414 15.1341L5.96748 14.0341C5.93081 13.7958 6.04998 13.4566 6.21498 13.2825L8.57998 10.9175C8.17664 9.60663 8.48831 8.12163 9.52414 7.0858C11.0091 5.6008 13.4291 5.6008 14.9233 7.0858C16.4083 8.56163 16.4083 10.9816 14.9233 12.4758Z" stroke="#989898" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M9.57915 14.9233L8.79999 14.135" stroke="#989898" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M12.2783 9.80831H12.2865" stroke="#989898" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            
+                            
+                            
+                            
+                            
+                            <span data-key="t-changepassword">Change Password</span>
+                        </a>
+                    
+                    </li>
+                    <!--<li>
+                        <a  href="javascript: void(0);" class="has-arrow" >
+                            <i data-feather="layout"></i>
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M11 13.75C12.5188 13.75 13.75 12.5188 13.75 11C13.75 9.48122 12.5188 8.25 11 8.25C9.48122 8.25 8.25 9.48122 8.25 11C8.25 12.5188 9.48122 13.75 11 13.75Z" stroke="#989898" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M1.83331 11.8066V10.1933C1.83331 9.23998 2.61248 8.45165 3.57498 8.45165C5.23415 8.45165 5.91248 7.27832 5.07831 5.83915C4.60165 5.01415 4.88581 3.94165 5.71998 3.46498L7.30581 2.55748C8.02998 2.12665 8.96498 2.38332 9.39581 3.10748L9.49665 3.28165C10.3216 4.72082 11.6783 4.72082 12.5125 3.28165L12.6133 3.10748C13.0441 2.38332 13.9791 2.12665 14.7033 2.55748L16.2891 3.46498C17.1233 3.94165 17.4075 5.01415 16.9308 5.83915C16.0966 7.27832 16.775 8.45165 18.4341 8.45165C19.3875 8.45165 20.1758 9.23082 20.1758 10.1933V11.8066C20.1758 12.76 19.3966 13.5483 18.4341 13.5483C16.775 13.5483 16.0966 14.7216 16.9308 16.1608C17.4075 16.995 17.1233 18.0583 16.2891 18.535L14.7033 19.4425C13.9791 19.8733 13.0441 19.6166 12.6133 18.8925L12.5125 18.7183C11.6875 17.2791 10.3308 17.2791 9.49665 18.7183L9.39581 18.8925C8.96498 19.6166 8.02998 19.8733 7.30581 19.4425L5.71998 18.535C4.88581 18.0583 4.60165 16.9858 5.07831 16.1608C5.91248 14.7216 5.23415 13.5483 3.57498 13.5483C2.61248 13.5483 1.83331 12.76 1.83331 11.8066Z" stroke="#989898" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            
+                            
+                            
+                            
+                            
+                            
+                            <span data-key="t-settings">Settings</span>
+                        </a>
+                    
+                    </li>-->
+                    <li>
+                        <a  href="apps-chatnew.html" >
+                        
+                            <svg width="20" height="20" viewBox="0 0 20 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M14.9834 8.99167V12.325C14.9834 12.5417 14.9751 12.75 14.9501 12.95C14.7584 15.2 13.4334 16.3167 10.9918 16.3167H10.6584C10.4501 16.3167 10.2501 16.4167 10.1251 16.5833L9.12509 17.9167C8.68343 18.5083 7.96675 18.5083 7.52508 17.9167L6.52507 16.5833C6.41674 16.4417 6.17508 16.3167 5.99175 16.3167H5.65842C3.00009 16.3167 1.66675 15.6583 1.66675 12.325V8.99167C1.66675 6.55001 2.79176 5.22501 5.03342 5.03334C5.23342 5.00834 5.44176 5 5.65842 5H10.9918C13.6501 5 14.9834 6.33334 14.9834 8.99167Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M18.3168 5.65818V8.99151C18.3168 11.4415 17.1918 12.7582 14.9501 12.9498C14.9751 12.7498 14.9834 12.5415 14.9834 12.3248V8.99151C14.9834 6.33318 13.6501 4.99984 10.9918 4.99984H5.65845C5.44178 4.99984 5.23345 5.00818 5.03345 5.03318C5.22511 2.79151 6.55011 1.6665 8.99178 1.6665H14.3251C16.9834 1.6665 18.3168 2.99984 18.3168 5.65818Z" stroke="white" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.2462 11.0417H11.2537" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M8.32966 11.0417H8.33716" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M5.41292 11.0417H5.42042" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"/>
+                                </svg>
+                            
+                            
+                            
+                            
+                            
+                            
+                            <span data-key="t-appschatnew">Live Chat Logs</span>
+                        </a>
+                    
+                    </li>
+                    <li>
+                        <a  href="auth-loginnew2.html" >
+                    
+                            <svg width="22" height="22" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                <path d="M8.15833 6.92997C8.44249 3.62997 10.1383 2.28247 13.8508 2.28247H13.97C18.0675 2.28247 19.7083 3.9233 19.7083 8.0208V13.9975C19.7083 18.095 18.0675 19.7358 13.97 19.7358H13.8508C10.1658 19.7358 8.46999 18.4066 8.16749 15.1616" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M1.83331 11H13.64" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                <path d="M11.5958 7.9292L14.6667 11L11.5958 14.0709" stroke="#989898" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                            </svg> 
+                            
+                            <span data-key="t-logout">Logout</span>
+                        </a>
+                    
+                    </li>
+
+
+
+                </ul>
+
+                <div class="card  sidebar-alert border-0 text-center mx-4 mb-0 mt-5"><!--.sidebar-alert-->
+                    <div class="card-body">
+                        <img src="assets/images/sales/sales.png" alt="" class="w-100">
+                        <div class="mt-1">
+                            <h5 class=" font-size-16 almarenamonolight-type fs-18">Sales Performers
+                                of the month</h5>
+                            <!--<p class="font-size-13">Upgrade your plan from a Free trial, to select ‘Business Plan’.</p>-->
+                            <a href="#!" class="btn btn-primary mt-2 gilory-semibold-type" data-bs-toggle="modal" data-bs-target=".bs-example-modal-not" type="button">View </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- Sidebar -->
+        </div>
+    </div>
+    <!-- Left Sidebar End -->
+
+    
+
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="main-content">
+
+        <div class="page-content" id="sales">
+            <div class="container-fluid">
+                <!--container-fluid px-md-5 me-md5-->
+
+                <!-- start page title -->
+                <div class="row">
+                    <div class="col-12">
+                        <div class="page-title-box d-sm-flex align-items-center justify-content-between">
+                            <h4 class="mb-sm-0 fs-23 almarenamonolight-type">Analytics Overview</h4><!--font-size-18-->
+
+                            <!--<div class="page-title-right">
+                                <ol class="breadcrumb m-0">
+                                    <li class="breadcrumb-item"><a href="javascript: void(0);">Dashboard</a></li>
+                                    <li class="breadcrumb-item active">Analytics Overview</li>
+                                </ol>
+                            </div>-->
+
+                        </div>
+                    </div>
+                </div>
+                <!-- end page title -->
+                <!--Analytics overview-->
+
+                <!--Row1-->
+                <div class="row">
+                    <!--New Accounts-->
+                    <div class="col-xl-6">
+                        <div class="card card-h-100">
+
+
+
+                            <div class="card-body">
+
+
+                                <div class="d-flex flex-wrap align-items-center mb-4">
+                                    <h5 class="card-title me-2 almarenamonolight-type fs-21">New Accounts</h5>
+                                    <div class="ms-auto">
+                                        <div>
+                                            <a href="" class=" mb-0 my-n1  gilorymedium-type fs-15"
+                                                style="color: var(--color1);">Sales graph this week</a>
+
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="  text-center d-none ">
+
+                                    <img src="assets/images/nodata/nodata.png" alt="">
+
+
+
+                                    <p class="gilory-regular-type fs-20 mt-2">Webinars this week not
+                                        sheduled</p>
+
+                                </div>
+
+                                <div id="spline_area_new_accounts"
+                                    data-colors='["#FF0000", "#06C3FF","#DD9406","#39AA7B"]'
+                                    class="apex-charts d-flex card-h-100 align-items-center" dir="ltr"></div>
+                            </div>
+                        </div>
+                        <!--end card-->
+                    </div>
+
+                    <div class="col-xl-6">
+
+
+                        <div class="row">
+
+                            <!--Tickets-->
+                            <div class="col-xl-6 col-lg-6  ">
+
+                                <div class="card card-h-100">
+                                    <div class="card-body">
+
+                                        <div class="d-flex flex-wrap align-items-center mb-4">
+                                            <h5 class="card-title me-2 almarenamonolight-type fs-21"> Tickets</h5>
+                                            <div class="ms-auto">
+                                                <div>
+                                                    <button type="button"
+                                                        class="btn bg-soft-gunmetal  text-white btn-sm fs-13 gilroyregular-type almarenamonolight-type"
+                                                        onclick="btnclickactive(this,'.bg-soft-gunmetal')">
+                                                        Daily
+                                                    </button>
+                                                    <button type="button"
+                                                        class="btn  btn-sm  text-white fs-13 gilroyregular-type"
+                                                        onclick="btnclickactive(this,'.bg-soft-gunmetal')" o="">
+                                                        Weekly
+                                                    </button>
+
+                                                </div>
+                                            </div>
+
+                                        </div>
+
+
+                                        <div class="  text-center  d-none">
+
+                                            <img src="assets/images/nodata/nodata.png" alt="" style="max-height: 80px;">
+
+
+
+                                            <p class="gilory-regular-type fs-20 mt-2">Tickets not
+                                                sheduled</p>
+
+                                        </div>
+                                        <div id="tickets" data-colors='["#B750BE","#DD9406","#3AACFF"]'
+                                            class="apex-charts " dir="ltr">
+                                        </div>
+                                    </div>
+
+                                </div>
+
+
+                            </div>
+                            <!--Leads Converted-->
+                            <div class="col-xl-6 col-lg-6">
+                                <div class="card card-h-100">
+
+                                    <div class="card-body">
+                                        <div class="d-flex flex-wrap align-items-center mb-4">
+                                            <h5 class="card-title me-2 fs-21 almarenamonolight-type">Leads Converted
+                                            </h5>
+                                            <!--<div class="ms-auto">
+                                                <div>
+                                                    <button type="button"
+                                                        class="btn bg-soft-gunmetal btn-sm fs-13 gilroymedium-type text-white"
+                                                        onclick="switchtab(this,'#tab01','#tab02')">
+                                                        Daily
+                                                    </button>
+                                                    <button type="button"
+                                                        class="btn  btn-sm fs-13 gilroymedium-type text-white"
+                                                        onclick="switchtab(this,'#tab02','#tab01')">
+                                                        Weekly
+                                                    </button>
+        
+                                                </div>
+                                            </div>-->
+                                        </div>
+                                        <div id="tab01" class="d-block">
+                                            <div class="  text-center d-none ">
+
+                                                <img src="assets/images/nodata/nodata.png" alt=""
+                                                    style="max-height: 80px;">
+
+
+
+                                                <p class="gilory-regular-type fs-20 mt-2">Leads not
+                                                    Generated</p>
+
+                                            </div>
+
+                                            <div id="column_chart_new_accounts" data-colors='["#E33399","#2D8CFF"]'
+                                                class="apex-charts  " dir="ltr">
+                                            </div>
+                                        </div>
+
+
+
+                                    </div>
+                                </div>
+                                <!--end card-->
+                            </div>
+                            <!--Journal-->
+                            <div class="col-xl-12 col-lg-12">
+                                <div class="card">
+
+
+
+
+                                    <div class="card-body ">
+
+                                        <div class="d-flex flex-wrap align-items-left flex-column mb-3 ">
+                                            <h5 class="card-title me-2 almarenamonolight-type fs-21 mb-0">Journal</h5>
+
+
+                                        </div>
+                                        <span class="mb-4  gilroymedium-type fs-13 color-color1">Recent
+                                            activities</span>
+                                        <div class="ps-3 pt-2 " data-simplebar
+                                            style="max-height: 145px;margin-left: -20px;">
+                                            <ul class="list-unstyled activity-wid mb-0 journel2 ">
+
+                                                <li class="activity-list activity-border ">
+                                                    <div class="activity-icon avatar-sm me-3">
+                                                        <span class="avatar-title   rounded-circle">
+                                                            <!--<i class="bx bx-bitcoin font-size-24"></i>-->
+                                                            <img class="rounded-circle avatar-md"
+                                                                src="assets/images/users/firasmonzer.png" alt="">
+                                                        </span>
+                                                    </div>
+                                                    <div class="timeline-list-item flex-grow-1">
+                                                        <div class="d-flex">
+                                                            <div class="flex-grow-1 overflow-hidden me-4">
+                                                                <h5 class="font-size-14 mb-1 gilroymedium-type fs-15">
+                                                                    Firas
+                                                                    Monzer</h5>
+                                                                <p
+                                                                    class="text-truncate color-color1 font-size-13 gilroymedium-type fs-12 d-flex justify-content-between mb-0">
+                                                                    Added
+                                                                    Comments to ticket: 507059
+
+                                                                    <span class="flex-shrink-0 text-end me-3">
+                                                                        <svg width="15" height="15" viewBox="0 0 15 15"
+                                                                            fill="none"
+                                                                            xmlns="http://www.w3.org/2000/svg">
+                                                                            <path
+                                                                                d="M13.75 7.5C13.75 10.95 10.95 13.75 7.5 13.75C4.05 13.75 1.25 10.95 1.25 7.5C1.25 4.05 4.05 1.25 7.5 1.25C10.95 1.25 13.75 4.05 13.75 7.5Z"
+                                                                                stroke="#9C9C9C" stroke-width="1.5"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                            <path
+                                                                                d="M9.81875 9.48751L7.88125 8.33126C7.54375 8.13126 7.26875 7.65001 7.26875 7.25626V4.69376"
+                                                                                stroke="var(--color1)"
+                                                                                stroke-width="1.5"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                        </svg> <span class="ms-1 color-color1">3 hr
+                                                                            ago</span>
+                                                                    </span>
+
+                                                                </p>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+                                                </li>
+                                                <li class="activity-list activity-border ">
+                                                    <div class="activity-icon avatar-sm me-3">
+                                                        <span class="avatar-title   rounded-circle">
+                                                            <!--<i class="bx bx-bitcoin font-size-24"></i>-->
+                                                            <img class="rounded-circle avatar-md"
+                                                                src="assets/images/users/firasmonzer.png" alt="">
+                                                        </span>
+                                                    </div>
+                                                    <div class="timeline-list-item flex-grow-1">
+                                                        <div class="d-flex">
+                                                            <div class="flex-grow-1 overflow-hidden me-4">
+                                                                <h5 class="font-size-14 mb-1 gilroymedium-type fs-15">
+                                                                    Firas
+                                                                    Monzer</h5>
+                                                                <p
+                                                                    class="text-truncate color-color1 font-size-13 gilroymedium-type fs-12 d-flex justify-content-between mb-0">
+                                                                    Added
+                                                                    Comments to ticket: 507059
+
+                                                                    <span class="flex-shrink-0 text-end me-3">
+                                                                        <svg width="15" height="15" viewBox="0 0 15 15"
+                                                                            fill="none"
+                                                                            xmlns="http://www.w3.org/2000/svg">
+                                                                            <path
+                                                                                d="M13.75 7.5C13.75 10.95 10.95 13.75 7.5 13.75C4.05 13.75 1.25 10.95 1.25 7.5C1.25 4.05 4.05 1.25 7.5 1.25C10.95 1.25 13.75 4.05 13.75 7.5Z"
+                                                                                stroke="#9C9C9C" stroke-width="1.5"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                            <path
+                                                                                d="M9.81875 9.48751L7.88125 8.33126C7.54375 8.13126 7.26875 7.65001 7.26875 7.25626V4.69376"
+                                                                                stroke="var(--color1)"
+                                                                                stroke-width="1.5"
+                                                                                stroke-linecap="round"
+                                                                                stroke-linejoin="round" />
+                                                                        </svg> <span class="ms-1 color-color1">3 hr
+                                                                            ago</span>
+                                                                    </span>
+
+                                                                </p>
+                                                            </div>
+
+
+                                                        </div>
+                                                    </div>
+                                                </li>
+
+
+
+
+                                            </ul>
+                                        </div>
+                                    </div>
+                                    <!-- end card body -->
+                                </div>
+                                <!-- end card -->
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+                <!--Row2-->
+                <div class="row">
+
+
+                    <!--Today’s Meetings-->
+                    <div class="col-xl-3  col-md-6">
+                        <!-- card -->
+                        <div class="card card-h-100">
+                            <!-- card body -->
+                            <div class="card-body">
+                                <div class="d-flex flex-wrap align-items-center mb-4">
+                                    <h5 class="card-title me-2 almarenamonolight-type fs-21">Today’s Meetings</h5>
+                                </div>
+                                <div data-simplebar="" style="max-height: 320px;">
+
+                                    <div class="  text-center d-none">
+
+                                        <img src="assets/images/nodata/nodata.png" alt="">
+
+
+
+                                        <p class="gilory-regular-type fs-20 mt-2">No Meeting
+                                            sheduled</p>
+
+                                    </div>
+
+
+                                    <!--Meetings-->
+                                    <div class=" mb-3 px-3 py-3 card-inside ">
+
+
+                                        <div>
+                                            <div class="d-flex justify-content-between mb-1 gilory-medium-type">
+
+                                                <span class="fs-14 m-0 p-0 flex-grow-1 color-color1">9: 30 AM</span>
+                                            
+                                              
+                                                <!--PopUp Actions-->
+                                                <div class="dropdown d-inline-block">
+                                                    <a class="ms-2 " href="#" id="meeting-dd1" data-bs-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false" class="position-relative">
+                                                        <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M12.8333 4.99215C12.8333 3.98381 12.0083 3.15881 10.9999 3.15881C9.99159 3.15881 9.16659 3.98381 9.16659 4.99215C9.16659 6.00048 9.99159 6.82548 10.9999 6.82548C12.0083 6.82548 12.8333 6.00048 12.8333 4.99215Z"
+                                                                stroke="#73759D" stroke-width="1.5" />
+                                                            <path
+                                                                d="M12.8333 17.8255C12.8333 16.8172 12.0083 15.9922 10.9999 15.9922C9.99159 15.9922 9.16659 16.8172 9.16659 17.8255C9.16659 18.8339 9.99159 19.6589 10.9999 19.6589C12.0083 19.6589 12.8333 18.8339 12.8333 17.8255Z"
+                                                                stroke="#73759D" stroke-width="1.5" />
+                                                            <path
+                                                                d="M12.8333 11.409C12.8333 10.4007 12.0083 9.57568 10.9999 9.57568C9.99159 9.57568 9.16659 10.4007 9.16659 11.409C9.16659 12.4173 9.99159 13.2423 10.9999 13.2424C12.0083 13.2424 12.8333 12.4174 12.8333 11.409Z"
+                                                                stroke="#73759D" stroke-width="1.5" />
+                                                        </svg>
+
+
+                                                    </a>
+
+                                                    
+
+                                                  
+                                                    <!--PopUp Actions-->
+                                                    <div class="dropdown-menu dropdown-menu-sm dropdown-menu-end p-0 border-0 " 
+                                                        aria-labelledby="meeting-dd1"
+                                                        style="background-color: var(--bs-card-bg);">
+                                                        <div class=" py-2 px-2 d-flex flex-column">
+                                                            <button type="button"
+                                                                class="btn btn-md btn-bg-soft-color1 mb-2 fs-14 gilory-semibold-type bg-soft-purple text-white ">Send
+                                                                Reminder</button>
+                                                            <button type="button"
+                                                                class="btn btn-md btn-bg-soft-color1   fs-14 gilory-semibold-type bg-soft-purple text-white">Cancel
+                                                                Meeting</button>
+                                                        </div>
+
+
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <h5 class="mb-0 fs-15  mb-2 gilory-semibold-type">Meeting with noura</h5>
+                                            <div
+                                                class="d-flex justify-content-between align-items-center  gilroymedium-type flex-wrap flex-xxl-nowrap">
+
+                                                <p class="mb-0   flex-grow-1 color-color1"><svg width="20" height="21"
+                                                        viewBox="0 0 20 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M9.9999 11.7532C11.4358 11.7532 12.5999 10.5495 12.5999 9.0646C12.5999 7.57975 11.4358 6.37604 9.9999 6.37604C8.56396 6.37604 7.3999 7.57975 7.3999 9.0646C7.3999 10.5495 8.56396 11.7532 9.9999 11.7532Z"
+                                                            stroke="#73759D" stroke-width="1.5" />
+                                                        <path
+                                                            d="M3.01675 7.49631C4.65842 0.0338179 15.3501 0.0424353 16.9834 7.50493C17.9418 11.8825 15.3084 15.5879 13.0001 17.88C11.3251 19.5518 8.67508 19.5518 6.99175 17.88C4.69175 15.5879 2.05842 11.8738 3.01675 7.49631Z"
+                                                            stroke="#73759D" stroke-width="1.5" />
+                                                    </svg>
+                                                    <span class="  fs-14 ">Trust capital office</span>
+                                                </p>
+                                                <span
+                                                    class="fs-14 d-block ms-xxl-2 mt-xxl-0 ms-0 mt-2 text-xxl-end">Ticket
+                                                    : 65010</span>
+
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+                                      <!--Meetings-->
+                                      <div class=" mb-3 px-3 py-3 card-inside ">
+
+
+                                        <div>
+                                            <div class="d-flex justify-content-between mb-1 gilory-medium-type">
+
+                                                <span class="fs-14 m-0 p-0 flex-grow-1 color-color1">9: 30 AM</span>
+                                            
+                                              
+                                                <!--PopUp Actions-->
+                                                <div class="dropdown d-inline-block">
+                                                    <a class="ms-2 " href="#" id="meeting-dd2" data-bs-toggle="dropdown"
+                                                        aria-haspopup="true" aria-expanded="false" class="position-relative">
+                                                        <svg width="22" height="23" viewBox="0 0 22 23" fill="none"
+                                                            xmlns="http://www.w3.org/2000/svg">
+                                                            <path
+                                                                d="M12.8333 4.99215C12.8333 3.98381 12.0083 3.15881 10.9999 3.15881C9.99159 3.15881 9.16659 3.98381 9.16659 4.99215C9.16659 6.00048 9.99159 6.82548 10.9999 6.82548C12.0083 6.82548 12.8333 6.00048 12.8333 4.99215Z"
+                                                                stroke="#73759D" stroke-width="1.5" />
+                                                            <path
+                                                                d="M12.8333 17.8255C12.8333 16.8172 12.0083 15.9922 10.9999 15.9922C9.99159 15.9922 9.16659 16.8172 9.16659 17.8255C9.16659 18.8339 9.99159 19.6589 10.9999 19.6589C12.0083 19.6589 12.8333 18.8339 12.8333 17.8255Z"
+                                                                stroke="#73759D" stroke-width="1.5" />
+                                                            <path
+                                                                d="M12.8333 11.409C12.8333 10.4007 12.0083 9.57568 10.9999 9.57568C9.99159 9.57568 9.16659 10.4007 9.16659 11.409C9.16659 12.4173 9.99159 13.2423 10.9999 13.2424C12.0083 13.2424 12.8333 12.4174 12.8333 11.409Z"
+                                                                stroke="#73759D" stroke-width="1.5" />
+                                                        </svg>
+
+
+                                                    </a>
+
+                                                    
+
+                                                  
+                                                    <!--PopUp Actions-->
+                                                    <div class="dropdown-menu dropdown-menu-sm dropdown-menu-end p-0 border-0 " 
+                                                        aria-labelledby="meeting-dd2"
+                                                        style="background-color: var(--bs-card-bg);">
+                                                        <div class=" py-2 px-2 d-flex flex-column">
+                                                            <button type="button"
+                                                                class="btn btn-md btn-bg-soft-color1 mb-2 fs-14 gilory-semibold-type bg-soft-purple text-white ">Send
+                                                                Reminder</button>
+                                                            <button type="button"
+                                                                class="btn btn-md btn-bg-soft-color1   fs-14 gilory-semibold-type bg-soft-purple text-white">Cancel
+                                                                Meeting</button>
+                                                        </div>
+
+
+
+                                                    </div>
+                                                </div>
+
+                                            </div>
+
+                                            <h5 class="mb-0 fs-15  mb-2 gilory-semibold-type">Meeting with noura</h5>
+                                            <div
+                                                class="d-flex justify-content-between align-items-center  gilroymedium-type flex-wrap flex-xxl-nowrap">
+
+                                                <p class="mb-0   flex-grow-1 color-color1"><svg width="20" height="21"
+                                                        viewBox="0 0 20 21" fill="none"
+                                                        xmlns="http://www.w3.org/2000/svg">
+                                                        <path
+                                                            d="M9.9999 11.7532C11.4358 11.7532 12.5999 10.5495 12.5999 9.0646C12.5999 7.57975 11.4358 6.37604 9.9999 6.37604C8.56396 6.37604 7.3999 7.57975 7.3999 9.0646C7.3999 10.5495 8.56396 11.7532 9.9999 11.7532Z"
+                                                            stroke="#73759D" stroke-width="1.5" />
+                                                        <path
+                                                            d="M3.01675 7.49631C4.65842 0.0338179 15.3501 0.0424353 16.9834 7.50493C17.9418 11.8825 15.3084 15.5879 13.0001 17.88C11.3251 19.5518 8.67508 19.5518 6.99175 17.88C4.69175 15.5879 2.05842 11.8738 3.01675 7.49631Z"
+                                                            stroke="#73759D" stroke-width="1.5" />
+                                                    </svg>
+                                                    <span class="  fs-14 ">Trust capital office</span>
+                                                </p>
+                                                <span
+                                                    class="fs-14 d-block ms-xxl-2 mt-xxl-0 ms-0 mt-2 text-xxl-end">Ticket
+                                                    : 65010</span>
+
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+                                     
+                                </div>
+
+
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+                        </div><!-- end card body -->
+                    </div><!-- end card -->
+
+                    <!--Reminders-->
+                    <div class="col-xl-3  col-md-6">
+                        <!-- card -->
+                        <div class="card card-h-100">
+                            <!-- card body -->
+                            <div class="card-body">
+                                <div class="d-flex flex-wrap align-items-center mb-4">
+                                    <h5 class="card-title me-2 almarenamonolight-type fs-21">Reminders</h5>
+                                </div>
+
+                                <div data-simplebar="" style="max-height:320px ;">
+                                    <!--No Data-->
+                                    <div class="  text-center d-none ">
+
+                                        <img src="assets/images/nodata/nodata.png" alt="" style="">
+
+
+
+                                        <p class="gilory-regular-type fs-20 mt-2">No Reminders
+                                            sheduled</p>
+
+                                    </div>
+                                    <!--Up Coming-->
+                                    <h4 class="fs-14 gilroymedium-type text-info">Pinned</h4>
+
+
+
+
+                                    <!--Reminder-->
+                                    <div class=" mb-3 px-3 py-3 card ">
+
+
+                                        <div>
+
+
+                                            <h5 class=" fs-15  mb-1 gilory-semibold-type">Appointment</h5>
+                                            <div
+                                                class="d-flex justify-content-between align-items-center  gilroymedium-type flex-wrap  flex-xxl-nowrap">
+
+                                                <p class="mb-0  fs-14  color-color1 me-2">
+                                                    <span class=" ">Lorem Ipsum has been the industry's standard dummy
+                                                        text</span>
+                                                </p>
+                                                <a href=""
+                                                    class="btn btn-sm btn-outline-success gilroymedium-type flex-shrink-0  mt-2 mt-xxl-0">5
+                                                    Sep, 5:00</a>
+
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+
+
+                                    <h4 class="fs-14 gilroymedium-type text-warning">Up Coming </h4>
+
+
+                                    <!--Reminder-->
+                                    <div class=" mb-3 px-3 py-3 card ">
+
+
+                                        <div>
+
+
+                                            <h5 class=" fs-15  mb-1 gilory-semibold-type">Appointment</h5>
+                                            <div
+                                                class="d-flex justify-content-between align-items-center  gilroymedium-type flex-wrap  flex-xxl-nowrap">
+
+                                                <p class="mb-0  fs-14  color-color1 me-2">
+                                                    <span class=" ">Lorem Ipsum has been the industry's standard dummy
+                                                        text</span>
+                                                </p>
+                                                <a href=""
+                                                    class="btn btn-sm btn-outline-success gilroymedium-type flex-shrink-0  mt-2 mt-xxl-0">5
+                                                    Sep, 5:00</a>
+
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+                                    <!--Reminder-->
+                                    <div class=" mb-3 px-3 py-3 card ">
+
+
+                                        <div>
+
+
+                                            <h5 class=" fs-15  mb-1 gilory-semibold-type">Appointment</h5>
+                                            <div
+                                                class="d-flex justify-content-between align-items-center  gilroymedium-type flex-wrap  flex-xxl-nowrap">
+
+                                                <p class="mb-0  fs-14  color-color1 me-2">
+                                                    <span class=" ">Lorem Ipsum has been the industry's standard dummy
+                                                        text</span>
+                                                </p>
+                                                <a href=""
+                                                    class="btn btn-sm btn-outline-success gilroymedium-type flex-shrink-0  mt-2 mt-xxl-0">5
+                                                    Sep, 5:00</a>
+
+                                            </div>
+
+                                        </div>
+
+
+
+                                    </div>
+
+
+
+
+                                </div>
+
+
+
+
+
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+                        </div><!-- end card body -->
+                    </div><!-- end card -->
+
+                    <!--Webinars this week-->
+                    <div class="col-xl-3  col-md-6 d-none ">
+                        <!-- card -->
+                        <div class="card card-h-100">
+                            <!-- card body -->
+                            <div class="card-body">
+                                <div class="d-flex flex-wrap align-items-center mb-4">
+                                    <h5 class="card-title me-2 almarenamonolight-type fs-21">Webinars this week</h5>
+                                </div>
+
+                                <div data-simplebar="" style="max-height:320px;overflow-x: hidden;">
+
+
+
+
+                                    <div class="row   ">
+                                        <!--webinar-->
+                                        <!--No Data-->
+                                        <div class="  col-xl-12 text-center d-none">
+
+                                            <img src="assets/images/nodata/nodata.png" alt="">
+
+
+
+                                            <p class="gilory-regular-type fs-20 mt-2">Webinars this week not
+                                                sheduled</p>
+
+                                        </div>
+                                        <!--webinar-->
+                                        <div class="  col-xxl-6  col-xl-12  col-md-6 mb-3   ">
+
+                                            <div class="position-relative rounded-3"
+                                                style="height: 150px;overflow:hidden;background-image: url('assets/images/webinars/web1.png');">
+
+                                                <div class="fade-overlay d-flex align-items-end ">
+                                                    <div class="px-2 py-2">
+
+                                                        <span class="color-color1 fs-12 gilory-medium-type">12.00
+                                                            PM</span>
+                                                        <h2 class="gilory-semibold-type fs-14">Forex Trading</h2>
+                                                    </div>
+
+
+
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+                                        <!--webinar-->
+                                        <div class="  col-xxl-6   col-xl-12 col-md-6 mb-3   ">
+
+                                            <div class="position-relative rounded-3"
+                                                style="height: 150px;overflow:hidden;background-image: url('assets/images/webinars/web3.png');">
+
+                                                <div class="fade-overlay d-flex align-items-end ">
+                                                    <div class="px-2 py-2">
+
+                                                        <span class="color-color1 fs-12 gilory-medium-type">12.00
+                                                            PM</span>
+                                                        <h2 class="gilory-semibold-type fs-14">Forex Trading</h2>
+                                                    </div>
+
+
+
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+                                        <!--webinar-->
+                                        <div class="  col-xxl-6   col-xl-12 col-md-6 mb-3   ">
+
+                                            <div class="position-relative rounded-3"
+                                                style="height: 150px;overflow:hidden;background-image: url('assets/images/webinars/web4.png');">
+
+                                                <div class="fade-overlay d-flex align-items-end ">
+                                                    <div class="px-2 py-2">
+
+                                                        <span class="color-color1 fs-12 gilory-medium-type">12.00
+                                                            PM</span>
+                                                        <h2 class="gilory-semibold-type fs-14">Forex Trading</h2>
+                                                    </div>
+
+
+
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+                                        <!--webinar-->
+                                        <div class="   col-xxl-6  col-xl-12  col-md-6 mb-3   ">
+
+                                            <div class="position-relative rounded-3"
+                                                style="height: 150px;overflow:hidden;background-image: url('assets/images/webinars/web2.png');">
+
+                                                <div class="fade-overlay d-flex align-items-end ">
+                                                    <div class="px-2 py-2">
+
+                                                        <span class="color-color1 fs-12 gilory-medium-type">12.00
+                                                            PM</span>
+                                                        <h2 class="gilory-semibold-type fs-14">Forex Trading</h2>
+                                                    </div>
+
+
+
+                                                </div>
+
+                                            </div>
+
+
+                                        </div>
+
+
+
+
+
+
+                                    </div>
+
+
+
+
+
+
+
+
+
+
+
+                                </div>
+
+
+
+
+
+                            </div>
+
+
+
+
+
+
+
+
+
+
+
+                        </div><!-- end card body -->
+                    </div><!-- end card -->
+
+                    <!---->
+                    <div class="col-xl-6 col-md-6">
+
+                        <div class="card border-top-0  card-h-100 "
+                            style="border-left: 1px solid transparent;border-right: 1px solid transparent;">
+                            <div class="row">
+
+                                <div class="col-xxl-6 col-md-6">
+                                    <!--Live chats this week-->
+                                    <div class="card card-h-100">
+
+
+                                        <div class="card-body ">
+
+
+                                            <div class="d-flex flex-no-wrap align-items-center ">
+                                                <h5 class="card-title me-2 almarenamonolight-type fs-21">Webinars this
+                                                    week
+                                                </h5>
+                                                <div class="ms-auto">
+                                                    <div class="dropdown d-inline-block">
+                                                        <a class="  position-relative " id="live-chats-dropdown"
+                                                            data-bs-toggle="dropdown" aria-haspopup="true"
+                                                            aria-expanded="false">
+
+                                                            <span
+                                                                class="badge bg-info rounded-pill rounded-circle p-2 fs-11">04</span>
+                                                        </a>
+                                                        <div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                                                            aria-labelledby="live-chats-dropdown">
+                                                            <div class="p-3">
+                                                                <div class="row align-items-center">
+                                                                    <div class="col">
+                                                                        <h6 class="m-0"> Notifications </h6>
+                                                                    </div>
+                                                                    <div class="col-auto">
+                                                                        <a href="#!"
+                                                                            class="small text-reset text-decoration-underline">
+                                                                            Unread (3)</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div data-simplebar="init" style="max-height: 230px;">
+                                                                <div class="simplebar-wrapper" style="margin: 0px;">
+                                                                    <div class="simplebar-height-auto-observer-wrapper">
+                                                                        <div class="simplebar-height-auto-observer">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="simplebar-mask">
+                                                                        <div class="simplebar-offset"
+                                                                            style="right: 0px; bottom: 0px;">
+                                                                            <div class="simplebar-content-wrapper"
+                                                                                style="height: auto; overflow: hidden;">
+                                                                                <div class="simplebar-content"
+                                                                                    style="padding: 0px;">
+                                                                                    <a href="#!"
+                                                                                        class="text-reset notification-item">
+                                                                                        <div class="d-flex">
+                                                                                            <div
+                                                                                                class="flex-shrink-0 me-3">
+                                                                                                <img src="assets/images/users/avatar-3.jpg"
+                                                                                                    class="rounded-circle avatar-sm"
+                                                                                                    alt="user-pic">
+                                                                                            </div>
+                                                                                            <div class="flex-grow-1">
+                                                                                                <h6 class="mb-1">James
+                                                                                                    Lemire
+                                                                                                </h6>
+                                                                                                <div
+                                                                                                    class="font-size-13 text-muted">
+                                                                                                    <p class="mb-1">It
+                                                                                                        will seem
+                                                                                                        like simplified
+                                                                                                        English.</p>
+                                                                                                    <p class="mb-0"><i
+                                                                                                            class="mdi mdi-clock-outline"></i>
+                                                                                                        <span>1
+                                                                                                            hour
+                                                                                                            ago</span>
+                                                                                                    </p>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </a>
+                                                                                    <a href="#!"
+                                                                                        class="text-reset notification-item">
+                                                                                        <div class="d-flex">
+                                                                                            <div
+                                                                                                class="flex-shrink-0 avatar-sm me-3">
+                                                                                                <span
+                                                                                                    class="avatar-title bg-primary rounded-circle font-size-16">
+                                                                                                    <i
+                                                                                                        class="bx bx-cart"></i>
+                                                                                                </span>
+                                                                                            </div>
+                                                                                            <div class="flex-grow-1">
+                                                                                                <h6 class="mb-1">Your
+                                                                                                    order is
+                                                                                                    placed</h6>
+                                                                                                <div
+                                                                                                    class="font-size-13 text-muted">
+                                                                                                    <p class="mb-1">If
+                                                                                                        several
+                                                                                                        languages
+                                                                                                        coalesce the
+                                                                                                        grammar</p>
+                                                                                                    <p class="mb-0"><i
+                                                                                                            class="mdi mdi-clock-outline"></i>
+                                                                                                        <span>3
+                                                                                                            min
+                                                                                                            ago</span>
+                                                                                                    </p>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </a>
+                                                                                    <a href="#!"
+                                                                                        class="text-reset notification-item">
+                                                                                        <div class="d-flex">
+                                                                                            <div
+                                                                                                class="flex-shrink-0 avatar-sm me-3">
+                                                                                                <span
+                                                                                                    class="avatar-title bg-success rounded-circle font-size-16">
+                                                                                                    <i
+                                                                                                        class="bx bx-badge-check"></i>
+                                                                                                </span>
+                                                                                            </div>
+                                                                                            <div class="flex-grow-1">
+                                                                                                <h6 class="mb-1">Your
+                                                                                                    item is
+                                                                                                    shipped</h6>
+                                                                                                <div
+                                                                                                    class="font-size-13 text-muted">
+                                                                                                    <p class="mb-1">If
+                                                                                                        several
+                                                                                                        languages
+                                                                                                        coalesce the
+                                                                                                        grammar</p>
+                                                                                                    <p class="mb-0"><i
+                                                                                                            class="mdi mdi-clock-outline"></i>
+                                                                                                        <span>3
+                                                                                                            min
+                                                                                                            ago</span>
+                                                                                                    </p>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </a>
+
+                                                                                    <a href="#!"
+                                                                                        class="text-reset notification-item">
+                                                                                        <div class="d-flex">
+                                                                                            <div
+                                                                                                class="flex-shrink-0 me-3">
+                                                                                                <img src="assets/images/users/avatar-6.jpg"
+                                                                                                    class="rounded-circle avatar-sm"
+                                                                                                    alt="user-pic">
+                                                                                            </div>
+                                                                                            <div class="flex-grow-1">
+                                                                                                <h6 class="mb-1">Salena
+                                                                                                    Layfield
+                                                                                                </h6>
+                                                                                                <div
+                                                                                                    class="font-size-13 text-muted">
+                                                                                                    <p class="mb-1">As a
+                                                                                                        skeptical
+                                                                                                        Cambridge
+                                                                                                        friend of
+                                                                                                        mine occidental.
+                                                                                                    </p>
+                                                                                                    <p class="mb-0"><i
+                                                                                                            class="mdi mdi-clock-outline"></i>
+                                                                                                        <span>1
+                                                                                                            hour
+                                                                                                            ago</span>
+                                                                                                    </p>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="simplebar-placeholder"
+                                                                        style="width: 0px; height: 0px;"></div>
+                                                                </div>
+                                                                <div class="simplebar-track simplebar-horizontal"
+                                                                    style="visibility: hidden;">
+                                                                    <div class="simplebar-scrollbar"
+                                                                        style="transform: translate3d(0px, 0px, 0px); display: none;">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="simplebar-track simplebar-vertical"
+                                                                    style="visibility: hidden;">
+                                                                    <div class="simplebar-scrollbar"
+                                                                        style="transform: translate3d(0px, 0px, 0px); display: none;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+
+
+
+
+                                        </div>
+                                        <!-- end card body -->
+                                    </div>
+
+                                </div>
+                                <div class="col-xxl-6 col-md-6">
+                                    <!--Live chats this week-->
+                                    <div class="card card-h-100">
+
+
+                                        <div class="card-body ">
+
+
+                                            <div class="d-flex flex-no-wrap align-items-center ">
+                                                <h5 class="card-title me-2 almarenamonolight-type fs-21">Live chats this
+                                                    week
+                                                </h5>
+                                                <div class="ms-auto">
+                                                    <div class="dropdown d-inline-block">
+                                                        <a class="  position-relative " id="live-chats-dropdown"
+                                                            data-bs-toggle="dropdown" aria-haspopup="true"
+                                                            aria-expanded="false">
+
+                                                            <span
+                                                                class="badge bg-success rounded-pill rounded-circle p-2 fs-11">04</span>
+                                                        </a>
+                                                       
+                                                    </div>
+                                                </div>
+                                                 <!--<div class="dropdown-menu dropdown-menu-lg dropdown-menu-end p-0"
+                                                            aria-labelledby="live-chats-dropdown">
+                                                            <div class="p-3">
+                                                                <div class="row align-items-center">
+                                                                    <div class="col">
+                                                                        <h6 class="m-0"> Notifications </h6>
+                                                                    </div>
+                                                                    <div class="col-auto">
+                                                                        <a href="#!"
+                                                                            class="small text-reset text-decoration-underline">
+                                                                            Unread (3)</a>
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+                                                            <div data-simplebar="init" style="max-height: 230px;">
+                                                                <div class="simplebar-wrapper" style="margin: 0px;">
+                                                                    <div class="simplebar-height-auto-observer-wrapper">
+                                                                        <div class="simplebar-height-auto-observer">
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="simplebar-mask">
+                                                                        <div class="simplebar-offset"
+                                                                            style="right: 0px; bottom: 0px;">
+                                                                            <div class="simplebar-content-wrapper"
+                                                                                style="height: auto; overflow: hidden;">
+                                                                                <div class="simplebar-content"
+                                                                                    style="padding: 0px;">
+                                                                                    <a href="#!"
+                                                                                        class="text-reset notification-item">
+                                                                                        <div class="d-flex">
+                                                                                            <div
+                                                                                                class="flex-shrink-0 me-3">
+                                                                                                <img src="assets/images/users/avatar-3.jpg"
+                                                                                                    class="rounded-circle avatar-sm"
+                                                                                                    alt="user-pic">
+                                                                                            </div>
+                                                                                            <div class="flex-grow-1">
+                                                                                                <h6 class="mb-1">James
+                                                                                                    Lemire
+                                                                                                </h6>
+                                                                                                <div
+                                                                                                    class="font-size-13 text-muted">
+                                                                                                    <p class="mb-1">It
+                                                                                                        will seem
+                                                                                                        like simplified
+                                                                                                        English.</p>
+                                                                                                    <p class="mb-0"><i
+                                                                                                            class="mdi mdi-clock-outline"></i>
+                                                                                                        <span>1
+                                                                                                            hour
+                                                                                                            ago</span>
+                                                                                                    </p>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </a>
+                                                                                    <a href="#!"
+                                                                                        class="text-reset notification-item">
+                                                                                        <div class="d-flex">
+                                                                                            <div
+                                                                                                class="flex-shrink-0 avatar-sm me-3">
+                                                                                                <span
+                                                                                                    class="avatar-title bg-primary rounded-circle font-size-16">
+                                                                                                    <i
+                                                                                                        class="bx bx-cart"></i>
+                                                                                                </span>
+                                                                                            </div>
+                                                                                            <div class="flex-grow-1">
+                                                                                                <h6 class="mb-1">Your
+                                                                                                    order is
+                                                                                                    placed</h6>
+                                                                                                <div
+                                                                                                    class="font-size-13 text-muted">
+                                                                                                    <p class="mb-1">If
+                                                                                                        several
+                                                                                                        languages
+                                                                                                        coalesce the
+                                                                                                        grammar</p>
+                                                                                                    <p class="mb-0"><i
+                                                                                                            class="mdi mdi-clock-outline"></i>
+                                                                                                        <span>3
+                                                                                                            min
+                                                                                                            ago</span>
+                                                                                                    </p>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </a>
+                                                                                    <a href="#!"
+                                                                                        class="text-reset notification-item">
+                                                                                        <div class="d-flex">
+                                                                                            <div
+                                                                                                class="flex-shrink-0 avatar-sm me-3">
+                                                                                                <span
+                                                                                                    class="avatar-title bg-success rounded-circle font-size-16">
+                                                                                                    <i
+                                                                                                        class="bx bx-badge-check"></i>
+                                                                                                </span>
+                                                                                            </div>
+                                                                                            <div class="flex-grow-1">
+                                                                                                <h6 class="mb-1">Your
+                                                                                                    item is
+                                                                                                    shipped</h6>
+                                                                                                <div
+                                                                                                    class="font-size-13 text-muted">
+                                                                                                    <p class="mb-1">If
+                                                                                                        several
+                                                                                                        languages
+                                                                                                        coalesce the
+                                                                                                        grammar</p>
+                                                                                                    <p class="mb-0"><i
+                                                                                                            class="mdi mdi-clock-outline"></i>
+                                                                                                        <span>3
+                                                                                                            min
+                                                                                                            ago</span>
+                                                                                                    </p>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </a>
+
+                                                                                    <a href="#!"
+                                                                                        class="text-reset notification-item">
+                                                                                        <div class="d-flex">
+                                                                                            <div
+                                                                                                class="flex-shrink-0 me-3">
+                                                                                                <img src="assets/images/users/avatar-6.jpg"
+                                                                                                    class="rounded-circle avatar-sm"
+                                                                                                    alt="user-pic">
+                                                                                            </div>
+                                                                                            <div class="flex-grow-1">
+                                                                                                <h6 class="mb-1">Salena
+                                                                                                    Layfield
+                                                                                                </h6>
+                                                                                                <div
+                                                                                                    class="font-size-13 text-muted">
+                                                                                                    <p class="mb-1">As a
+                                                                                                        skeptical
+                                                                                                        Cambridge
+                                                                                                        friend of
+                                                                                                        mine occidental.
+                                                                                                    </p>
+                                                                                                    <p class="mb-0"><i
+                                                                                                            class="mdi mdi-clock-outline"></i>
+                                                                                                        <span>1
+                                                                                                            hour
+                                                                                                            ago</span>
+                                                                                                    </p>
+                                                                                                </div>
+                                                                                            </div>
+                                                                                        </div>
+                                                                                    </a>
+                                                                                </div>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                    <div class="simplebar-placeholder"
+                                                                        style="width: 0px; height: 0px;"></div>
+                                                                </div>
+                                                                <div class="simplebar-track simplebar-horizontal"
+                                                                    style="visibility: hidden;">
+                                                                    <div class="simplebar-scrollbar"
+                                                                        style="transform: translate3d(0px, 0px, 0px); display: none;">
+                                                                    </div>
+                                                                </div>
+                                                                <div class="simplebar-track simplebar-vertical"
+                                                                    style="visibility: hidden;">
+                                                                    <div class="simplebar-scrollbar"
+                                                                        style="transform: translate3d(0px, 0px, 0px); display: none;">
+                                                                    </div>
+                                                                </div>
+                                                            </div>
+
+                                                        </div>-->
+                                            </div>
+
+
+
+
+                                        </div>
+                                        <!-- end card body -->
+                                    </div>
+
+                                </div>
+                            </div>
+
+
+
+
+                            <!-- end card -->
+
+                            <!--Active Campaigns-->
+                            <div class="card   border-bottom-0 h-100 mb-0">
+
+
+                                <div class="card-body ">
+
+
+                                    <div class="d-flex flex-wrap align-items-center mb-2">
+                                        <h5 class="card-title me-2 almarenamonolight-type fs-21">Active Campaigns</h5>
+                                        <!--<div class="ms-auto">
+                                            <div>
+                                                <a href="" class=" mb-0 my-n1">View all</a>
+
+                                            </div>
+                                        </div>-->
+                                    </div>
+
+
+
+                                    <div class="table-responsive" data-simplebar="" style="max-height:200px ">
+
+                                        <table class="table mb-0 ">
+
+                                            <thead>
+                                                <tr class="almarenamonolight-type fs-14 color-color1">
+                                                    <th>Source</th>
+                                                    <th>Duration</th>
+
+                                                    <th class="text-end">Count</th>
+                                                </tr>
+                                            </thead>
+                                            <tbody class="gilroyregular-type fs-15">
+                                                <tr>
+                                                    <th scope="row">UAE campaign
+                                                        072022</th>
+                                                    <td>Nov 08-2022 / Aug 13-2022</td>
+
+                                                    <td class="text-end">22</td>
+                                                </tr>
+
+
+                                            </tbody>
+                                        </table>
+
+                                    </div>
+                                </div>
+                                <!-- end card body -->
+                            </div>
+                            <!-- end card -->
+                        </div>
+
+                    </div>
+
+
+
+                </div>
+                <!-- end col -->
+
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+    </div>
+    <!-- container-fluid -->
+</div>
+<!-- End Page-content -->
+
+
+</div>
+<!-- end main content-->
+
+</div>
+<!-- END layout-wrapper -->
+
+<!--Popup common -->
+
+
+<!--Popup -->
+<div class="modal fade bs-example-modal-not" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered  modal-md " style="z-index: 10555;">
+        <div class="modal-content bg-soft-white bg-white
+        ">
+            <div class="modal-header border-0" style="background-color: rgba(255,66,41,0.1) ;">
+                <h5 class="modal-title " style="color:#FF2950 !important; font-size: 24px">Important notice</h5>
+
+                <a data-bs-dismiss="modal" aria-label="Close" href="">
+
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M9.93408 16.0653L16.0657 9.93359" stroke="#1B2A57" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path d="M16.0657 16.0653L9.93408 9.93359" stroke="#1B2A57" stroke-width="1.5"
+                            stroke-linecap="round" stroke-linejoin="round" />
+                        <path
+                            d="M9.75008 23.8327H16.2501C21.6667 23.8327 23.8334 21.666 23.8334 16.2493V9.74935C23.8334 4.33268 21.6667 2.16602 16.2501 2.16602H9.75008C4.33341 2.16602 2.16675 4.33268 2.16675 9.74935V16.2493C2.16675 21.666 4.33341 23.8327 9.75008 23.8327Z"
+                            stroke="#1B2A57" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" />
+                    </svg>
+
+
+
+                </a>
+            </div>
+
+            <div class="modal-body">
+
+                <div class="row">
+
+                    <div class=" col-lg-12 ">
+
+                        <img src="https://trustcapitaltc.eu/home_new/images/tccolorlogo.png" alt="" class="py-3"
+                            width="190">
+
+                        <p style="font-size: 16px;color:#1E1F30">It has come to our attention that fraudulent websites
+                            impersonating our business are circulating. We would like to inform our customers that
+                            <span style="color:#06BE59!important ;">Trust Capital TC LTD</span> with trade name
+                            <span>'Trust Capital'</span> holding license number 369/18 does
+                            not use any other websites except our official website which is www.trustcapitaltc.eu and we
+                            kindly ask our clients to trust only this website that Trust Capital TC offers its services.
+                            In case you receive any other communication that is linked to any other domain, please
+                            contact us for confirmation,
+                            at <a href="" style="color:#06BE59!important ;">+357 25378899</a> or by email at <a href=""
+                                style="color:#06BE59!important ;">info@trustcapitaltc.eu</a>
+                        </p>
+                    </div>
+                </div>
+
+
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!--Popup common insta-->
+<div class="modal fade bs-example-modal-insta" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered"   style="z-index: 10555;">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <!--<h5 class="modal-title fs-21">@title</h5>-->
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+                                        
+            <div class="modal-body" >
+
+
+                <div data-simplebar style="max-height: 230px;">
+
+                     <!--User-->
+                <div class="d-flex align-items-center  border-bottom py-3">
+                    
+                    <div class="flex-shrink-0 me-3">
+                        <div class="avatar-sm align-self-center">
+                            <span class="avatar-title rounded-circle bg-soft-primary text-primary">
+                                J
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h6 class="mb-0">James Lemire</h6>
+                        <!--<div class="font-size-13 text-muted">
+                            <p class="mb-1">It will seem like simplified English.</p>
+                            <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>1 hour ago</span></p>
+                        </div>-->
+                    </div>
+                </div>
+                <!--User-->
+                <div class="d-flex align-items-center  border-bottom py-3">
+                    
+                    <div class="flex-shrink-0 me-3">
+                        <div class="avatar-sm align-self-center">
+                            <span class="avatar-title rounded-circle bg-soft-primary text-primary">
+                                J
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h6 class="mb-0">James Lemire</h6>
+                        <!--<div class="font-size-13 text-muted">
+                            <p class="mb-1">It will seem like simplified English.</p>
+                            <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>1 hour ago</span></p>
+                        </div>-->
+                    </div>
+                </div>
+
+                <!--User-->
+                <div class="d-flex align-items-center  border-bottom py-3">
+                    
+                    <div class="flex-shrink-0 me-3">
+                        <div class="avatar-sm align-self-center">
+                            <span class="avatar-title rounded-circle bg-soft-primary text-primary">
+                                J
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h6 class="mb-0">James Lemire</h6>
+                        <!--<div class="font-size-13 text-muted">
+                            <p class="mb-1">It will seem like simplified English.</p>
+                            <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>1 hour ago</span></p>
+                        </div>-->
+                    </div>
+                </div>
+
+                <!--User-->
+                <div class="d-flex align-items-center  border-bottom py-3">
+                    
+                    <div class="flex-shrink-0 me-3">
+                        <div class="avatar-sm align-self-center">
+                            <span class="avatar-title rounded-circle bg-soft-primary text-primary">
+                                J
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h6 class="mb-0">James Lemire</h6>
+                        <!--<div class="font-size-13 text-muted">
+                            <p class="mb-1">It will seem like simplified English.</p>
+                            <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>1 hour ago</span></p>
+                        </div>-->
+                    </div>
+                </div>
+
+                <!--User-->
+                <div class="d-flex align-items-center  border-bottom py-3">
+                    
+                    <div class="flex-shrink-0 me-3">
+                        <div class="avatar-sm align-self-center">
+                            <span class="avatar-title rounded-circle bg-soft-primary text-primary">
+                                J
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h6 class="mb-0">James Lemire</h6>
+                        <!--<div class="font-size-13 text-muted">
+                            <p class="mb-1">It will seem like simplified English.</p>
+                            <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>1 hour ago</span></p>
+                        </div>-->
+                    </div>
+                </div>
+
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!--Popup common linkedin-->
+<div class="modal fade bs-example-modal-linkedin" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered"   style="z-index: 10555;">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <!--<h5 class="modal-title fs-21">@title</h5>-->
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+                                        
+            <div class="modal-body" >
+
+
+                <div data-simplebar style="max-height: 230px;">
+
+                     <!--User-->
+                <div class="d-flex align-items-center  border-bottom py-3">
+                    
+                    <div class="flex-shrink-0 me-3">
+                        <div class="avatar-sm align-self-center">
+                            <span class="avatar-title rounded-circle bg-soft-primary text-primary">
+                                J
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h6 class="mb-0">James Lemire</h6>
+                        <!--<div class="font-size-13 text-muted">
+                            <p class="mb-1">It will seem like simplified English.</p>
+                            <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>1 hour ago</span></p>
+                        </div>-->
+                    </div>
+                </div>
+                <!--User-->
+                <div class="d-flex align-items-center  border-bottom py-3">
+                    
+                    <div class="flex-shrink-0 me-3">
+                        <div class="avatar-sm align-self-center">
+                            <span class="avatar-title rounded-circle bg-soft-primary text-primary">
+                                J
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h6 class="mb-0">James Lemire</h6>
+                        <!--<div class="font-size-13 text-muted">
+                            <p class="mb-1">It will seem like simplified English.</p>
+                            <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>1 hour ago</span></p>
+                        </div>-->
+                    </div>
+                </div>
+
+                <!--User-->
+                <div class="d-flex align-items-center  border-bottom py-3">
+                    
+                    <div class="flex-shrink-0 me-3">
+                        <div class="avatar-sm align-self-center">
+                            <span class="avatar-title rounded-circle bg-soft-primary text-primary">
+                                J
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h6 class="mb-0">James Lemire</h6>
+                        <!--<div class="font-size-13 text-muted">
+                            <p class="mb-1">It will seem like simplified English.</p>
+                            <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>1 hour ago</span></p>
+                        </div>-->
+                    </div>
+                </div>
+
+                <!--User-->
+                <div class="d-flex align-items-center  border-bottom py-3">
+                    
+                    <div class="flex-shrink-0 me-3">
+                        <div class="avatar-sm align-self-center">
+                            <span class="avatar-title rounded-circle bg-soft-primary text-primary">
+                                J
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h6 class="mb-0">James Lemire</h6>
+                        <!--<div class="font-size-13 text-muted">
+                            <p class="mb-1">It will seem like simplified English.</p>
+                            <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>1 hour ago</span></p>
+                        </div>-->
+                    </div>
+                </div>
+
+                <!--User-->
+                <div class="d-flex align-items-center  border-bottom py-3">
+                    
+                    <div class="flex-shrink-0 me-3">
+                        <div class="avatar-sm align-self-center">
+                            <span class="avatar-title rounded-circle bg-soft-primary text-primary">
+                                J
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h6 class="mb-0">James Lemire</h6>
+                        <!--<div class="font-size-13 text-muted">
+                            <p class="mb-1">It will seem like simplified English.</p>
+                            <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>1 hour ago</span></p>
+                        </div>-->
+                    </div>
+                </div>
+
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!--Popup common twitter-->
+<div class="modal fade bs-example-modal-twitter" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered"   style="z-index: 10555;">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <!--<h5 class="modal-title fs-21">@title</h5>-->
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+                                        
+            <div class="modal-body" >
+
+
+                <div data-simplebar style="max-height: 230px;">
+
+                     <!--User-->
+                <div class="d-flex align-items-center  border-bottom py-3">
+                    
+                    <div class="flex-shrink-0 me-3">
+                        <div class="avatar-sm align-self-center">
+                            <span class="avatar-title rounded-circle bg-soft-primary text-primary">
+                                J
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h6 class="mb-0">James Lemire</h6>
+                        <!--<div class="font-size-13 text-muted">
+                            <p class="mb-1">It will seem like simplified English.</p>
+                            <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>1 hour ago</span></p>
+                        </div>-->
+                    </div>
+                </div>
+                <!--User-->
+                <div class="d-flex align-items-center  border-bottom py-3">
+                    
+                    <div class="flex-shrink-0 me-3">
+                        <div class="avatar-sm align-self-center">
+                            <span class="avatar-title rounded-circle bg-soft-primary text-primary">
+                                J
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h6 class="mb-0">James Lemire</h6>
+                        <!--<div class="font-size-13 text-muted">
+                            <p class="mb-1">It will seem like simplified English.</p>
+                            <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>1 hour ago</span></p>
+                        </div>-->
+                    </div>
+                </div>
+
+                <!--User-->
+                <div class="d-flex align-items-center  border-bottom py-3">
+                    
+                    <div class="flex-shrink-0 me-3">
+                        <div class="avatar-sm align-self-center">
+                            <span class="avatar-title rounded-circle bg-soft-primary text-primary">
+                                J
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h6 class="mb-0">James Lemire</h6>
+                        <!--<div class="font-size-13 text-muted">
+                            <p class="mb-1">It will seem like simplified English.</p>
+                            <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>1 hour ago</span></p>
+                        </div>-->
+                    </div>
+                </div>
+
+                <!--User-->
+                <div class="d-flex align-items-center  border-bottom py-3">
+                    
+                    <div class="flex-shrink-0 me-3">
+                        <div class="avatar-sm align-self-center">
+                            <span class="avatar-title rounded-circle bg-soft-primary text-primary">
+                                J
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h6 class="mb-0">James Lemire</h6>
+                        <!--<div class="font-size-13 text-muted">
+                            <p class="mb-1">It will seem like simplified English.</p>
+                            <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>1 hour ago</span></p>
+                        </div>-->
+                    </div>
+                </div>
+
+                <!--User-->
+                <div class="d-flex align-items-center  border-bottom py-3">
+                    
+                    <div class="flex-shrink-0 me-3">
+                        <div class="avatar-sm align-self-center">
+                            <span class="avatar-title rounded-circle bg-soft-primary text-primary">
+                                J
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h6 class="mb-0">James Lemire</h6>
+                        <!--<div class="font-size-13 text-muted">
+                            <p class="mb-1">It will seem like simplified English.</p>
+                            <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>1 hour ago</span></p>
+                        </div>-->
+                    </div>
+                </div>
+
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!--Popup common facebook-->
+<div class="modal fade bs-example-modal-facebook" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered"   style="z-index: 10555;">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <!--<h5 class="modal-title fs-21">@title</h5>-->
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+                                        
+            <div class="modal-body" >
+
+
+                <div data-simplebar style="max-height: 230px;">
+
+                     <!--User-->
+                <div class="d-flex align-items-center  border-bottom py-3">
+                    
+                    <div class="flex-shrink-0 me-3">
+                        <div class="avatar-sm align-self-center">
+                            <span class="avatar-title rounded-circle bg-soft-primary text-primary">
+                                J
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h6 class="mb-0">James Lemire</h6>
+                        <!--<div class="font-size-13 text-muted">
+                            <p class="mb-1">It will seem like simplified English.</p>
+                            <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>1 hour ago</span></p>
+                        </div>-->
+                    </div>
+                </div>
+                <!--User-->
+                <div class="d-flex align-items-center  border-bottom py-3">
+                    
+                    <div class="flex-shrink-0 me-3">
+                        <div class="avatar-sm align-self-center">
+                            <span class="avatar-title rounded-circle bg-soft-primary text-primary">
+                                J
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h6 class="mb-0">James Lemire</h6>
+                        <!--<div class="font-size-13 text-muted">
+                            <p class="mb-1">It will seem like simplified English.</p>
+                            <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>1 hour ago</span></p>
+                        </div>-->
+                    </div>
+                </div>
+
+                <!--User-->
+                <div class="d-flex align-items-center  border-bottom py-3">
+                    
+                    <div class="flex-shrink-0 me-3">
+                        <div class="avatar-sm align-self-center">
+                            <span class="avatar-title rounded-circle bg-soft-primary text-primary">
+                                J
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h6 class="mb-0">James Lemire</h6>
+                        <!--<div class="font-size-13 text-muted">
+                            <p class="mb-1">It will seem like simplified English.</p>
+                            <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>1 hour ago</span></p>
+                        </div>-->
+                    </div>
+                </div>
+
+                <!--User-->
+                <div class="d-flex align-items-center  border-bottom py-3">
+                    
+                    <div class="flex-shrink-0 me-3">
+                        <div class="avatar-sm align-self-center">
+                            <span class="avatar-title rounded-circle bg-soft-primary text-primary">
+                                J
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h6 class="mb-0">James Lemire</h6>
+                        <!--<div class="font-size-13 text-muted">
+                            <p class="mb-1">It will seem like simplified English.</p>
+                            <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>1 hour ago</span></p>
+                        </div>-->
+                    </div>
+                </div>
+
+                <!--User-->
+                <div class="d-flex align-items-center  border-bottom py-3">
+                    
+                    <div class="flex-shrink-0 me-3">
+                        <div class="avatar-sm align-self-center">
+                            <span class="avatar-title rounded-circle bg-soft-primary text-primary">
+                                J
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h6 class="mb-0">James Lemire</h6>
+                        <!--<div class="font-size-13 text-muted">
+                            <p class="mb-1">It will seem like simplified English.</p>
+                            <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>1 hour ago</span></p>
+                        </div>-->
+                    </div>
+                </div>
+
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</div>
+
+ <!--Popup common youtube-->
+<div class="modal fade bs-example-modal-yt" tabindex="-1" role="dialog" aria-hidden="true">
+    <div class="modal-dialog modal-dialog-centered"   style="z-index: 10555;">
+        <div class="modal-content">
+            <div class="modal-header border-0">
+                <!--<h5 class="modal-title fs-21">title</h5>-->
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+            </div>
+                                        
+            <div class="modal-body" >
+
+
+                <div data-simplebar style="max-height: 230px;">
+
+                     <!--User-->
+                <div class="d-flex align-items-center  border-bottom py-3">
+                    
+                    <div class="flex-shrink-0 me-3">
+                        <div class="avatar-sm align-self-center">
+                            <span class="avatar-title rounded-circle bg-soft-primary text-primary">
+                                J
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h6 class="mb-0">James Lemire</h6>
+                        <!--<div class="font-size-13 text-muted">
+                            <p class="mb-1">It will seem like simplified English.</p>
+                            <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>1 hour ago</span></p>
+                        </div>-->
+                    </div>
+                </div>
+                <!--User-->
+                <div class="d-flex align-items-center  border-bottom py-3">
+                    
+                    <div class="flex-shrink-0 me-3">
+                        <div class="avatar-sm align-self-center">
+                            <span class="avatar-title rounded-circle bg-soft-primary text-primary">
+                                J
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h6 class="mb-0">James Lemire</h6>
+                        <!--<div class="font-size-13 text-muted">
+                            <p class="mb-1">It will seem like simplified English.</p>
+                            <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>1 hour ago</span></p>
+                        </div>-->
+                    </div>
+                </div>
+
+                <!--User-->
+                <div class="d-flex align-items-center  border-bottom py-3">
+                    
+                    <div class="flex-shrink-0 me-3">
+                        <div class="avatar-sm align-self-center">
+                            <span class="avatar-title rounded-circle bg-soft-primary text-primary">
+                                J
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h6 class="mb-0">James Lemire</h6>
+                        <!--<div class="font-size-13 text-muted">
+                            <p class="mb-1">It will seem like simplified English.</p>
+                            <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>1 hour ago</span></p>
+                        </div>-->
+                    </div>
+                </div>
+
+                <!--User-->
+                <div class="d-flex align-items-center  border-bottom py-3">
+                    
+                    <div class="flex-shrink-0 me-3">
+                        <div class="avatar-sm align-self-center">
+                            <span class="avatar-title rounded-circle bg-soft-primary text-primary">
+                                J
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h6 class="mb-0">James Lemire</h6>
+                        <!--<div class="font-size-13 text-muted">
+                            <p class="mb-1">It will seem like simplified English.</p>
+                            <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>1 hour ago</span></p>
+                        </div>-->
+                    </div>
+                </div>
+
+                <!--User-->
+                <div class="d-flex align-items-center  border-bottom py-3">
+                    
+                    <div class="flex-shrink-0 me-3">
+                        <div class="avatar-sm align-self-center">
+                            <span class="avatar-title rounded-circle bg-soft-primary text-primary">
+                                J
+                            </span>
+                        </div>
+                    </div>
+                    <div class="flex-grow-1">
+                        <h6 class="mb-0">James Lemire</h6>
+                        <!--<div class="font-size-13 text-muted">
+                            <p class="mb-1">It will seem like simplified English.</p>
+                            <p class="mb-0"><i class="mdi mdi-clock-outline"></i> <span>1 hour ago</span></p>
+                        </div>-->
+                    </div>
+                </div>
+
+                </div>
+               
+            </div>
+        </div>
+    </div>
+</div>
+
+<!-- Right Sidebar -->
+<div class="right-bar">
+    <div data-simplebar class="h-100">
+        <div class="rightbar-title d-flex align-items-center p-3">
+
+            <h5 class="m-0 me-2">Theme Customizer</h5>
+
+            <a href="javascript:void(0);" class="right-bar-toggle ms-auto">
+                <i class="mdi mdi-close noti-icon"></i>
+            </a>
+        </div>
+
+        <!-- Settings -->
+        <hr class="m-0" />
+
+        <div class="p-4">
+            <h6 class="mb-3">Layout</h6>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="layout"
+                    id="layout-vertical" value="vertical">
+                <label class="form-check-label" for="layout-vertical">Vertical</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="layout"
+                    id="layout-horizontal" value="horizontal">
+                <label class="form-check-label" for="layout-horizontal">Horizontal</label>
+            </div>
+
+            <h6 class="mt-4 mb-3 pt-2">Layout Mode</h6>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="layout-mode"
+                    id="layout-mode-light" value="light">
+                <label class="form-check-label" for="layout-mode-light">Light</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="layout-mode"
+                    id="layout-mode-dark" value="dark">
+                <label class="form-check-label" for="layout-mode-dark">Dark</label>
+            </div>
+
+            <h6 class="mt-4 mb-3 pt-2">Layout Width</h6>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="layout-width"
+                    id="layout-width-fuild" value="fuild" onchange="document.body.setAttribute('data-layout-size', 'fluid')">
+                <label class="form-check-label" for="layout-width-fuild">Fluid</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="layout-width"
+                    id="layout-width-boxed" value="boxed" onchange="document.body.setAttribute('data-layout-size', 'boxed')">
+                <label class="form-check-label" for="layout-width-boxed">Boxed</label>
+            </div>
+
+            <h6 class="mt-4 mb-3 pt-2">Layout Position</h6>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="layout-position"
+                    id="layout-position-fixed" value="fixed" onchange="document.body.setAttribute('data-layout-scrollable', 'false')">
+                <label class="form-check-label" for="layout-position-fixed">Fixed</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="layout-position"
+                    id="layout-position-scrollable" value="scrollable" onchange="document.body.setAttribute('data-layout-scrollable', 'true')">
+                <label class="form-check-label" for="layout-position-scrollable">Scrollable</label>
+            </div>
+
+            <h6 class="mt-4 mb-3 pt-2">Topbar Color</h6>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="topbar-color"
+                    id="topbar-color-light" value="light" onchange="document.body.setAttribute('data-topbar', 'light')">
+                <label class="form-check-label" for="topbar-color-light">Light</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="topbar-color"
+                    id="topbar-color-dark" value="dark" onchange="document.body.setAttribute('data-topbar', 'dark')">
+                <label class="form-check-label" for="topbar-color-dark">Dark</label>
+            </div>
+
+            <h6 class="mt-4 mb-3 pt-2 sidebar-setting">Sidebar Size</h6>
+
+            <div class="form-check sidebar-setting">
+                <input class="form-check-input" type="radio" name="sidebar-size"
+                    id="sidebar-size-default" value="default" onchange="document.body.setAttribute('data-sidebar-size', 'lg')">
+                <label class="form-check-label" for="sidebar-size-default">Default</label>
+            </div>
+            <div class="form-check sidebar-setting">
+                <input class="form-check-input" type="radio" name="sidebar-size"
+                    id="sidebar-size-compact" value="compact" onchange="document.body.setAttribute('data-sidebar-size', 'md')">
+                <label class="form-check-label" for="sidebar-size-compact">Compact</label>
+            </div>
+            <div class="form-check sidebar-setting">
+                <input class="form-check-input" type="radio" name="sidebar-size"
+                    id="sidebar-size-small" value="small" onchange="document.body.setAttribute('data-sidebar-size', 'sm')">
+                <label class="form-check-label" for="sidebar-size-small">Small (Icon View)</label>
+            </div>
+
+            <h6 class="mt-4 mb-3 pt-2 sidebar-setting">Sidebar Color</h6>
+
+            <div class="form-check sidebar-setting">
+                <input class="form-check-input" type="radio" name="sidebar-color"
+                    id="sidebar-color-light" value="light" onchange="document.body.setAttribute('data-sidebar', 'light')">
+                <label class="form-check-label" for="sidebar-color-light">Light</label>
+            </div>
+            <div class="form-check sidebar-setting">
+                <input class="form-check-input" type="radio" name="sidebar-color"
+                    id="sidebar-color-dark" value="dark" onchange="document.body.setAttribute('data-sidebar', 'dark')">
+                <label class="form-check-label" for="sidebar-color-dark">Dark</label>
+            </div>
+            <div class="form-check sidebar-setting">
+                <input class="form-check-input" type="radio" name="sidebar-color"
+                    id="sidebar-color-brand" value="brand" onchange="document.body.setAttribute('data-sidebar', 'brand')">
+                <label class="form-check-label" for="sidebar-color-brand">Brand</label>
+            </div>
+
+            <h6 class="mt-4 mb-3 pt-2">Direction</h6>
+
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="layout-direction"
+                    id="layout-direction-ltr" value="ltr">
+                <label class="form-check-label" for="layout-direction-ltr">LTR</label>
+            </div>
+            <div class="form-check form-check-inline">
+                <input class="form-check-input" type="radio" name="layout-direction"
+                    id="layout-direction-rtl" value="rtl">
+                <label class="form-check-label" for="layout-direction-rtl">RTL</label>
+            </div>
+
+        </div>
+
+    </div> <!-- end slimscroll-menu-->
+</div>
+<!-- /Right-bar -->
+
+<!-- Right bar overlay-->
+<div class="rightbar-overlay"></div>
+<!-- JAVASCRIPT -->
+<script src="assets/libs/jquery/jquery.min.js" ></script>
+<script src="assets/libs/bootstrap/js/bootstrap.bundle.min.js" ></script>
+<script src="assets/libs/metismenu/metisMenu.min.js" ></script>
+<script src="assets/libs/simplebar/simplebar.min.js" ></script>
+<script src="assets/libs/node-waves/waves.min.js" ></script>
+<script src="assets/libs/feather-icons/feather.min.js" ></script>
+<!-- pace js -->
+<script src="assets/libs/pace-js/pace.min.js"></script>
+
+<!-- apexcharts -->
+<script src="assets/libs/apexcharts/apexcharts.min.js"></script>
+<!-- dashboard init -->
+<script src="assets/js/pages/dashboardsales.init.js"></script>
+
+<script src="assets/js/app.js"></script>
+<script src="assets/js/theme.js"></script>
+
+
+</body>
+
+</html>

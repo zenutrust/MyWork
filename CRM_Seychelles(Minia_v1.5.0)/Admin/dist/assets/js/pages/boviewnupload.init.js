@@ -1,0 +1,1 @@
+$(document).ready(function(){new SimpleBar(document.getElementById("useractivity")),new SimpleBar(document.getElementById("uploaddocumentsdetails")),flatpickr("#expirydate",{allowInput:!0,dateFormat:"Y-m-d",altFormat:"Y-m-d",mode:"single",enableTime:!1,altInput:!0});document.getElementById("choosefile").onchange=e=>{e=e.target.files[0];$("#choosetext").text(e.name)}});

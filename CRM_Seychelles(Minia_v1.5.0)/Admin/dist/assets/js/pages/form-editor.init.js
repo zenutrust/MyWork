@@ -1,0 +1,1 @@
+ClassicEditor.create(document.querySelector("#ckeditor-classic")).then(function(e){e.ui.view.editable.element.style.height="100px"}).catch(function(e){console.error(e)});

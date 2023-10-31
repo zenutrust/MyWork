@@ -1,0 +1,458 @@
+@@include("partials/main.html")
+
+<head>
+
+    @@include("partials/title-meta.html", {"title": "Dashboard"})
+    <!-- flatpickr css -->
+    <link href="assets/libs/flatpickr/flatpickr.min.css" rel="stylesheet" type="text/css">
+    <!-- DataTables -->
+    <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    <link href="assets/libs/datatables.net-buttons-bs4/css/buttons.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+    @@include("partials/head-css.html")
+</head>
+
+@@include("partials/body.html")
+
+<!-- Begin page -->
+<div id="layout-wrapper">
+                                          
+    @@include("partials/menutc.html")
+
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="main-content ">
+
+        <div class="page-content " id="sales">
+            <div class="container-fluid">
+                          @@include("partials/page-title.html", {"pagetitle": "Dashboard", "title": "Inactive Tickets"})   
+                          
+                          <div class="row">
+            
+                            <div class="col-sm-6    col-md-4  col-xl-2">
+                                <!-- card -->
+                                <div class="card card-h-100 ">
+                                    <!-- card body -->
+                                    <div class="card-body py-2">
+                                        <div class="">
+                                            <div class="d-flex align-items-center  flex-column flex-xxl-row flex-xxl-wrap">
+                                                <span class=" mb-3 lh-1 d-block flex-shrink-0 ">
+                                                    <i class=" rounded-circle d-inline-block p-3  " style="background-color: var(--bs-card-bg);">
+                                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M24.2776 15.5002C24.2776 13.8136 25.6464 12.4447 27.3331 12.4447V11.2224C27.3331 6.33355 26.1109 5.11133 21.222 5.11133H8.99978C4.11089 5.11133 2.88867 6.33355 2.88867 11.2224V11.8336C4.57534 11.8336 5.94423 13.2024 5.94423 14.8891C5.94423 16.5758 4.57534 17.9447 2.88867 17.9447V18.5558C2.88867 23.4447 4.11089 24.6669 8.99978 24.6669H21.222C26.1109 24.6669 27.3331 23.4447 27.3331 18.5558C25.6464 18.5558 24.2776 17.1869 24.2776 15.5002Z" stroke="#DD9406" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M12.6665 5.11133L12.6665 24.6669" stroke="#DD9406" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+                                                            </svg>
+                                                            
+        
+                                                    </i>
+                                                </span>
+                                                <div class=" mx-1 ms-xxl-2 flex-shrink-0">
+                                                   
+                                                    <div class="text-wrap mb-1 text-center text-xxl-start">
+                                                      
+                                                        <span class="  fs-30 ">1478</span>
+                                                    </div>
+                                                    <h2 class=" gilory-semibold-type fs-20  mb-0 text-center text-xxl-start text-truncate almarenamonolight-type color-color1" >Total <br>Tickets</h2>
+                                                </div>
+                                                
+                                            </div>
+        
+        
+                                        </div>
+                                        
+                                    </div><!-- end card body -->
+                                </div>
+                                <!-- end card -->
+                            </div><!-- end col -->
+                            <div class="col-sm-6    col-md-4  col-xl-2">
+                                <!-- card -->
+                                <div class="card card-h-100 ">
+                                    <!-- card body -->
+                                    <div class="card-body py-2">
+                                        <div class="">
+                                            <div class="d-flex align-items-center  flex-column flex-xxl-row flex-xxl-wrap">
+                                                <span class=" mb-3 lh-1 d-block flex-shrink-0 ">
+                                                    <i class=" rounded-circle d-inline-block p-3  " style="background-color: var(--bs-card-bg);">
+                                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M8.40771 22.1811V19.6514" stroke="#E323FF" stroke-width="1.5" stroke-linecap="round"/>
+                                                            <path d="M14.665 22.1805V17.1211" stroke="#E323FF" stroke-width="1.5" stroke-linecap="round"/>
+                                                            <path d="M20.9219 22.1805V14.5791" stroke="#E323FF" stroke-width="1.5" stroke-linecap="round"/>
+                                                            <path d="M20.9218 7.14941L20.3597 7.80934C17.2434 11.4511 13.0639 14.0297 8.40771 15.1907" stroke="#E323FF" stroke-width="1.5" stroke-linecap="round"/>
+                                                            <path d="M17.3413 7.14941H20.922V10.7179" stroke="#E323FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M10.9989 26.886H18.3314C24.4418 26.886 26.886 24.4418 26.886 18.3314V10.9989C26.886 4.8885 24.4418 2.44434 18.3314 2.44434H10.9989C4.8885 2.44434 2.44434 4.8885 2.44434 10.9989V18.3314C2.44434 24.4418 4.8885 26.886 10.9989 26.886Z" stroke="#E323FF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                            
+                                                            
+        
+                                                    </i>
+                                                </span>
+                                                <div class=" mx-1 ms-xxl-2 flex-shrink-0">
+                                                   
+                                                    <div class="text-wrap mb-1 text-center text-xxl-start">
+                                                      
+                                                        <span class="  fs-30 ">1478</span>
+                                                    </div>
+                                                    <h2 class=" gilory-semibold-type fs-20  mb-0 text-center text-xxl-start text-truncate almarenamonolight-type color-color1" >Unattended <br>Leads</h2>
+                                                </div>
+                                                
+                                            </div>
+        
+        
+                                        </div>
+                                        
+                                    </div><!-- end card body -->
+                                </div>
+                                <!-- end card -->
+                            </div><!-- end col -->
+                          
+                           
+                            <div class="col-sm-6    col-md-4  col-xl-2">
+                                <!-- card -->
+                                <div class="card card-h-100 ">
+                                    <!-- card body -->
+                                    <div class="card-body py-2">
+                                        <div class="">
+                                            <div class="d-flex align-items-center  flex-column flex-xxl-row flex-xxl-wrap">
+                                                <span class=" mb-3 lh-1 d-block flex-shrink-0 ">
+                                                    <i class=" rounded-circle d-inline-block p-3  " style="background-color: var(--bs-card-bg);">
+                                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M14.6651 17.7198C16.3524 17.7198 17.7203 16.3519 17.7203 14.6646C17.7203 12.9772 16.3524 11.6094 14.6651 11.6094C12.9777 11.6094 11.6099 12.9772 11.6099 14.6646C11.6099 16.3519 12.9777 17.7198 14.6651 17.7198Z" stroke="#24C38E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M22.6084 11.6094V17.7198" stroke="#24C38E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M10.9988 21.9977C10.9988 22.9143 10.7422 23.7819 10.29 24.5152C9.44681 25.9328 7.89474 26.886 6.1105 26.886C4.32626 26.886 2.7742 25.9328 1.93096 24.5152C1.47879 23.7819 1.22217 22.9143 1.22217 21.9977C1.22217 19.2969 3.4097 17.1094 6.1105 17.1094C8.81131 17.1094 10.9988 19.2969 10.9988 21.9977Z" stroke="#24C38E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M4.20557 21.9974L5.41542 23.2073L8.01846 20.7998" stroke="#24C38E" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M2.44434 18.6982V10.9991C2.44434 6.7218 4.8885 4.88867 8.55475 4.88867H20.7756C24.4418 4.88867 26.886 6.7218 26.886 10.9991V18.3316C26.886 22.6089 24.4418 24.442 20.7756 24.442H10.3879" stroke="#24C38E" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                            
+                                                            
+        
+                                                    </i>
+                                                </span>
+                                                <div class=" mx-1 ms-xxl-2 flex-shrink-0">
+                                                   
+                                                    <div class="text-wrap mb-1 text-center text-xxl-start">
+                                                      
+                                                        <span class="  fs-30 ">1478</span>
+                                                    </div>
+                                                    <h2 class=" gilory-semibold-type fs-20  mb-0 text-center text-xxl-start text-truncate almarenamonolight-type color-color1" >Interested <br>Tickets</h2>
+                                                </div>
+                                                
+                                            </div>
+        
+        
+                                        </div>
+                                        
+                                    </div><!-- end card body -->
+                                </div>
+                                <!-- end card -->
+                            </div><!-- end col -->
+                          
+                           
+                            <div class="col-sm-6    col-md-4  col-xl-2">
+                                <!-- card -->
+                                <div class="card card-h-100 ">
+                                    <!-- card body -->
+                                    <div class="card-body py-2">
+                                        <div class="">
+                                            <div class="d-flex align-items-center  flex-column flex-xxl-row flex-xxl-wrap">
+                                                <span class=" mb-3 lh-1 d-block flex-shrink-0 ">
+                                                    <i class=" rounded-circle d-inline-block p-3  " style="background-color: var(--bs-card-bg);">
+                                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M23.1096 17.9558C23.1096 19.5323 24.405 20.8155 25.9815 20.8155C25.9815 25.3983 24.8327 26.5471 20.2499 26.5471H8.78675C4.20393 26.5471 3.05518 25.3983 3.05518 20.8155V20.2533C4.63166 20.2533 5.92707 18.9579 5.92707 17.3814C5.92707 15.805 4.63166 14.5095 3.05518 14.5095V13.9474C3.0674 9.36458 4.20393 8.21582 8.78675 8.21582H20.2377C24.8205 8.21582 25.9692 9.36458 25.9692 13.9474V15.0961C24.3928 15.0961 23.1096 16.3671 23.1096 17.9558Z" stroke="#FF4743" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M19.8114 8.21562H8.70264L12.2833 4.63492C15.2041 1.71414 16.6706 1.71414 19.5914 4.63492L20.3246 5.36817C19.5547 6.13808 19.3714 7.27462 19.8114 8.21562Z" stroke="#FF4743" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M12.0728 8.21582L12.0728 26.5471" stroke="#FF4743" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" stroke-dasharray="5 5"/>
+                                                            </svg>
+                                                            
+                                                            
+        
+                                                    </i>
+                                                </span>
+                                                <div class=" mx-1 ms-xxl-2 flex-shrink-0">
+                                                   
+                                                    <div class="text-wrap mb-1 text-center text-xxl-start">
+                                                      
+                                                        <span class="  fs-30 ">1478</span>
+                                                    </div>
+                                                    <h2 class=" gilory-semibold-type fs-20  mb-0 text-center text-xxl-start text-truncate almarenamonolight-type color-color1" >Spoken <br>Tickets</h2>
+                                                </div>
+                                                
+                                            </div>
+        
+        
+                                        </div>
+                                        
+                                    </div><!-- end card body -->
+                                </div>
+                                <!-- end card -->
+                            </div><!-- end col -->
+                          
+                           
+                            <div class="col-sm-6    col-md-4  col-xl-2">
+                                <!-- card -->
+                                <div class="card card-h-100 ">
+                                    <!-- card body -->
+                                    <div class="card-body py-2">
+                                        <div class="">
+                                            <div class="d-flex align-items-center  flex-column flex-xxl-row flex-xxl-wrap">
+                                                <span class=" mb-3 lh-1 d-block flex-shrink-0 ">
+                                                    <i class=" rounded-circle d-inline-block p-3  " style="background-color: var(--bs-card-bg);">
+                                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M10.2412 14.6654L13.1864 17.6229L19.0891 11.708" stroke="#2D8CFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M13.1373 2.9939C13.9806 2.27287 15.3615 2.27287 16.217 2.9939L18.1479 4.65593C18.5145 4.97367 19.1988 5.23031 19.6877 5.23031H21.7652C23.0606 5.23031 24.1238 6.29352 24.1238 7.58893V9.66647C24.1238 10.1431 24.3805 10.8397 24.6982 11.2063L26.3603 13.1372C27.0813 13.9804 27.0813 15.3614 26.3603 16.2168L24.6982 18.1477C24.3805 18.5144 24.1238 19.1987 24.1238 19.6876V21.7651C24.1238 23.0605 23.0606 24.1237 21.7652 24.1237H19.6877C19.2111 24.1237 18.5145 24.3804 18.1479 24.6981L16.217 26.3601C15.3737 27.0812 13.9928 27.0812 13.1373 26.3601L11.2064 24.6981C10.8398 24.3804 10.1554 24.1237 9.6666 24.1237H7.55239C6.25698 24.1237 5.19377 23.0605 5.19377 21.7651V19.6753C5.19377 19.1987 4.93713 18.5144 4.63161 18.1477L2.9818 16.2046C2.27299 15.3614 2.27299 13.9926 2.9818 13.1494L4.63161 11.2063C4.93713 10.8397 5.19377 10.1553 5.19377 9.67869V7.57671C5.19377 6.2813 6.25698 5.21809 7.55239 5.21809H9.6666C10.1432 5.21809 10.8398 4.96145 11.2064 4.64371L13.1373 2.9939Z" stroke="#2D8CFF" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                            
+                                                            
+        
+                                                    </i>
+                                                </span>
+                                                <div class=" mx-1 ms-xxl-2 flex-shrink-0">
+                                                   
+                                                    <div class="text-wrap mb-1 text-center text-xxl-start">
+                                                      
+                                                        <span class="  fs-30 ">1478</span>
+                                                    </div>
+                                                    <h2 class=" gilory-semibold-type fs-20  mb-0 text-center text-xxl-start text-truncate almarenamonolight-type color-color1" >Registered <br>Live</h2>
+                                                </div>
+                                                
+                                            </div>
+        
+        
+                                        </div>
+                                        
+                                    </div><!-- end card body -->
+                                </div>
+                                <!-- end card -->
+                            </div><!-- end col -->
+                            <div class="col-sm-6    col-md-4  col-xl-2">
+                                <!-- card -->
+                                <div class="card card-h-100 ">
+                                    <!-- card body -->
+                                    <div class="card-body py-2">
+                                        <div class="">
+                                            <div class="d-flex align-items-center  flex-column flex-xxl-row flex-xxl-wrap">
+                                                <span class=" mb-3 lh-1 d-block flex-shrink-0 ">
+                                                    <i class=" rounded-circle d-inline-block p-3  " style="background-color: var(--bs-card-bg);">
+                                                        <svg width="30" height="30" viewBox="0 0 30 30" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                            <path d="M26.886 18.3314V10.9989C26.886 4.8885 24.4418 2.44434 18.3314 2.44434H10.9989C4.8885 2.44434 2.44434 4.8885 2.44434 10.9989V18.3314C2.44434 24.4418 4.8885 26.886 10.9989 26.886H18.3314C24.4418 26.886 26.886 24.4418 26.886 18.3314Z" stroke="#F8D091" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M3.07959 8.68945H26.2503" stroke="#F8D091" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M10.4121 2.57812V8.51745" stroke="#F8D091" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M18.918 2.57812V7.96751" stroke="#F8D091" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            <path d="M11.9155 17.6591V16.1926C11.9155 14.3106 13.2476 13.5407 14.873 14.4817L16.1439 15.2149L17.4149 15.9482C19.0403 16.8892 19.0403 18.429 17.4149 19.37L16.1439 20.1033L14.873 20.8365C13.2476 21.7775 11.9155 21.0076 11.9155 19.1256V17.6591V17.6591Z" stroke="#F8D091" stroke-width="1.5" stroke-miterlimit="10" stroke-linecap="round" stroke-linejoin="round"/>
+                                                            </svg>
+                                                            
+                                                            
+        
+                                                    </i>
+                                                </span>
+                                                <div class=" mx-1 ms-xxl-2 flex-shrink-0">
+                                                   
+                                                    <div class="text-wrap mb-1 text-center text-xxl-start">
+                                                      
+                                                        <span class="  fs-30 ">1478</span>
+                                                    </div>
+                                                    <h2 class=" gilory-semibold-type fs-20  mb-0 text-center text-xxl-start text-truncate almarenamonolight-type color-color1" >Started <br>Training</h2>
+                                                </div>
+                                                
+                                            </div>
+        
+        
+                                        </div>
+                                        
+                                    </div><!-- end card body -->
+                                </div>
+                                <!-- end card -->
+                            </div><!-- end col -->
+
+                            <div class="col-12">
+
+                                <hr  class="my-4">
+                            </div>
+                          
+                           
+                          
+                           
+                           
+
+                            
+                        
+                          </div>
+                          
+                          <!--Search-->
+                          <div class="row align-items-end">
+
+                            <div class="col-xxl-6 col-md-6 mb-2 ">
+
+                                <div class="row">
+
+                                
+                                    <div class="col-12">
+
+                                        <form class="">
+                                            <div class="row align-items-end ">
+                                              
+                                                <div class="col-sm-4 col-xxl-4">
+                                                    <div class="mb-2">
+                                                        <label class="form-label " for="Fromdate1">From date<span class="color-orange">*</span></label>
+                                                        <input  type="text" class="form-control" id="Fromdate1" placeholder="" required>
+                                                    </div>
+                                                </div>
+                                                <div class="col-sm-4 col-xxl-4">
+                                                    <div class="mb-2">
+                                                        <label class="form-label " for="Todate1">To date<span class="color-orange">*</span></label>
+                                                        <input  type="text" class="form-control" id="Todate1" placeholder="" required>
+                                                            
+                                                        
+                                                    </div>
+                                                </div>
+                                               
+                                                <div class="col-sm-4 col-xxl-2 " >
+                                                        <button class="btn  btn-info  btn-lg mb-2  me-2
+                                                        " type="submit" id="">History</button>
+                                                </div>
+                                               
+                                        </div> 
+                                        </form>
+                                    </div>
+                                
+                                </div>
+
+                                    
+                            </div>
+                            <div class="col-xxl-6 col-md-6  mb-2 ">
+
+                                <div class="row ">
+
+                                    <div class="col-md-6 col-xxl-7"> 
+
+                                        <div class="mb-2">
+
+                                            <input type="text" class="form-control  " placeholder="Search" id="myinputsearch1" >
+                                        </div>
+                                       
+
+                                    </div>
+                                    <div class="col-md-6 col-xxl-5 d-flex justify-content-end flex-shrink-0">
+                                        <div class="mb-2">
+                                            <div id="datatable-buttons_wrapper1">
+
+                                            </div>
+                                        </div>
+                                        
+                                    </div>
+                                </div>
+                                
+                            </div>
+                        
+                        </div>
+
+                            
+                            <!--Data Table-->
+                             <div class="row">
+                                <div class="col-12">
+                                         
+                                          <div class="card">
+
+                                                <div class="card-body">
+
+                                                    <div class="table-responsive "   data-simplebar="init" >
+
+    
+                                                       
+                                            
+                                                        <table  class="table dt-responsive  nowrap  w-100 change" id="datatableiblive">
+                                                            <thead class="color-color1">
+                                                                <tr  class=" gilorymedium-type fs-17">
+                                                                    <th  class="ps-0"> View</th>
+                                                                    <th >Ticket</th>
+                                                                    <th  >Name</th>
+                                                                    <th  >Reg Date</th>
+                                                               
+                                                                    <th>Registerd Live</th>
+                                                                    <th>Intrested Not</th>
+                                                                    <th>Country</th>
+                                                                    <th>Spoken</th>
+                                                                    <th>Sales Rep</th>
+                                                                    
+                                                                    <th>Started Training</th>
+                                                                   
+                                                                    <th class="text-end ">Last Comment</th>
+                                                                  
+                                                                    
+                                                                </tr>
+                                                            </thead>
+            
+            
+                                                            <tbody class="text-white giloryregular-type fs-16">
+                                                                <tr>
+                                                              
+                                                                <td class="ps-0"> <a class="color-green text-decoration-underline">View</a> </td>
+                                                                <td> <a class="text-info text-decoration-underline">View Clients</a> </td>
+                                                                <td>Noura Mikati</td>   
+                                                                <td>09-02-2022</td>
+                                                                <td>09-02-2022</td>
+                                                                <td>410000</td>
+                                                                <td>Noura Mikati</td>
+                                                                <td>nouramikati@trusttech.in</td>
+                                                                <td>TC Limited affiliate</td>
+                                                                
+                                                                <td>China</td>   
+                                                                <td class="text-end ">86.98.85.251</td>
+                                                         
+                                                           
+                                                                
+                                                                </tr>
+                                                            
+            
+                                                            
+                                                              
+                                                            
+                                                        
+                                                            
+                                                            </tbody>
+                                                        
+                                                        </table>
+                                                    </div>
+                                                </div>
+                                          </div>
+                                            
+                                          
+    
+                                 
+                                </div>
+                            </div>  
+                           
+                           
+                       
+                  
+            </div>
+            <!-- End Page-content -->
+            <!--@@include("partials/footer.html")-->
+        </div>
+        <!-- end main content-->
+    </div>
+    <!-- END layout-wrapper -->
+    @@include("partials/right-sidebar.html")
+    @@include("partials/vendor-scripts.html")
+
+    <!-- datepicker js -->
+    <script src="assets/libs/flatpickr/flatpickr.min.js"></script>
+    <!-- Required datatable js -->
+   <script src="assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+   <script src="assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+    <!-- Buttons examples -->
+    <script src="assets/libs/datatables.net-buttons/js/dataTables.buttons.min.js"></script>
+    <script src="assets/libs/datatables.net-buttons-bs4/js/buttons.bootstrap4.min.js"></script>
+    <script src="assets/libs/jszip/jszip.min.js"></script>
+    <script src="assets/libs/pdfmake/build/pdfmake.min.js"></script>
+    <script src="assets/libs/pdfmake/build/vfs_fonts.js"></script>
+    <script src="assets/libs/datatables.net-buttons/js/buttons.html5.min.js"></script>
+    <script src="assets/libs/datatables.net-buttons/js/buttons.print.min.js"></script>
+    <script src="assets/libs/datatables.net-buttons/js/buttons.colVis.min.js"></script>
+    <!-- Datatable init js -->
+    <script src="assets/js/pages/inactive-tickets.init.js"></script> 
+    
+    <script src="assets/js/app.js"></script>
+        <script src="assets/js/theme.js"></script>
+
+    </body>
+
+    </html>

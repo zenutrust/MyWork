@@ -1,0 +1,1 @@
+function allowDrop(t){t.preventDefault()}function drag(t){t.dataTransfer.setData("text/plain",t.target.id)}function drop(t){t.preventDefault();var a=t.dataTransfer.getData("text/plain");t.target.appendChild(document.getElementById(a))}

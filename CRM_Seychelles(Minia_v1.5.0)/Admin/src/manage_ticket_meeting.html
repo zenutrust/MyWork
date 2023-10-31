@@ -1,0 +1,410 @@
+@@include("partials/main.html")
+
+<head>
+
+    @@include("partials/title-meta.html", {"title": "Dashboard"})
+
+    <!-- plugin css -->
+    <!--<link href="assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.css" rel="stylesheet"
+        type="text/css" />-->
+
+            <!-- flatpickr css -->
+    <link href="assets/libs/flatpickr/flatpickr.min.css" rel="stylesheet" type="text/css">
+        <link href="assets/css/input-tel.min.css" rel="stylesheet"
+        type="text/css" />
+    @@include("partials/head-css.html")
+
+</head>
+
+@@include("partials/body.html")
+
+<!-- Begin page -->
+<div id="layout-wrapper">
+
+    @@include("partials/menutc.html")
+
+    <!-- ============================================================== -->
+    <!-- Start right Content here -->
+    <!-- ============================================================== -->
+    <div class="main-content">
+
+        <div class="page-content" id="sales">
+            <div class="container-fluid"> <!--container-fluid px-md-5 me-md5-->
+
+                <!--@@include("partials/page-title.html", {"pagetitle": "Dashboard", "title": "New Lead Registration"})-->
+                
+                <!--Analytics overview-->
+                <div class="row">
+
+                    <div class="col-md-12">
+                        <div class="mb-3">
+                            <a href="" class="btn bg-soft-secondarycolor text-white btn-sm"><i class="fa fa-chevron-left me-2"></i> <!--Manage Tickets--></a>
+                        </div>
+                    </div>
+
+                    <div class="  col-md-6 col-lg-6 col-xl-6 col-xxl-5">
+                        <div class="row">
+                            <!--Book your Meeting-->
+                            <div class="col-md-12">
+
+                                <h4 class="card-title fs-20 almarenamonolight-type mb-3">Book your Meeting
+                                </h4>
+        
+                                <div class="card ">
+                                 
+                                    <div class="card-body">
+                                        
+                                   
+                                    
+                                        <form class="needs-validation" novalidate>
+                                            <div class="row">
+                                                
+                                                <div class="col-lg-12 col-xl-6">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="bookdate">Date<span class="color-orange">*</span></label>
+                                                      
+                                                        <input type="text" id="bookdate" class="form-control">
+                                                        <div class="invalid-feedback">
+                                                            Please provide a valid entry.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 col-xl-6">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="booktime">Time<span class="color-orange">*</span></label>
+                                                        <input type="text" id="booktime" class="form-control">
+                                                        <div class="invalid-feedback">
+                                                            Please provide a valid entry.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                              
+                                                <div class="col-lg-12 col-xl-6">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="location*">Location<span class="color-orange">*</span></label>
+                                                        <input  type="text" id="location"  value="" required  class="form-control">
+                                                            
+                                                        <div class="invalid-feedback">
+                                                            Please provide a valid entry.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 col-xl-6">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="purpose">Purpose<span class="color-orange">*</span></label>
+                                                        <select  class="form-select" id="purpose"  value="" required>
+                                                            <option value="">Mr</option>
+                                                            <option value="">Mrs</option>
+                                                        </select>
+                                                        <div class="invalid-feedback">
+                                                            Please provide a valid entry.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 ">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="time">Feedback<span class="color-orange">*</span></label>
+                                                       <textarea name="" id="" cols="30" rows="5" class="form-control"></textarea>
+                                                        <div class="invalid-feedback">
+                                                            Please provide a valid entry.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-10 ">
+                                                    <button class="btn btn-info btn-md mb-2 me-1" type="submit">Send meeting request</button>
+                                                    <button class="btn btn-outline-light btn-md me-1 mb-2">Change meeting</button>
+                                                    <button class="btn btn-outline-light btn-md me-1 mb-2" >Update feedback</button>
+                                                    <button class="btn btn-outline-light btn-md me-1 mb-2" >Cancel meeting</button>
+                                                    <button class="btn btn-outline-light btn-md me-1 mb-2"  type="reset">Reset</button>
+
+
+
+
+                                                </div>
+                                               
+                                               
+                                                
+                                            </div>
+                                           
+                                            
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <!--Meeting Assessment-->
+                            <div class="col-md-12">
+
+                                <div class="d-flex flex-no-wrap align-items-center ">
+                                    <h4 class="card-title fs-20 almarenamonolight-type mb-3">Meeting Assessment
+                                    </h4>
+                                    <div class="ms-auto">
+                                       
+                                            <a class=" gilory-medium-type color-green"   href="">
+                                                View document
+                                            </a>
+                                    </div>       
+                                        
+                                </div>
+
+                               
+        
+                                <div class="card  card-h-100">
+                                 
+                                    <div class="card-body">
+                                        
+                                   
+                                    
+                                        <form class="needs-validation" novalidate>
+                                            <div class="row">
+                                                
+                                                <div class="col-lg-12 col-xl-6">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="feedback">Feedback<span class="color-orange">*</span></label>
+                                                        <select  class="form-select" id="feedback"  value="" required>
+                                                            <option value="">Mr</option>
+                                                            <option value="">Mrs</option>
+                                                        </select>
+                                                        <div class="invalid-feedback">
+                                                            Please provide a valid entry.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 col-xl-6">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="installeddemo">Installed demo<span class="color-orange">*</span></label>
+                                                        <select  class="form-select" id="installeddemo"  value="" required>
+                                                            <option value="">Mr</option>
+                                                            <option value="">Mrs</option>
+                                                        </select>
+                                                        <div class="invalid-feedback">
+                                                            Please provide a valid entry.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                              
+                                                <div class="col-lg-12 col-xl-6">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="training">Training*</label>
+                                                        <select  class="form-select" id="training"  value="" required>
+                                                            <option value="">Mr</option>
+                                                            <option value="">Mrs</option>
+                                                        </select>
+                                                        <div class="invalid-feedback">
+                                                            Please provide a valid entry.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                
+                                                <div class="col-lg-12 col-xl-6">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="askedquestions">Asked questions<span class="color-orange">*</span></label>
+                                                        <input  type="text" id="askedquestions"  value="" required  class="form-control">
+                                                            
+                                                        <div class="invalid-feedback">
+                                                            Please provide a valid entry.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                               
+                                                <div class="col-lg-12 col-xl-6">
+                                                    <div class="mb-3">
+                                                        <label class="form-label" for="attendedseminars">Attended seminars<span class="color-orange">*</span></label>
+                                                        <select  class="form-select" id="attendedseminars"  value="" required>
+                                                            <option value="">Mr</option>
+                                                            <option value="">Mrs</option>
+                                                        </select>
+                                                        <div class="invalid-feedback">
+                                                            Please provide a valid entry.
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 col-xl-6">
+
+                                                    <div class="mb-3">
+                                                        <label class="form-label">&nbsp;</label>
+                                                        <div class="form-check">
+                                                            <input type="checkbox" class="form-check-input" id="minimumaccount" required="">
+                                                            <label class="form-check-label fs-12" for="minimumaccount">Asked about minimum account</label>
+                                                            <div class="invalid-feedback fs-10 py-0 ">
+                                                                You must agree before submitting.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-lg-12 col-xl-6">
+
+                                                    <div class="mb-3">
+                                                        <!--<label class="form-label">&nbsp;</label>-->
+                                                        <div class="form-check">
+                                                            <input type="checkbox" class="form-check-input" id="commission" required="">
+                                                            <label class="form-check-label fs-12" for="commission">Asked about commission</label>
+                                                            <div class="invalid-feedback fs-10 py-0 ">
+                                                                You must agree before submitting.
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <div class="col-md-12">
+                                                    <button class="btn btn-primary btn-md " type="submit">Update assessment</button>
+                                                    
+
+
+                                                </div>
+                                               
+                                               
+                                                
+                                            </div>
+                                           
+                                            
+                                        </form>
+                                    </div>
+                                </div>
+
+                            </div>
+                        </div>
+                        
+                        <!-- end card -->
+                    </div> <!-- end col -->
+                    <!--All Meeting-->
+                    <div class="  col-md-6  col-lg-6  col-xxl-6 col-xxl-7">
+                        <h4 class="card-title fs-20 almarenamonolight-type mb-3">All Meeting</h4>
+                        <div class=" card   card-h-100" >
+                         
+                            <div class="card-body ">
+                                <div class="d-flex flex-no-wrap align-items-center  justify-content-end">
+                                
+                      
+                                       
+                                         
+                                                <div class="mb-4">
+                                                    
+                                                    <select class="form-select w-100 py-1" id="meetingdropdwn" value="" required="">
+                                                        <option value="" >Last meeting</option>
+                                                        <option value=""  >Last meeting</option>
+                                                    </select>
+                                                   
+                                                </div>
+                                            
+
+                                    
+                                       
+                                 
+                                        
+                                </div>
+                                <div class="table-responsive" data-simplebar="" style="max-height:100%">
+                                    <table class="table mb-0 ">
+
+                                        <thead>
+                                            <tr class="almarenamonolight-type fs-12 color-color1">
+                                                <th>Source</th>
+                                                <th>Duration</th>
+                                                <th>Duration</th>
+                                                <th>Duration</th>
+                                                <th>Duration</th>
+                                                <th>Duration</th>
+    
+                                                <th class="text-end">Count</th>
+                                            </tr>
+                                        </thead>
+                                        <tbody class="gilroyregular-type fs-15">
+                                            <tr>
+                                                <th scope="row">UAE campaign
+                                                    072022</th>
+                                                <td>Nov 08-2022 / Aug 13-2022</td>
+                                                <td>Nov 08-2022 / Aug 13-2022</td>
+                                                <td>Nov 08-2022 / Aug 13-2022</td>
+                                                <td>Nov 08-2022 / Aug 13-2022</td>
+                                                <td>Nov 08-2022 / Aug 13-2022</td>
+                                               
+    
+                                                <td class="text-end"><button class="btn  btn-sm  color-green"  style="background-color:
+                                                    rgba(0, 165, 79, 0.15) ;">Attended</button></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">UAE campaign
+                                                    072022</th>
+                                                <td>Nov 08-2022 / Aug 13-2022</td>
+                                                <td>Nov 08-2022 / Aug 13-2022</td>
+                                                <td>Nov 08-2022 / Aug 13-2022</td>
+                                                <td>Nov 08-2022 / Aug 13-2022</td>
+                                                <td>Nov 08-2022 / Aug 13-2022</td>
+                                               
+    
+                                                
+                                                <td class="text-end"><button class="btn  btn-sm  text-warning"  style="background-color:
+                                                    rgba(221, 174, 6, 0.15) ;">Attended</button></td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">UAE campaign
+                                                    072022</th>
+                                                <td>Nov 08-2022 / Aug 13-2022</td>
+                                                <td>Nov 08-2022 / Aug 13-2022</td>
+                                                <td>Nov 08-2022 / Aug 13-2022</td>
+                                                <td>Nov 08-2022 / Aug 13-2022</td>
+                                                <td>Nov 08-2022 / Aug 13-2022</td>
+                                               
+    
+                                                <td class="text-end"><button class="btn  btn-sm  text-danger"  style="background-color:
+                                                    rgba(255, 3, 3, 0.15) ;">Attended</button></td>
+                                            </tr>
+                                            </tr>
+    
+    
+                                        </tbody>
+                                    </table>
+                                </div>
+                                </div>
+                                
+                        </div>
+                    </div>
+
+
+                </div>
+                <!-- end row-->
+
+                </div>
+                <!-- container -->
+            </div>
+            <!-- End Page-content -->
+
+            <!--@@include("partials/footer.html")-->
+        </div>
+        <!-- end main content-->
+
+    </div>
+    <!-- END layout-wrapper -->
+
+    @@include("partials/right-sidebar.html")
+
+    @@include("partials/vendor-scripts.html")
+
+  
+
+    <!-- Plugins js-->
+    <!--<script src="assets/libs/admin-resources/jquery.vectormap/jquery-jvectormap-1.2.2.min.js"></script>
+    <script src="assets/libs/admin-resources/jquery.vectormap/maps/jquery-jvectormap-world-mill-en.js"></script>-->
+    <!-- dashboard init -->
+  
+     <!-- datepicker js -->
+     <script src="assets/libs/flatpickr/flatpickr.min.js"></script>
+  
+
+    <!-- form intTel -->
+    <!--<script src="assets/js/pages/data.init.js"></script> 
+    <script src="assets/js/pages/intTellinput.init.js"></script>   
+    <script src="assets/js/pages/utils.init.js"></script>  -->
+
+
+    <!-- form validation -->
+    <script src="assets/js/pages/manage-ticket-meeting.init.js"></script>    
+  
+    
+
+    <script src="assets/js/app.js"></script>
+        <script src="assets/js/theme.js"></script>
+    
+
+    </body>
+
+    </html>

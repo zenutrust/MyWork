@@ -1,0 +1,323 @@
+@@include("partials/main.html")
+    <head>
+
+        @@include("partials/title-meta.html", {"title": "Dashboard"})
+
+        <!-- flatpickr css -->
+        <link href="assets/libs/flatpickr/flatpickr.min.css" rel="stylesheet" type="text/css">
+        <!-- DataTables -->
+        <link href="assets/libs/datatables.net-bs4/css/dataTables.bootstrap4.min.css" rel="stylesheet" type="text/css" />
+
+        @@include("partials/head-css.html")
+
+    </head>
+
+    @@include("partials/body.html")
+
+        <!-- Begin page -->
+        <div id="layout-wrapper">
+                                          
+            @@include("partials/menutc.html")
+
+            <!-- ============================================================== -->
+            <!-- Start right Content here -->
+            <!-- ============================================================== -->
+            <div class="main-content">
+
+                <div class="page-content" id="sales">
+                    <div class="container-fluid">
+                        <!--@@include("partials/page-title.html", {"pagetitle": "Dashboard", "title": "New Accounts"})-->
+                        <div class="row">
+
+                            <div class="col-12">
+                                <div class="d-flex align-items-center">
+                                    <h4 class="card-title almarenamonolight-type mb-4 fs-23">Seminar Reports</h4>
+                                
+                                    
+                                </div>
+                            
+                        
+                                
+                                <div class=" mb-4">
+                                    <p class="gilroymedium-type fs-15 color-color1 mb-0">This page allows you to view the details regarding Sales
+                                        This page allows you to generate reports on events/seminars.</p>
+                                </div>
+
+                        
+                                
+                            </div>
+                            <div class="col-lg-12 col-xxl-6">
+                            
+                                    <form>
+                                        <div class="row align-items-end ">
+
+                                                <div class="col-lg-6">
+                                                    <div class="mb-2">
+                                                        <label class="form-label " for="Seminars">Select the Seminar</label>
+                                                        <select   class=" form-select" id="Seminars"> 
+                                                            <option value="1">1</option>
+                                                        </select>
+
+                                                        
+                                                    </div>
+                                                </div>
+                                            
+                                                <div class="col-lg-6 ">
+                                                    <button class="btn btn-info btn-md mb-2  noPrint me-2" type="submit" id="load-btn-sr">Load</button>
+                                                    <button class="btn btn-outline-light  btn-md mb-2  "  >Print Attendees</button>
+                                                </div>
+                                        </div> 
+                                    </form>
+                            </div>
+                        </div>
+                        <hr class="my-4">
+                        <div class="row justify-content-between">
+
+                            <div class="col-lg-6 col-xxl-5">
+                                <h4 class="card-title almarenamonolight-type mb-2 fs-23">
+                                    View Accounts Opened</h4>
+                                <form>
+                                    <div class="row align-items-end ">
+
+                                        <div class="col-sm-4 col-xxl-5">
+                                            <div class="mb-2">
+                                                <label class="form-label " for="fromdate-semr">From Date</label>
+                                                <input  type="date" class="form-control" id="fromdate-semr" placeholder="yyyy-mm-dd" >
+
+                                                
+                                            </div>
+                                        </div>
+
+                                        <div class="col-sm-4 col-xxl-5">
+                                            <div class="mb-2">
+                                                <label class="form-label " for="todate-semr">To Date</label>
+                                                <input  type="date" class="form-control" id="todate-semr" placeholder="yyyy-mm-dd" >
+                                                
+                                            </div>
+                                        </div>
+                                    
+                                        <div class="col-sm-4 col-xxl-2">
+                                            <button class="btn btn-info btn-md mb-2  
+                                            me-2 w-100" type="submit" id="load-btn-sem">Show</button>
+                                        
+                                        </div>
+                                </div> 
+                                </form>
+
+
+                            </div>
+
+                            <div class="col-lg-6 col-xxl-5">
+                                <h4 class="card-title almarenamonolight-type mb-2 fs-23">
+                                    Update Attending Status</h4>
+
+                                <form>
+                                    <div class="row align-items-end ">
+
+                                            <div class="col-md-4 col-xxl-5">
+                                                <div class="mb-2">
+                                                    <label class="form-label " for="TicketNo">Ticket No*</label>
+                                                    <input type="text"  class=" form-control" id="TicketNo"> 
+                                                    
+
+                                                    
+                                                </div>
+                                            </div>
+
+                                            <div class="col-md-4 col-xxl-5">
+                                                <div class="mb-2">
+                                                    <label class="form-label " for="Attending">Attending</label>
+                                                    <select   class=" form-select" id="Attending"> 
+                                                        <option value="1">1</option>
+                                                    </select>
+
+                                                    
+                                                </div>
+                                            </div>
+                                        
+                                            <div class="col-md-4 col-xxl-2 ">
+                                                <button class="btn btn-info btn-md mb-2  noPrint me-2 w-100" type="submit" >Update</button>
+                                            
+                                            </div>
+                                    </div> 
+                                </form>
+
+
+                            </div>
+                        </div>
+                        <hr class="my-4">
+                        <div class="row">
+
+                            <div class="col-12">
+                            
+                                        
+                                        <div class=" px-1 table-responsive" id="seminar-rep" style="max-height: 453px;">
+                                            
+                                            <table class="table mb-0  change " >
+
+                                                <thead class="gilory-medium-type fs-16">
+                                                    <tr>
+                                                        <td class=" ps-0">Name:</td>
+                                                        <td >Location:</td>
+                                                        <td>Date:</td>
+                                                        <td >Resolved:</td>
+                                                        <td >Attending:</td>
+                                                        <td >Not Attended:</td>
+                                                        <td  class="text-end" >Registered:</td>
+                                                    </tr>
+                                                </thead>
+                                            
+                                                <tbody class="gilory-regular-type fs-15 text-white" >
+                                                    <tr>
+                                                        <td class=" ps-0 color-orange">Forex 01</td>
+                                                        <td class=" color-orange">Join Zoom Meeting<span class="d-block">
+                                                            https://
+                                                            us02web.zoom.us/j/83222165362?
+                                                        </span></td>
+                                                        <td class=" color-orange">09-15-2022 </td>
+                                                        <td  class=" color-orange">01</td>
+                                                        <td class=" color-orange">01</td>
+                                                        <td class=" color-orange" >01</td>
+                                                        <td  class="text-end color-orange">01</td>
+                                                    </tr>
+                                                
+
+                                                </tbody>
+                                            
+                                            </table>
+                                        </div>
+                                    
+                                        
+
+                            
+
+                            </div> <!-- end col -->
+                        
+
+
+
+                        </div>
+                        <hr class="my-5">
+                        <div class="row">
+
+                            <div class="col-12">
+                                <div class=" card   card-h-100" >
+                                    <div class="card-body ">
+                                        <div class="position-absolute " style="right:10px;z-index:1055">
+                                            <input type="text" class="form-control "  placeholder="Search" id="myinputsearch-semrep" style="width:369px">
+                                        </div>
+                                        <div class="table-responsive mt-3" data-simplebar="" style="max-height:100%">
+                                            <table id="datatableseminar-report" class="table dt-responsive  nowrap  w-100 change">
+                                                <thead >
+                                                    <tr  class=" gilory-medium-type fs-17">
+                                                        <th  > Ticket</th>
+                                                        <th >Sales Rep</th>
+                                                        <th  >Re Assigned</th>
+                                                        <th  >Client Name</th>
+                                                        <th>Country</th>
+                                                        <th>Source</th>
+                                                        <th>Attended</th>
+                                                        <th>Attending</th>
+                                                        <th>SMS</th>
+                                                        <th>Account</th>
+                                                        <th>Application</th>
+                                                        <th>Edit</th>
+                                                        
+                                                    </tr>
+                                                </thead>
+
+
+                                                <tbody class="text-white gilory-regular-type fs-16">
+                                        
+                                                    <tr>
+                                                    <td>2C2E45</td>
+                                                    <td>Online</td>
+                                                    <td>Firas</td>
+                                                    <td>Sumitha test</td>
+                                                    <td>Qatar</td>
+                                                    <td>Live account reg</td>
+                                                    <td>Attended</td>
+                                                    <td>Not Attended</td>
+                                                    <td>--</td>
+                                                    <td>845682</td>
+                                                    <td>0</td>
+                                                    <td><div class="dropdown align-self-start">
+                                                        <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                            <i class="bx bx-dots-vertical-rounded"></i>
+                                                        </a>
+                                                        <div class="dropdown-menu">
+                                                            <a class="dropdown-item" href="#">Copy</a>
+                                                            <a class="dropdown-item" href="#">Save</a>
+                                                            <a class="dropdown-item" href="#">Forward</a>
+                                                            <a class="dropdown-item" href="#">Delete</a>
+                                                        </div>
+                                                    </div></td>
+                                                    
+                                                    </tr>
+                                                    <tr>
+                                                        <td>2C2E41</td>
+                                                        <td>Online</td>
+                                                        <td>Firas</td>
+                                                        <td>Sumitha test</td>
+                                                        <td>Qatar</td>
+                                                        <td>Live account reg</td>
+                                                        <td>Attended</td>
+                                                        <td>Not Attended</td>
+                                                        <td>--</td>
+                                                        <td>845682</td>
+                                                        <td>0</td>
+                                                        <td><div class="dropdown align-self-start">
+                                                            <a class="dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                                                <i class="bx bx-dots-vertical-rounded"></i>
+                                                            </a>
+                                                            <div class="dropdown-menu">
+                                                                <a class="dropdown-item" href="#">Copy</a>
+                                                                <a class="dropdown-item" href="#">Save</a>
+                                                                <a class="dropdown-item" href="#">Forward</a>
+                                                                <a class="dropdown-item" href="#">Delete</a>
+                                                            </div>
+                                                        </div></td>
+                                                    
+                                                    </tr>
+                                                
+                                            
+                                                
+                                                </tbody>
+                                            
+                                            </table>
+                                        </div>
+                                    </div>
+                                        
+                                </div>
+                            
+                            </div>
+                    
+                        </div>
+                        
+                    </div>
+                    <!-- End Page-content -->
+
+                    <!--@@include("partials/footer.html")-->
+                </div>
+                <!-- end main content-->
+
+            </div>
+        </div>
+        <!-- END layout-wrapper -->
+
+        @@include("partials/right-sidebar.html")
+        @@include("partials/vendor-scripts.html")
+
+        <!-- datepicker js -->
+        <script src="assets/libs/flatpickr/flatpickr.min.js"></script>
+        <!-- Required datatable js -->
+        <script src="assets/libs/datatables.net/js/jquery.dataTables.min.js"></script>
+        <script src="assets/libs/datatables.net-bs4/js/dataTables.bootstrap4.min.js"></script>
+            <!-- Datatable init js -->
+        <script src="assets/js/pages/seminarreport.init.js"></script> 
+        <script src="assets/js/app.js"></script>
+        <script src="assets/js/theme.js"></script>
+
+    </body>
+
+</html>
